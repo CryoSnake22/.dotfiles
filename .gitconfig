@@ -1,0 +1,11 @@
+[user]
+	name = CryoSnake22
+	email = 65683733+CryoSnake22@users.noreply.github.com
+[init]
+	defaultBranch = main
+[color]
+	ui = auto
+[pull]
+	rebase = false
+[core]
+	excludesfile = /Users/charlo/.gitignore_global
