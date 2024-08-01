@@ -9,6 +9,7 @@ return {
     "williamboman/mason.nvim",
     opts = function(_, opts)
       vim.list_extend(opts.ensure_installed, {
+        "pyright",
         "luacheck",
         "shellcheck",
         "shfmt",
@@ -18,13 +19,22 @@ return {
       })
     end,
   },
-
   -- lsp servers
   {
     "neovim/nvim-lspconfig",
     opts = {
       inlay_hints = { enabled = true },
-      ---@type lspconfig.options
+      --@type lspconfig.options
+      config = function()
+        local util = require("lspconfig/util")
+        local path = util.path
+        require("lspconfig").pyright.setup({
+          before_init = function(_, config)
+            local default_venv_path = path.join(vim.env.HOME, "virtualenvs", "nvim-venv", "bin", "python")
+            config.settings.python.pythonPath = default_venv_path
+          end,
+        })
+      end,
       servers = {
         cssls = {},
         tailwindcss = {
@@ -32,7 +42,30 @@ return {
             return require("lspconfig.util").root_pattern(".git")(...)
           end,
         },
-
+        ruff = {
+          cmd_env = { RUFF_TRACE = "messages" },
+          init_options = {
+            settings = {
+              logLevel = "error",
+            },
+          },
+          keys = {
+            {
+              "<leader>co",
+              LazyVim.lsp.action["source.organizeImports"],
+              desc = "Organize Imports",
+            },
+          },
+        },
+        ruff_lsp = {
+          keys = {
+            {
+              "<leader>co",
+              LazyVim.lsp.action["source.organizeImports"],
+              desc = "Organize Imports",
+            },
+          },
+        },
         tsserver = {
           root_dir = function(...)
             return require("lspconfig.util").root_pattern(".git")(...)
