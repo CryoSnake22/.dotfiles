@@ -8,6 +8,7 @@ local toggle = function()
   vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
 end
 
+keymap.set("n", "<leader>fmp", ":silent !black %<cr>")
 keymap.set("n", "<leader>o", toggle, opts)
 
 keymap.set("n", "x", '"_x')
