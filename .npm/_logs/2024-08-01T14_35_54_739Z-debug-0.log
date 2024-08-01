@@ -1,0 +1,36 @@
+0 verbose cli /opt/homebrew/Cellar/node/22.5.1/bin/node /opt/homebrew/bin/npm
+1 info using npm@10.8.2
+2 info using node@v22.5.1
+3 silly config load:file:/opt/homebrew/lib/node_modules/npm/npmrc
+0 verbose cli /opt/homebrew/Cellar/node/22.5.1/bin/node /opt/homebrew/bin/npm
+4 silly config load:file:/Users/charlo/.npmrc
+5 silly config load:file:/opt/homebrew/etc/npmrc
+6 verbose title npm version
+7 verbose argv "version" "--json"
+1 info using npm@10.8.2
+2 info using node@v22.5.1
+8 verbose logfile logs-max:10 dir:/Users/charlo/.npm/_logs/2024-08-01T14_35_54_739Z-
+3 silly config load:file:/opt/homebrew/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/charlo/.npmrc
+5 silly config load:file:/opt/homebrew/etc/npmrc
+6 verbose title npm version
+7 verbose argv "version" "--json"
+9 verbose logfile /Users/charlo/.npm/_logs/2024-08-01T14_35_54_739Z-debug-0.log
+8 verbose logfile logs-max:10 dir:/Users/charlo/.npm/_logs/2024-08-01T14_35_54_739Z-
+9 verbose logfile /Users/charlo/.npm/_logs/2024-08-01T14_35_54_739Z-debug-0.log
+10 silly logfile start cleaning logs, removing 1 files
+10 silly logfile start cleaning logs, removing 1 files
+11 silly logfile done cleaning log files
+11 silly logfile done cleaning log files
+12 verbose cwd /Users/charlo/.dotfiles
+13 verbose os Darwin 23.6.0
+14 verbose node v22.5.1
+15 verbose npm  v10.8.2
+12 verbose cwd /Users/charlo/.dotfiles
+13 verbose os Darwin 23.6.0
+14 verbose node v22.5.1
+15 verbose npm  v10.8.2
+16 verbose exit 0
+17 info ok
+16 verbose exit 0
+17 info ok

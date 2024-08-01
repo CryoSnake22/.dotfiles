@@ -1,0 +1,668 @@
+0 verbose cli /opt/homebrew/Cellar/node/22.5.1/bin/node /opt/homebrew/bin/npm
+1 info using npm@10.8.2
+2 info using node@v22.5.1
+0 verbose cli /opt/homebrew/Cellar/node/22.5.1/bin/node /opt/homebrew/bin/npm
+3 silly config load:file:/opt/homebrew/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/charlo/.local/share/nvim/mason/staging/emmet-ls/.npmrc
+5 silly config load:file:/Users/charlo/.npmrc
+6 silly config load:file:/opt/homebrew/etc/npmrc
+7 verbose title npm install emmet-ls@0.4.2
+1 info using npm@10.8.2
+2 info using node@v22.5.1
+3 silly config load:file:/opt/homebrew/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/charlo/.local/share/nvim/mason/staging/sqlls/.npmrc
+8 verbose argv "install" "emmet-ls@0.4.2"
+5 silly config load:file:/Users/charlo/.npmrc
+6 silly config load:file:/opt/homebrew/etc/npmrc
+7 verbose title npm install sql-language-server@1.7.0
+9 verbose logfile logs-max:10 dir:/Users/charlo/.npm/_logs/2024-08-01T14_35_54_842Z-
+10 verbose logfile /Users/charlo/.npm/_logs/2024-08-01T14_35_54_842Z-debug-0.log
+8 verbose argv "install" "sql-language-server@1.7.0"
+9 verbose logfile logs-max:10 dir:/Users/charlo/.npm/_logs/2024-08-01T14_35_54_842Z-
+10 verbose logfile /Users/charlo/.npm/_logs/2024-08-01T14_35_54_842Z-debug-0.log
+11 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+11 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+12 silly logfile start cleaning logs, removing 1 files
+12 silly logfile start cleaning logs, removing 1 files
+13 silly logfile done cleaning log files
+13 silly logfile done cleaning log files
+14 silly idealTree buildDeps
+14 silly idealTree buildDeps
+15 silly fetch manifest emmet-ls@0.4.2
+15 silly fetch manifest sql-language-server@1.7.0
+16 silly packumentCache full:https://registry.npmjs.org/emmet-ls cache-miss
+16 silly packumentCache full:https://registry.npmjs.org/sql-language-server cache-miss
+17 http fetch GET 200 https://registry.npmjs.org/emmet-ls 536ms (cache miss)
+18 silly packumentCache full:https://registry.npmjs.org/emmet-ls set size:undefined disposed:false
+19 silly placeDep ROOT emmet-ls@0.4.2 OK for: @mason/emmet-ls@1.0.0 want: 0.4.2
+20 silly fetch manifest @types/node@^17.0.45
+21 silly packumentCache full:https://registry.npmjs.org/@types%2fnode cache-miss
+22 silly fetch manifest emmet@^2.3.6
+23 silly packumentCache full:https://registry.npmjs.org/emmet cache-miss
+24 silly fetch manifest typescript@^4.8.4
+25 silly packumentCache full:https://registry.npmjs.org/typescript cache-miss
+26 silly fetch manifest vscode-languageserver@^7.0.0
+27 silly packumentCache full:https://registry.npmjs.org/vscode-languageserver cache-miss
+28 silly fetch manifest vscode-languageserver-textdocument@^1.0.7
+29 silly packumentCache full:https://registry.npmjs.org/vscode-languageserver-textdocument cache-miss
+17 http fetch GET 200 https://registry.npmjs.org/sql-language-server 580ms (cache miss)
+18 silly packumentCache full:https://registry.npmjs.org/sql-language-server set size:undefined disposed:false
+19 silly placeDep ROOT sql-language-server@1.7.0 OK for: @mason/sqlls@1.0.0 want: 1.7.0
+20 silly fetch manifest @google-cloud/bigquery@^5.9.0
+21 silly packumentCache full:https://registry.npmjs.org/@google-cloud%2fbigquery cache-miss
+22 silly fetch manifest @joe-re/sql-parser@^1.7.0
+23 silly packumentCache full:https://registry.npmjs.org/@joe-re%2fsql-parser cache-miss
+24 silly fetch manifest @types/pg@^8.6.6
+25 silly packumentCache full:https://registry.npmjs.org/@types%2fpg cache-miss
+26 silly fetch manifest @types/yargs@^17.0.8
+27 silly packumentCache full:https://registry.npmjs.org/@types%2fyargs cache-miss
+28 silly fetch manifest cardinal@^2.1.1
+29 silly packumentCache full:https://registry.npmjs.org/cardinal cache-miss
+30 silly fetch manifest jest@^26.0.1
+31 silly packumentCache full:https://registry.npmjs.org/jest cache-miss
+32 silly fetch manifest log4js@^6.2.1
+33 silly packumentCache full:https://registry.npmjs.org/log4js cache-miss
+34 silly fetch manifest mysql2@^2.3.0
+35 silly packumentCache full:https://registry.npmjs.org/mysql2 cache-miss
+36 silly fetch manifest node-ssh-forward@^0.6.3
+37 silly packumentCache full:https://registry.npmjs.org/node-ssh-forward cache-miss
+30 http fetch GET 200 https://registry.npmjs.org/vscode-languageserver-textdocument 198ms (cache updated)
+31 silly packumentCache full:https://registry.npmjs.org/vscode-languageserver-textdocument set size:undefined disposed:false
+32 http fetch GET 200 https://registry.npmjs.org/vscode-languageserver 203ms (cache updated)
+38 http fetch GET 200 https://registry.npmjs.org/cardinal 162ms (cache miss)
+39 silly packumentCache full:https://registry.npmjs.org/cardinal set size:undefined disposed:false
+40 silly fetch manifest pg@^8.9.0
+41 silly packumentCache full:https://registry.npmjs.org/pg cache-miss
+33 silly packumentCache full:https://registry.npmjs.org/vscode-languageserver set size:undefined disposed:false
+42 http fetch GET 200 https://registry.npmjs.org/mysql2 181ms (cache miss)
+43 silly packumentCache full:https://registry.npmjs.org/mysql2 set size:undefined disposed:false
+44 silly fetch manifest sqlint@^1.7.0
+45 silly packumentCache full:https://registry.npmjs.org/sqlint cache-miss
+46 http fetch GET 200 https://registry.npmjs.org/log4js 188ms (cache miss)
+47 silly packumentCache full:https://registry.npmjs.org/log4js set size:undefined disposed:false
+48 silly fetch manifest sqlite3@^5.0.3
+49 silly packumentCache full:https://registry.npmjs.org/sqlite3 cache-miss
+50 http fetch GET 200 https://registry.npmjs.org/@types%2fyargs 196ms (cache miss)
+51 silly packumentCache full:https://registry.npmjs.org/@types%2fyargs set size:undefined disposed:false
+52 silly fetch manifest vscode-languageclient@^6.1.3
+53 silly packumentCache full:https://registry.npmjs.org/vscode-languageclient cache-miss
+54 http fetch GET 200 https://registry.npmjs.org/jest 261ms (cache miss)
+55 silly packumentCache full:https://registry.npmjs.org/jest set size:undefined disposed:false
+56 silly fetch manifest vscode-languageserver@8.0.0-next.8
+57 silly packumentCache full:https://registry.npmjs.org/vscode-languageserver cache-miss
+58 http fetch GET 200 https://registry.npmjs.org/pg 106ms (cache miss)
+59 silly packumentCache full:https://registry.npmjs.org/pg set size:undefined disposed:false
+60 silly fetch manifest vscode-languageserver-protocol@^3.15.3
+61 silly packumentCache full:https://registry.npmjs.org/vscode-languageserver-protocol cache-miss
+62 http fetch GET 200 https://registry.npmjs.org/vscode-languageserver 7ms (cache hit)
+63 silly packumentCache full:https://registry.npmjs.org/vscode-languageserver set size:687688 disposed:false
+64 silly fetch manifest vscode-languageserver-textdocument@^1.0.1
+65 silly packumentCache full:https://registry.npmjs.org/vscode-languageserver-textdocument cache-miss
+66 http fetch GET 200 https://registry.npmjs.org/vscode-languageserver-textdocument 3ms (cache hit)
+67 silly packumentCache full:https://registry.npmjs.org/vscode-languageserver-textdocument set size:66497 disposed:false
+68 silly fetch manifest yargs@^17.3.1
+69 silly packumentCache full:https://registry.npmjs.org/yargs cache-miss
+70 http fetch GET 200 https://registry.npmjs.org/sqlite3 139ms (cache miss)
+71 silly packumentCache full:https://registry.npmjs.org/sqlite3 set size:undefined disposed:false
+34 http fetch GET 200 https://registry.npmjs.org/emmet 382ms (cache miss)
+35 silly packumentCache full:https://registry.npmjs.org/emmet set size:undefined disposed:false
+72 http fetch GET 200 https://registry.npmjs.org/vscode-languageserver-protocol 112ms (cache updated)
+73 silly packumentCache full:https://registry.npmjs.org/vscode-languageserver-protocol set size:undefined disposed:false
+74 http fetch GET 200 https://registry.npmjs.org/yargs 179ms (cache miss)
+75 silly packumentCache full:https://registry.npmjs.org/yargs set size:undefined disposed:false
+76 http fetch GET 200 https://registry.npmjs.org/node-ssh-forward 469ms (cache miss)
+77 silly packumentCache full:https://registry.npmjs.org/node-ssh-forward set size:undefined disposed:false
+36 http fetch GET 200 https://registry.npmjs.org/@types%2fnode 527ms (cache updated)
+78 http fetch GET 200 https://registry.npmjs.org/sqlint 346ms (cache miss)
+79 silly packumentCache full:https://registry.npmjs.org/sqlint set size:undefined disposed:false
+80 http fetch GET 200 https://registry.npmjs.org/vscode-languageclient 335ms (cache miss)
+81 silly packumentCache full:https://registry.npmjs.org/vscode-languageclient set size:undefined disposed:false
+37 silly packumentCache full:https://registry.npmjs.org/@types%2fnode set size:undefined disposed:false
+38 http fetch GET 200 https://registry.npmjs.org/typescript 672ms (cache updated)
+82 http fetch GET 200 https://registry.npmjs.org/@types%2fpg 641ms (cache miss)
+83 silly packumentCache full:https://registry.npmjs.org/@types%2fpg set size:undefined disposed:false
+84 http fetch GET 200 https://registry.npmjs.org/@google-cloud%2fbigquery 652ms (cache miss)
+85 silly packumentCache full:https://registry.npmjs.org/@google-cloud%2fbigquery set size:undefined disposed:false
+39 silly packumentCache full:https://registry.npmjs.org/typescript set size:undefined disposed:false
+40 silly placeDep node_modules/emmet-ls @types/node@17.0.45 OK for: emmet-ls@0.4.2 want: ^17.0.45
+41 silly placeDep node_modules/emmet-ls emmet@2.4.7 OK for: emmet-ls@0.4.2 want: ^2.3.6
+42 silly placeDep node_modules/emmet-ls typescript@4.9.5 OK for: emmet-ls@0.4.2 want: ^4.8.4
+43 silly placeDep node_modules/emmet-ls vscode-languageserver@7.0.0 OK for: emmet-ls@0.4.2 want: ^7.0.0
+44 silly placeDep node_modules/emmet-ls vscode-languageserver-textdocument@1.0.12 OK for: emmet-ls@0.4.2 want: ^1.0.7
+45 silly fetch manifest @emmetio/abbreviation@^2.3.3
+46 silly packumentCache full:https://registry.npmjs.org/@emmetio%2fabbreviation cache-miss
+47 silly fetch manifest @emmetio/css-abbreviation@^2.1.8
+48 silly packumentCache full:https://registry.npmjs.org/@emmetio%2fcss-abbreviation cache-miss
+49 silly fetch manifest vscode-languageserver-protocol@3.16.0
+50 silly packumentCache full:https://registry.npmjs.org/vscode-languageserver-protocol cache-miss
+51 http fetch GET 200 https://registry.npmjs.org/vscode-languageserver-protocol 4ms (cache hit)
+52 silly packumentCache full:https://registry.npmjs.org/vscode-languageserver-protocol set size:454003 disposed:false
+86 http fetch GET 200 https://registry.npmjs.org/@joe-re%2fsql-parser 812ms (cache miss)
+87 silly packumentCache full:https://registry.npmjs.org/@joe-re%2fsql-parser set size:undefined disposed:false
+88 silly fetch manifest pg-native@>=3.0.1
+89 silly packumentCache full:https://registry.npmjs.org/pg-native cache-miss
+90 http fetch GET 200 https://registry.npmjs.org/pg-native 53ms (cache miss)
+91 silly packumentCache full:https://registry.npmjs.org/pg-native set size:undefined disposed:false
+92 silly placeDep node_modules/sql-language-server @google-cloud/bigquery@5.12.0 OK for: sql-language-server@1.7.0 want: ^5.9.0
+93 silly placeDep node_modules/sql-language-server @joe-re/sql-parser@1.7.0 OK for: sql-language-server@1.7.0 want: ^1.7.0
+94 silly placeDep node_modules/sql-language-server @types/pg@8.11.6 OK for: sql-language-server@1.7.0 want: ^8.6.6
+95 silly placeDep node_modules/sql-language-server @types/yargs@17.0.32 OK for: sql-language-server@1.7.0 want: ^17.0.8
+96 silly placeDep node_modules/sql-language-server cardinal@2.1.1 OK for: sql-language-server@1.7.0 want: ^2.1.1
+97 silly placeDep node_modules/sql-language-server jest@26.6.3 OK for: sql-language-server@1.7.0 want: ^26.0.1
+98 silly placeDep node_modules/sql-language-server log4js@6.9.1 OK for: sql-language-server@1.7.0 want: ^6.2.1
+99 silly placeDep node_modules/sql-language-server mysql2@2.3.3 OK for: sql-language-server@1.7.0 want: ^2.3.0
+100 silly placeDep node_modules/sql-language-server node-ssh-forward@0.6.3 OK for: sql-language-server@1.7.0 want: ^0.6.3
+101 silly placeDep node_modules/sql-language-server pg@8.12.0 OK for: sql-language-server@1.7.0 want: ^8.9.0
+102 silly placeDep node_modules/sql-language-server sqlint@1.7.0 OK for: sql-language-server@1.7.0 want: ^1.7.0
+103 silly placeDep node_modules/sql-language-server sqlite3@5.1.7 OK for: sql-language-server@1.7.0 want: ^5.0.3
+104 silly placeDep node_modules/sql-language-server vscode-languageclient@6.1.4 OK for: sql-language-server@1.7.0 want: ^6.1.3
+105 silly placeDep node_modules/sql-language-server vscode-languageserver@8.0.0-next.8 OK for: sql-language-server@1.7.0 want: 8.0.0-next.8
+106 silly placeDep node_modules/sql-language-server vscode-languageserver-protocol@3.17.5 OK for: sql-language-server@1.7.0 want: ^3.15.3
+107 silly placeDep node_modules/sql-language-server vscode-languageserver-textdocument@1.0.12 OK for: sql-language-server@1.7.0 want: ^1.0.1
+108 silly placeDep node_modules/sql-language-server yargs@17.7.2 OK for: sql-language-server@1.7.0 want: ^17.3.1
+109 silly fetch manifest is@^3.3.0
+110 silly packumentCache full:https://registry.npmjs.org/is cache-miss
+111 silly fetch manifest uuid@^8.0.0
+112 silly packumentCache full:https://registry.npmjs.org/uuid cache-miss
+113 silly fetch manifest arrify@^2.0.1
+114 silly packumentCache full:https://registry.npmjs.org/arrify cache-miss
+115 silly fetch manifest big.js@^6.0.0
+116 silly packumentCache full:https://registry.npmjs.org/big.js cache-miss
+117 silly fetch manifest extend@^3.0.2
+118 silly packumentCache full:https://registry.npmjs.org/extend cache-miss
+119 silly fetch manifest p-event@^4.1.0
+120 silly packumentCache full:https://registry.npmjs.org/p-event cache-miss
+121 silly fetch manifest duplexify@^4.0.0
+122 silly packumentCache full:https://registry.npmjs.org/duplexify cache-miss
+123 silly fetch manifest stream-events@^1.0.5
+124 silly packumentCache full:https://registry.npmjs.org/stream-events cache-miss
+125 silly fetch manifest readable-stream@^3.6.0
+126 silly packumentCache full:https://registry.npmjs.org/readable-stream cache-miss
+127 http fetch GET 200 https://registry.npmjs.org/p-event 43ms (cache miss)
+128 silly packumentCache full:https://registry.npmjs.org/p-event set size:undefined disposed:false
+129 silly fetch manifest @google-cloud/common@^3.9.0
+130 silly packumentCache full:https://registry.npmjs.org/@google-cloud%2fcommon cache-miss
+131 http fetch GET 200 https://registry.npmjs.org/extend 52ms (cache revalidated)
+132 silly packumentCache full:https://registry.npmjs.org/extend set size:25974 disposed:false
+133 silly fetch manifest @google-cloud/paginator@^3.0.0
+134 silly packumentCache full:https://registry.npmjs.org/@google-cloud%2fpaginator cache-miss
+135 http fetch GET 200 https://registry.npmjs.org/uuid 53ms (cache revalidated)
+136 silly packumentCache full:https://registry.npmjs.org/uuid set size:281614 disposed:false
+137 silly fetch manifest @google-cloud/promisify@^2.0.0
+138 silly packumentCache full:https://registry.npmjs.org/@google-cloud%2fpromisify cache-miss
+139 http fetch GET 200 https://registry.npmjs.org/is 55ms (cache miss)
+140 silly packumentCache full:https://registry.npmjs.org/is set size:undefined disposed:false
+141 silly fetch manifest peggy@^3.0.2
+142 silly packumentCache full:https://registry.npmjs.org/peggy cache-miss
+143 http fetch GET 200 https://registry.npmjs.org/big.js 56ms (cache miss)
+144 silly packumentCache full:https://registry.npmjs.org/big.js set size:undefined disposed:false
+145 silly fetch manifest pg-types@^4.0.1
+146 silly packumentCache full:https://registry.npmjs.org/pg-types cache-miss
+147 http fetch GET 200 https://registry.npmjs.org/duplexify 57ms (cache miss)
+148 silly packumentCache full:https://registry.npmjs.org/duplexify set size:undefined disposed:false
+149 silly fetch manifest @types/node@*
+150 silly packumentCache full:https://registry.npmjs.org/@types%2fnode cache-miss
+151 http fetch GET 200 https://registry.npmjs.org/arrify 59ms (cache miss)
+152 silly packumentCache full:https://registry.npmjs.org/arrify set size:undefined disposed:false
+153 silly fetch manifest pg-protocol@*
+154 silly packumentCache full:https://registry.npmjs.org/pg-protocol cache-miss
+155 http fetch GET 200 https://registry.npmjs.org/@types%2fnode 9ms (cache hit)
+156 silly packumentCache full:https://registry.npmjs.org/@types%2fnode set size:8893005 disposed:false
+157 silly fetch manifest @types/yargs-parser@*
+158 silly packumentCache full:https://registry.npmjs.org/@types%2fyargs-parser cache-miss
+159 http fetch GET 200 https://registry.npmjs.org/readable-stream 102ms (cache revalidated)
+160 silly packumentCache full:https://registry.npmjs.org/readable-stream set size:272167 disposed:false
+161 silly fetch manifest ansicolors@~0.3.2
+162 silly packumentCache full:https://registry.npmjs.org/ansicolors cache-miss
+163 http fetch GET 200 https://registry.npmjs.org/pg-protocol 49ms (cache miss)
+164 silly packumentCache full:https://registry.npmjs.org/pg-protocol set size:undefined disposed:false
+165 silly fetch manifest redeyed@~2.1.0
+166 silly packumentCache full:https://registry.npmjs.org/redeyed cache-miss
+167 http fetch GET 200 https://registry.npmjs.org/pg-types 51ms (cache miss)
+168 silly packumentCache full:https://registry.npmjs.org/pg-types set size:undefined disposed:false
+169 silly fetch manifest jest-cli@^26.6.3
+170 silly packumentCache full:https://registry.npmjs.org/jest-cli cache-miss
+171 http fetch GET 200 https://registry.npmjs.org/redeyed 53ms (cache miss)
+172 silly packumentCache full:https://registry.npmjs.org/redeyed set size:undefined disposed:false
+173 silly fetch manifest @jest/core@^26.6.3
+174 silly packumentCache full:https://registry.npmjs.org/@jest%2fcore cache-miss
+175 http fetch GET 200 https://registry.npmjs.org/ansicolors 66ms (cache miss)
+176 silly packumentCache full:https://registry.npmjs.org/ansicolors set size:undefined disposed:false
+177 silly fetch manifest import-local@^3.0.2
+178 silly packumentCache full:https://registry.npmjs.org/import-local cache-miss
+179 http fetch GET 200 https://registry.npmjs.org/@types%2fyargs-parser 75ms (cache miss)
+180 silly packumentCache full:https://registry.npmjs.org/@types%2fyargs-parser set size:undefined disposed:false
+181 silly fetch manifest date-format@^4.0.14
+182 silly packumentCache full:https://registry.npmjs.org/date-format cache-miss
+183 http fetch GET 200 https://registry.npmjs.org/jest-cli 72ms (cache miss)
+184 silly packumentCache full:https://registry.npmjs.org/jest-cli set size:undefined disposed:false
+185 silly fetch manifest debug@^4.3.4
+186 silly packumentCache full:https://registry.npmjs.org/debug cache-miss
+53 http fetch GET 200 https://registry.npmjs.org/@emmetio%2fcss-abbreviation 392ms (cache miss)
+54 silly packumentCache full:https://registry.npmjs.org/@emmetio%2fcss-abbreviation set size:undefined disposed:false
+187 http fetch GET 200 https://registry.npmjs.org/date-format 44ms (cache miss)
+188 silly packumentCache full:https://registry.npmjs.org/date-format set size:undefined disposed:false
+189 silly fetch manifest flatted@^3.2.7
+190 silly packumentCache full:https://registry.npmjs.org/flatted cache-miss
+191 http fetch GET 200 https://registry.npmjs.org/import-local 56ms (cache miss)
+192 silly packumentCache full:https://registry.npmjs.org/import-local set size:undefined disposed:false
+193 silly fetch manifest rfdc@^1.3.0
+194 silly packumentCache full:https://registry.npmjs.org/rfdc cache-miss
+195 http fetch GET 200 https://registry.npmjs.org/debug 50ms (cache updated)
+196 silly packumentCache full:https://registry.npmjs.org/debug set size:undefined disposed:false
+197 silly fetch manifest streamroller@^3.1.5
+198 silly packumentCache full:https://registry.npmjs.org/streamroller cache-miss
+199 http fetch GET 200 https://registry.npmjs.org/@jest%2fcore 98ms (cache miss)
+200 silly packumentCache full:https://registry.npmjs.org/@jest%2fcore set size:undefined disposed:false
+201 silly fetch manifest long@^4.0.0
+202 silly packumentCache full:https://registry.npmjs.org/long cache-miss
+203 http fetch GET 200 https://registry.npmjs.org/flatted 44ms (cache revalidated)
+204 silly packumentCache full:https://registry.npmjs.org/flatted set size:120985 disposed:false
+205 silly fetch manifest denque@^2.0.1
+206 silly packumentCache full:https://registry.npmjs.org/denque cache-miss
+207 http fetch GET 200 https://registry.npmjs.org/stream-events 267ms (cache miss)
+208 silly packumentCache full:https://registry.npmjs.org/stream-events set size:undefined disposed:false
+209 silly fetch manifest lru-cache@^6.0.0
+210 silly packumentCache full:https://registry.npmjs.org/lru-cache cache-miss
+211 http fetch GET 200 https://registry.npmjs.org/rfdc 48ms (cache miss)
+212 silly packumentCache full:https://registry.npmjs.org/rfdc set size:undefined disposed:false
+213 silly fetch manifest seq-queue@^0.0.5
+214 silly packumentCache full:https://registry.npmjs.org/seq-queue cache-miss
+215 http fetch GET 200 https://registry.npmjs.org/streamroller 44ms (cache miss)
+216 silly packumentCache full:https://registry.npmjs.org/streamroller set size:undefined disposed:false
+217 silly fetch manifest sqlstring@^2.3.2
+218 silly packumentCache full:https://registry.npmjs.org/sqlstring cache-miss
+219 http fetch GET 200 https://registry.npmjs.org/denque 42ms (cache miss)
+220 silly packumentCache full:https://registry.npmjs.org/denque set size:undefined disposed:false
+221 silly fetch manifest iconv-lite@^0.6.3
+222 silly packumentCache full:https://registry.npmjs.org/iconv-lite cache-miss
+223 http fetch GET 200 https://registry.npmjs.org/lru-cache 48ms (cache revalidated)
+224 silly packumentCache full:https://registry.npmjs.org/lru-cache set size:698785 disposed:false
+225 silly fetch manifest generate-function@^2.3.1
+226 silly packumentCache full:https://registry.npmjs.org/generate-function cache-miss
+227 http fetch GET 200 https://registry.npmjs.org/long 58ms (cache miss)
+228 silly packumentCache full:https://registry.npmjs.org/long set size:undefined disposed:false
+229 silly fetch manifest named-placeholders@^1.1.2
+230 silly packumentCache full:https://registry.npmjs.org/named-placeholders cache-miss
+231 http fetch GET 200 https://registry.npmjs.org/seq-queue 44ms (cache miss)
+232 silly packumentCache full:https://registry.npmjs.org/seq-queue set size:undefined disposed:false
+233 silly fetch manifest debug@^4.1.1
+234 silly packumentCache full:https://registry.npmjs.org/debug cache-miss
+235 http fetch GET 200 https://registry.npmjs.org/debug 2ms (cache hit)
+236 silly packumentCache full:https://registry.npmjs.org/debug set size:186932 disposed:false
+237 silly fetch manifest ssh2@^0.8.9
+238 silly packumentCache full:https://registry.npmjs.org/ssh2 cache-miss
+239 http fetch GET 200 https://registry.npmjs.org/sqlstring 42ms (cache miss)
+240 silly packumentCache full:https://registry.npmjs.org/sqlstring set size:undefined disposed:false
+241 silly fetch manifest pgpass@1.x
+242 silly packumentCache full:https://registry.npmjs.org/pgpass cache-miss
+243 http fetch GET 200 https://registry.npmjs.org/peggy 301ms (cache miss)
+244 silly packumentCache full:https://registry.npmjs.org/peggy set size:undefined disposed:false
+245 silly fetch manifest pg-pool@^3.6.2
+246 silly packumentCache full:https://registry.npmjs.org/pg-pool cache-miss
+247 http fetch GET 200 https://registry.npmjs.org/generate-function 45ms (cache miss)
+248 silly packumentCache full:https://registry.npmjs.org/generate-function set size:undefined disposed:false
+249 silly fetch manifest pg-types@^2.1.0
+250 silly packumentCache full:https://registry.npmjs.org/pg-types cache-miss
+251 http fetch GET 200 https://registry.npmjs.org/pg-types 1ms (cache hit)
+252 silly packumentCache full:https://registry.npmjs.org/pg-types set size:49222 disposed:false
+253 silly fetch manifest pg-protocol@^1.6.1
+254 silly packumentCache full:https://registry.npmjs.org/pg-protocol cache-miss
+255 http fetch GET 200 https://registry.npmjs.org/pg-protocol 0ms (cache hit)
+256 silly packumentCache full:https://registry.npmjs.org/pg-protocol set size:27047 disposed:false
+257 silly fetch manifest pg-connection-string@^2.6.4
+258 silly packumentCache full:https://registry.npmjs.org/pg-connection-string cache-miss
+259 http fetch GET 200 https://registry.npmjs.org/named-placeholders 48ms (cache miss)
+260 silly packumentCache full:https://registry.npmjs.org/named-placeholders set size:undefined disposed:false
+261 silly fetch manifest pg-cloudflare@^1.1.1
+262 silly packumentCache full:https://registry.npmjs.org/pg-cloudflare cache-miss
+263 http fetch GET 200 https://registry.npmjs.org/pgpass 44ms (cache miss)
+264 silly packumentCache full:https://registry.npmjs.org/pgpass set size:undefined disposed:false
+265 silly fetch manifest ajv@^6.12.2
+266 silly packumentCache full:https://registry.npmjs.org/ajv cache-miss
+267 http fetch GET 200 https://registry.npmjs.org/ssh2 57ms (cache miss)
+268 silly packumentCache full:https://registry.npmjs.org/ssh2 set size:undefined disposed:false
+269 silly fetch manifest chalk@^4.0.0
+270 silly packumentCache full:https://registry.npmjs.org/chalk cache-miss
+271 http fetch GET 200 https://registry.npmjs.org/iconv-lite 94ms (cache revalidated)
+272 silly packumentCache full:https://registry.npmjs.org/iconv-lite set size:115994 disposed:false
+273 silly fetch manifest js-yaml@^3.14.0
+274 silly packumentCache full:https://registry.npmjs.org/js-yaml cache-miss
+275 http fetch GET 200 https://registry.npmjs.org/ajv 41ms (cache revalidated)
+276 silly packumentCache full:https://registry.npmjs.org/ajv set size:1126072 disposed:false
+277 silly fetch manifest bindings@^1.5.0
+278 silly packumentCache full:https://registry.npmjs.org/bindings cache-miss
+279 http fetch GET 200 https://registry.npmjs.org/pg-cloudflare 48ms (cache miss)
+280 silly packumentCache full:https://registry.npmjs.org/pg-cloudflare set size:undefined disposed:false
+281 silly fetch manifest node-addon-api@^7.0.0
+282 silly packumentCache full:https://registry.npmjs.org/node-addon-api cache-miss
+283 http fetch GET 200 https://registry.npmjs.org/pg-pool 58ms (cache miss)
+284 silly packumentCache full:https://registry.npmjs.org/pg-pool set size:undefined disposed:false
+285 silly fetch manifest prebuild-install@^7.1.1
+286 silly packumentCache full:https://registry.npmjs.org/prebuild-install cache-miss
+287 http fetch GET 200 https://registry.npmjs.org/pg-connection-string 51ms (cache miss)
+288 silly packumentCache full:https://registry.npmjs.org/pg-connection-string set size:undefined disposed:false
+289 silly fetch manifest tar@^6.1.11
+290 silly packumentCache full:https://registry.npmjs.org/tar cache-miss
+291 http fetch GET 200 https://registry.npmjs.org/chalk 54ms (cache revalidated)
+292 silly packumentCache full:https://registry.npmjs.org/chalk set size:141442 disposed:false
+293 silly fetch manifest node-gyp@8.x
+294 silly packumentCache full:https://registry.npmjs.org/node-gyp cache-miss
+295 http fetch GET 200 https://registry.npmjs.org/js-yaml 42ms (cache revalidated)
+296 silly packumentCache full:https://registry.npmjs.org/js-yaml set size:145975 disposed:false
+297 silly fetch manifest semver@^6.3.0
+298 silly packumentCache full:https://registry.npmjs.org/semver cache-miss
+299 http fetch GET 200 https://registry.npmjs.org/bindings 51ms (cache revalidated)
+300 silly packumentCache full:https://registry.npmjs.org/bindings set size:31303 disposed:false
+301 silly fetch manifest vscode-languageserver-protocol@3.15.3
+302 silly packumentCache full:https://registry.npmjs.org/vscode-languageserver-protocol cache-miss
+303 http fetch GET 200 https://registry.npmjs.org/vscode-languageserver-protocol 3ms (cache hit)
+304 silly packumentCache full:https://registry.npmjs.org/vscode-languageserver-protocol set size:454003 disposed:false
+305 silly fetch manifest vscode-languageserver-protocol@3.17.0-next.14
+306 silly packumentCache full:https://registry.npmjs.org/vscode-languageserver-protocol cache-hit
+307 silly fetch manifest vscode-jsonrpc@8.2.0
+308 silly packumentCache full:https://registry.npmjs.org/vscode-jsonrpc cache-miss
+309 http fetch GET 200 https://registry.npmjs.org/prebuild-install 52ms (cache miss)
+310 silly packumentCache full:https://registry.npmjs.org/prebuild-install set size:undefined disposed:false
+311 silly fetch manifest vscode-languageserver-types@3.17.5
+312 silly packumentCache full:https://registry.npmjs.org/vscode-languageserver-types cache-miss
+313 http fetch GET 200 https://registry.npmjs.org/node-addon-api 54ms (cache miss)
+314 silly packumentCache full:https://registry.npmjs.org/node-addon-api set size:undefined disposed:false
+315 silly fetch manifest y18n@^5.0.5
+316 silly packumentCache full:https://registry.npmjs.org/y18n cache-miss
+55 http fetch GET 200 https://registry.npmjs.org/@emmetio%2fabbreviation 666ms (cache miss)
+56 silly packumentCache full:https://registry.npmjs.org/@emmetio%2fabbreviation set size:undefined disposed:false
+317 http fetch GET 200 https://registry.npmjs.org/tar 55ms (cache miss)
+57 silly placeDep node_modules/emmet-ls @emmetio/abbreviation@2.3.3 OK for: emmet@2.4.7 want: ^2.3.3
+58 silly placeDep node_modules/emmet-ls @emmetio/css-abbreviation@2.1.8 OK for: emmet@2.4.7 want: ^2.1.8
+59 silly fetch manifest @emmetio/scanner@^1.0.4
+60 silly packumentCache full:https://registry.npmjs.org/@emmetio%2fscanner cache-miss
+61 silly fetch manifest @emmetio/scanner@^1.0.4
+62 silly packumentCache full:https://registry.npmjs.org/@emmetio%2fscanner cache-miss
+318 silly packumentCache full:https://registry.npmjs.org/tar set size:undefined disposed:false
+319 silly fetch manifest cliui@^8.0.1
+320 silly packumentCache full:https://registry.npmjs.org/cliui cache-miss
+321 http fetch GET 200 https://registry.npmjs.org/node-gyp 48ms (cache miss)
+322 silly packumentCache full:https://registry.npmjs.org/node-gyp set size:undefined disposed:false
+323 silly fetch manifest escalade@^3.1.1
+324 silly packumentCache full:https://registry.npmjs.org/escalade cache-miss
+325 http fetch GET 200 https://registry.npmjs.org/semver 49ms (cache updated)
+326 silly packumentCache full:https://registry.npmjs.org/semver set size:undefined disposed:false
+327 silly fetch manifest string-width@^4.2.3
+328 silly packumentCache full:https://registry.npmjs.org/string-width cache-miss
+329 http fetch GET 200 https://registry.npmjs.org/vscode-jsonrpc 43ms (cache revalidated)
+330 silly packumentCache full:https://registry.npmjs.org/vscode-jsonrpc set size:476625 disposed:false
+331 silly fetch manifest yargs-parser@^21.1.1
+332 silly packumentCache full:https://registry.npmjs.org/yargs-parser cache-miss
+333 http fetch GET 200 https://registry.npmjs.org/y18n 52ms (cache miss)
+334 silly packumentCache full:https://registry.npmjs.org/y18n set size:undefined disposed:false
+335 silly fetch manifest get-caller-file@^2.0.5
+336 silly packumentCache full:https://registry.npmjs.org/get-caller-file cache-miss
+337 http fetch GET 200 https://registry.npmjs.org/cliui 49ms (cache miss)
+338 silly packumentCache full:https://registry.npmjs.org/cliui set size:undefined disposed:false
+339 silly fetch manifest require-directory@^2.1.1
+340 silly packumentCache full:https://registry.npmjs.org/require-directory cache-miss
+341 http fetch GET 200 https://registry.npmjs.org/vscode-languageserver-types 60ms (cache updated)
+342 silly packumentCache full:https://registry.npmjs.org/vscode-languageserver-types set size:undefined disposed:false
+343 http fetch GET 200 https://registry.npmjs.org/string-width 41ms (cache miss)
+344 silly packumentCache full:https://registry.npmjs.org/string-width set size:undefined disposed:false
+345 http fetch GET 200 https://registry.npmjs.org/escalade 52ms (cache miss)
+346 silly packumentCache full:https://registry.npmjs.org/escalade set size:undefined disposed:false
+347 http fetch GET 200 https://registry.npmjs.org/yargs-parser 50ms (cache miss)
+348 silly packumentCache full:https://registry.npmjs.org/yargs-parser set size:undefined disposed:false
+349 http fetch GET 200 https://registry.npmjs.org/get-caller-file 42ms (cache miss)
+350 silly packumentCache full:https://registry.npmjs.org/get-caller-file set size:undefined disposed:false
+351 http fetch GET 200 https://registry.npmjs.org/require-directory 71ms (cache miss)
+352 silly packumentCache full:https://registry.npmjs.org/require-directory set size:undefined disposed:false
+353 http fetch GET 200 https://registry.npmjs.org/@google-cloud%2fpromisify 575ms (cache miss)
+354 silly packumentCache full:https://registry.npmjs.org/@google-cloud%2fpromisify set size:undefined disposed:false
+355 http fetch GET 200 https://registry.npmjs.org/@google-cloud%2fpaginator 594ms (cache miss)
+356 silly packumentCache full:https://registry.npmjs.org/@google-cloud%2fpaginator set size:undefined disposed:false
+357 http fetch GET 200 https://registry.npmjs.org/@google-cloud%2fcommon 652ms (cache miss)
+358 silly packumentCache full:https://registry.npmjs.org/@google-cloud%2fcommon set size:undefined disposed:false
+359 silly placeDep node_modules/sql-language-server @google-cloud/common@3.10.0 OK for: @google-cloud/bigquery@5.12.0 want: ^3.9.0
+360 silly placeDep node_modules/sql-language-server @google-cloud/paginator@3.0.7 OK for: @google-cloud/bigquery@5.12.0 want: ^3.0.0
+361 silly placeDep node_modules/sql-language-server @google-cloud/promisify@2.0.4 OK for: @google-cloud/bigquery@5.12.0 want: ^2.0.0
+362 silly placeDep node_modules/sql-language-server arrify@2.0.1 OK for: @google-cloud/bigquery@5.12.0 want: ^2.0.1
+363 silly placeDep node_modules/sql-language-server big.js@6.2.1 OK for: @google-cloud/bigquery@5.12.0 want: ^6.0.0
+364 silly placeDep node_modules/sql-language-server duplexify@4.1.3 OK for: @google-cloud/bigquery@5.12.0 want: ^4.0.0
+365 silly placeDep node_modules/sql-language-server extend@3.0.2 OK for: @google-cloud/bigquery@5.12.0 want: ^3.0.2
+366 silly placeDep node_modules/sql-language-server is@3.3.0 OK for: @google-cloud/bigquery@5.12.0 want: ^3.3.0
+367 silly placeDep node_modules/sql-language-server p-event@4.2.0 OK for: @google-cloud/bigquery@5.12.0 want: ^4.1.0
+368 silly placeDep node_modules/sql-language-server readable-stream@3.6.2 OK for: @google-cloud/bigquery@5.12.0 want: ^3.6.0
+369 silly placeDep node_modules/sql-language-server stream-events@1.0.5 OK for: @google-cloud/bigquery@5.12.0 want: ^1.0.5
+370 silly placeDep node_modules/sql-language-server uuid@8.3.2 OK for: @google-cloud/bigquery@5.12.0 want: ^8.0.0
+371 silly fetch manifest @google-cloud/projectify@^2.0.0
+372 silly packumentCache full:https://registry.npmjs.org/@google-cloud%2fprojectify cache-miss
+373 silly fetch manifest duplexify@^4.1.1
+374 silly packumentCache full:https://registry.npmjs.org/duplexify cache-miss
+375 silly fetch manifest ent@^2.2.0
+376 silly packumentCache full:https://registry.npmjs.org/ent cache-miss
+377 silly fetch manifest google-auth-library@^7.14.0
+378 silly packumentCache full:https://registry.npmjs.org/google-auth-library cache-miss
+379 silly fetch manifest retry-request@^4.2.2
+380 silly packumentCache full:https://registry.npmjs.org/retry-request cache-miss
+381 silly fetch manifest teeny-request@^7.0.0
+382 silly packumentCache full:https://registry.npmjs.org/teeny-request cache-miss
+383 silly fetch manifest arrify@^2.0.0
+384 silly packumentCache full:https://registry.npmjs.org/arrify cache-miss
+385 silly fetch manifest end-of-stream@^1.4.1
+386 silly packumentCache full:https://registry.npmjs.org/end-of-stream cache-miss
+387 silly fetch manifest inherits@^2.0.3
+388 silly packumentCache full:https://registry.npmjs.org/inherits cache-miss
+389 http fetch GET 200 https://registry.npmjs.org/arrify 4ms (cache hit)
+390 silly packumentCache full:https://registry.npmjs.org/arrify set size:11862 disposed:false
+391 silly fetch manifest readable-stream@^3.1.1
+392 silly packumentCache full:https://registry.npmjs.org/readable-stream cache-hit
+393 silly fetch manifest stream-shift@^1.0.2
+394 silly packumentCache full:https://registry.npmjs.org/stream-shift cache-miss
+395 http fetch GET 200 https://registry.npmjs.org/duplexify 4ms (cache hit)
+396 silly packumentCache full:https://registry.npmjs.org/duplexify set size:73064 disposed:false
+397 silly fetch manifest p-timeout@^3.1.0
+398 silly packumentCache full:https://registry.npmjs.org/p-timeout cache-miss
+399 http fetch GET 200 https://registry.npmjs.org/inherits 45ms (cache revalidated)
+400 silly packumentCache full:https://registry.npmjs.org/inherits set size:12925 disposed:false
+401 silly fetch manifest string_decoder@^1.1.1
+402 silly packumentCache full:https://registry.npmjs.org/string_decoder cache-miss
+403 http fetch GET 200 https://registry.npmjs.org/ent 45ms (cache miss)
+404 silly packumentCache full:https://registry.npmjs.org/ent set size:undefined disposed:false
+405 silly fetch manifest util-deprecate@^1.0.1
+406 silly packumentCache full:https://registry.npmjs.org/util-deprecate cache-miss
+407 http fetch GET 200 https://registry.npmjs.org/p-timeout 48ms (cache miss)
+408 silly packumentCache full:https://registry.npmjs.org/p-timeout set size:undefined disposed:false
+409 silly fetch manifest stubs@^3.0.0
+410 silly packumentCache full:https://registry.npmjs.org/stubs cache-miss
+411 http fetch GET 200 https://registry.npmjs.org/teeny-request 61ms (cache miss)
+412 silly packumentCache full:https://registry.npmjs.org/teeny-request set size:undefined disposed:false
+413 http fetch GET 200 https://registry.npmjs.org/google-auth-library 64ms (cache miss)
+414 silly packumentCache full:https://registry.npmjs.org/google-auth-library set size:undefined disposed:false
+415 http fetch GET 200 https://registry.npmjs.org/stream-shift 63ms (cache miss)
+416 silly packumentCache full:https://registry.npmjs.org/stream-shift set size:undefined disposed:false
+417 http fetch GET 200 https://registry.npmjs.org/end-of-stream 67ms (cache miss)
+418 silly packumentCache full:https://registry.npmjs.org/end-of-stream set size:undefined disposed:false
+419 http fetch GET 200 https://registry.npmjs.org/string_decoder 44ms (cache revalidated)
+420 silly packumentCache full:https://registry.npmjs.org/string_decoder set size:28441 disposed:false
+421 http fetch GET 200 https://registry.npmjs.org/util-deprecate 48ms (cache revalidated)
+422 silly packumentCache full:https://registry.npmjs.org/util-deprecate set size:6674 disposed:false
+423 http fetch GET 200 https://registry.npmjs.org/retry-request 296ms (cache miss)
+424 silly packumentCache full:https://registry.npmjs.org/retry-request set size:undefined disposed:false
+425 http fetch GET 200 https://registry.npmjs.org/stubs 285ms (cache miss)
+426 silly packumentCache full:https://registry.npmjs.org/stubs set size:undefined disposed:false
+63 http fetch GET 200 https://registry.npmjs.org/@emmetio%2fscanner 644ms (cache miss)
+64 silly packumentCache full:https://registry.npmjs.org/@emmetio%2fscanner set size:undefined disposed:false
+65 http fetch GET 200 https://registry.npmjs.org/@emmetio%2fscanner 675ms (cache miss)
+66 silly packumentCache full:https://registry.npmjs.org/@emmetio%2fscanner set size:undefined disposed:false
+67 silly placeDep node_modules/emmet-ls @emmetio/scanner@1.0.4 OK for: @emmetio/abbreviation@2.3.3 want: ^1.0.4
+68 silly placeDep node_modules/emmet-ls vscode-languageserver-protocol@3.16.0 OK for: vscode-languageserver@7.0.0 want: 3.16.0
+69 silly fetch manifest vscode-jsonrpc@6.0.0
+70 silly packumentCache full:https://registry.npmjs.org/vscode-jsonrpc cache-miss
+71 silly fetch manifest vscode-languageserver-types@3.16.0
+72 silly packumentCache full:https://registry.npmjs.org/vscode-languageserver-types cache-miss
+73 http fetch GET 200 https://registry.npmjs.org/vscode-languageserver-types 2ms (cache hit)
+74 silly packumentCache full:https://registry.npmjs.org/vscode-languageserver-types set size:304524 disposed:false
+75 http fetch GET 200 https://registry.npmjs.org/vscode-jsonrpc 4ms (cache hit)
+76 silly packumentCache full:https://registry.npmjs.org/vscode-jsonrpc set size:476625 disposed:false
+77 silly placeDep node_modules/emmet-ls vscode-jsonrpc@6.0.0 OK for: vscode-languageserver-protocol@3.16.0 want: 6.0.0
+78 silly placeDep node_modules/emmet-ls vscode-languageserver-types@3.16.0 OK for: vscode-languageserver-protocol@3.16.0 want: 3.16.0
+79 silly reify moves {}
+80 silly audit bulk request {
+80 silly audit   'emmet-ls': [ '0.4.2' ],
+80 silly audit   '@types/node': [ '17.0.45' ],
+80 silly audit   emmet: [ '2.4.7' ],
+80 silly audit   typescript: [ '4.9.5' ],
+80 silly audit   'vscode-languageserver': [ '7.0.0' ],
+80 silly audit   'vscode-languageserver-textdocument': [ '1.0.12' ],
+80 silly audit   '@emmetio/abbreviation': [ '2.3.3' ],
+80 silly audit   '@emmetio/css-abbreviation': [ '2.1.8' ],
+80 silly audit   '@emmetio/scanner': [ '1.0.4' ],
+80 silly audit   'vscode-languageserver-protocol': [ '3.16.0' ],
+80 silly audit   'vscode-jsonrpc': [ '6.0.0' ],
+80 silly audit   'vscode-languageserver-types': [ '3.16.0' ]
+80 silly audit }
+81 silly tarball no local data for emmet-ls@https://registry.npmjs.org/emmet-ls/-/emmet-ls-0.4.2.tgz. Extracting by manifest.
+82 silly tarball no local data for @emmetio/scanner@https://registry.npmjs.org/@emmetio/scanner/-/scanner-1.0.4.tgz. Extracting by manifest.
+83 silly tarball no local data for @emmetio/abbreviation@https://registry.npmjs.org/@emmetio/abbreviation/-/abbreviation-2.3.3.tgz. Extracting by manifest.
+84 silly tarball no local data for vscode-languageserver-textdocument@https://registry.npmjs.org/vscode-languageserver-textdocument/-/vscode-languageserver-textdocument-1.0.12.tgz. Extracting by manifest.
+85 silly tarball no local data for @emmetio/css-abbreviation@https://registry.npmjs.org/@emmetio/css-abbreviation/-/css-abbreviation-2.1.8.tgz. Extracting by manifest.
+86 silly tarball no local data for emmet@https://registry.npmjs.org/emmet/-/emmet-2.4.7.tgz. Extracting by manifest.
+87 silly tarball no local data for @types/node@https://registry.npmjs.org/@types/node/-/node-17.0.45.tgz. Extracting by manifest.
+88 http fetch GET 200 https://registry.npmjs.org/emmet-ls/-/emmet-ls-0.4.2.tgz 94ms (cache miss)
+89 http fetch GET 200 https://registry.npmjs.org/vscode-languageserver-textdocument/-/vscode-languageserver-textdocument-1.0.12.tgz 94ms (cache miss)
+427 http fetch GET 200 https://registry.npmjs.org/@google-cloud%2fprojectify 563ms (cache miss)
+428 silly packumentCache full:https://registry.npmjs.org/@google-cloud%2fprojectify set size:undefined disposed:false
+429 silly placeDep node_modules/sql-language-server @google-cloud/projectify@2.1.1 OK for: @google-cloud/common@3.10.0 want: ^2.0.0
+90 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 105ms
+91 silly audit report {}
+430 silly placeDep node_modules/sql-language-server ent@2.2.1 OK for: @google-cloud/common@3.10.0 want: ^2.2.0
+431 silly placeDep node_modules/sql-language-server google-auth-library@7.14.1 OK for: @google-cloud/common@3.10.0 want: ^7.14.0
+432 silly placeDep node_modules/sql-language-server retry-request@4.2.2 OK for: @google-cloud/common@3.10.0 want: ^4.2.2
+433 silly placeDep node_modules/sql-language-server teeny-request@7.2.0 OK for: @google-cloud/common@3.10.0 want: ^7.0.0
+434 silly fetch manifest punycode@^1.4.1
+435 silly packumentCache full:https://registry.npmjs.org/punycode cache-miss
+436 silly fetch manifest jws@^4.0.0
+437 silly packumentCache full:https://registry.npmjs.org/jws cache-miss
+438 silly fetch manifest gaxios@^4.0.0
+439 silly packumentCache full:https://registry.npmjs.org/gaxios cache-miss
+440 silly fetch manifest gtoken@^5.0.4
+441 silly packumentCache full:https://registry.npmjs.org/gtoken cache-miss
+442 silly fetch manifest base64-js@^1.3.0
+443 silly packumentCache full:https://registry.npmjs.org/base64-js cache-miss
+444 silly fetch manifest gcp-metadata@^4.2.0
+445 silly packumentCache full:https://registry.npmjs.org/gcp-metadata cache-miss
+446 silly fetch manifest fast-text-encoding@^1.0.0
+447 silly packumentCache full:https://registry.npmjs.org/fast-text-encoding cache-miss
+448 silly fetch manifest ecdsa-sig-formatter@^1.0.11
+449 silly packumentCache full:https://registry.npmjs.org/ecdsa-sig-formatter cache-miss
+450 silly fetch manifest http-proxy-agent@^5.0.0
+451 silly packumentCache full:https://registry.npmjs.org/http-proxy-agent cache-miss
+452 http fetch GET 200 https://registry.npmjs.org/ecdsa-sig-formatter 40ms (cache miss)
+453 silly packumentCache full:https://registry.npmjs.org/ecdsa-sig-formatter set size:undefined disposed:false
+454 silly fetch manifest https-proxy-agent@^5.0.0
+455 silly packumentCache full:https://registry.npmjs.org/https-proxy-agent cache-miss
+456 http fetch GET 200 https://registry.npmjs.org/jws 43ms (cache miss)
+457 silly packumentCache full:https://registry.npmjs.org/jws set size:undefined disposed:false
+458 silly fetch manifest node-fetch@^2.6.1
+459 silly packumentCache full:https://registry.npmjs.org/node-fetch cache-miss
+460 http fetch GET 200 https://registry.npmjs.org/base64-js 47ms (cache miss)
+461 silly packumentCache full:https://registry.npmjs.org/base64-js set size:undefined disposed:false
+462 http fetch GET 200 https://registry.npmjs.org/fast-text-encoding 49ms (cache miss)
+463 silly packumentCache full:https://registry.npmjs.org/fast-text-encoding set size:undefined disposed:false
+464 http fetch GET 200 https://registry.npmjs.org/punycode 50ms (cache revalidated)
+465 silly packumentCache full:https://registry.npmjs.org/punycode set size:61302 disposed:false
+466 http fetch GET 200 https://registry.npmjs.org/gcp-metadata 53ms (cache miss)
+467 silly packumentCache full:https://registry.npmjs.org/gcp-metadata set size:undefined disposed:false
+468 http fetch GET 200 https://registry.npmjs.org/http-proxy-agent 60ms (cache miss)
+469 silly packumentCache full:https://registry.npmjs.org/http-proxy-agent set size:undefined disposed:false
+470 http fetch GET 200 https://registry.npmjs.org/gtoken 62ms (cache miss)
+471 silly packumentCache full:https://registry.npmjs.org/gtoken set size:undefined disposed:false
+472 http fetch GET 200 https://registry.npmjs.org/gaxios 63ms (cache miss)
+473 silly packumentCache full:https://registry.npmjs.org/gaxios set size:undefined disposed:false
+474 http fetch GET 200 https://registry.npmjs.org/https-proxy-agent 58ms (cache revalidated)
+475 silly packumentCache full:https://registry.npmjs.org/https-proxy-agent set size:73945 disposed:false
+476 http fetch GET 200 https://registry.npmjs.org/node-fetch 57ms (cache revalidated)
+477 silly packumentCache full:https://registry.npmjs.org/node-fetch set size:896010 disposed:false
+478 silly placeDep node_modules/sql-language-server peggy@3.0.2 OK for: @joe-re/sql-parser@1.7.0 want: ^3.0.2
+479 silly fetch manifest commander@^10.0.0
+480 silly packumentCache full:https://registry.npmjs.org/commander cache-miss
+481 silly fetch manifest source-map-generator@0.8.0
+482 silly packumentCache full:https://registry.npmjs.org/source-map-generator cache-miss
+92 http fetch GET 200 https://registry.npmjs.org/@emmetio/css-abbreviation/-/css-abbreviation-2.1.8.tgz 233ms (cache miss)
+93 http fetch GET 200 https://registry.npmjs.org/emmet/-/emmet-2.4.7.tgz 235ms (cache miss)
+94 http fetch GET 200 https://registry.npmjs.org/@types/node/-/node-17.0.45.tgz 270ms (cache miss)
+483 http fetch GET 200 https://registry.npmjs.org/commander 62ms (cache revalidated)
+484 silly packumentCache full:https://registry.npmjs.org/commander set size:942287 disposed:false
+95 http fetch GET 200 https://registry.npmjs.org/@emmetio/abbreviation/-/abbreviation-2.3.3.tgz 343ms (cache miss)
+96 http fetch GET 200 https://registry.npmjs.org/@emmetio/scanner/-/scanner-1.0.4.tgz 343ms (cache miss)
+97 silly ADD node_modules/emmet-ls
+98 silly ADD node_modules/emmet-ls/node_modules/vscode-languageserver-types
+99 silly ADD node_modules/emmet-ls/node_modules/vscode-jsonrpc
+100 silly ADD node_modules/emmet-ls/node_modules/vscode-languageserver-protocol
+101 silly ADD node_modules/emmet-ls/node_modules/@emmetio/scanner
+102 silly ADD node_modules/emmet-ls/node_modules/@emmetio/css-abbreviation
+103 silly ADD node_modules/emmet-ls/node_modules/@emmetio/abbreviation
+104 silly ADD node_modules/emmet-ls/node_modules/vscode-languageserver-textdocument
+105 silly ADD node_modules/emmet-ls/node_modules/vscode-languageserver
+106 silly ADD node_modules/emmet-ls/node_modules/typescript
+107 silly ADD node_modules/emmet-ls/node_modules/emmet
+108 silly ADD node_modules/emmet-ls/node_modules/@types/node
+109 verbose cwd /Users/charlo/.local/share/nvim/mason/staging/emmet-ls
+110 verbose os Darwin 23.6.0
+111 verbose node v22.5.1
+112 verbose npm  v10.8.2
+113 verbose exit 0
+114 info ok
+485 http fetch GET 200 https://registry.npmjs.org/source-map-generator 282ms (cache miss)
+486 silly packumentCache full:https://registry.npmjs.org/source-map-generator set size:undefined disposed:false
+487 silly placeDep node_modules/sql-language-server @types/node@22.0.2 OK for: @types/pg@8.11.6 want: *
+488 silly placeDep node_modules/sql-language-server pg-protocol@1.6.1 OK for: @types/pg@8.11.6 want: *
+489 silly placeDep node_modules/sql-language-server pg-types@4.0.2 OK for: @types/pg@8.11.6 want: ^4.0.1
+490 silly fetch manifest undici-types@~6.11.1
+491 silly packumentCache full:https://registry.npmjs.org/undici-types cache-miss
+492 silly fetch manifest pg-int8@1.0.1
+493 silly packumentCache full:https://registry.npmjs.org/pg-int8 cache-miss
+494 silly fetch manifest pg-numeric@1.0.2
+495 silly packumentCache full:https://registry.npmjs.org/pg-numeric cache-miss
+496 silly fetch manifest postgres-array@~3.0.1
+497 silly packumentCache full:https://registry.npmjs.org/postgres-array cache-miss
+498 silly fetch manifest postgres-bytea@~3.0.0
+499 silly packumentCache full:https://registry.npmjs.org/postgres-bytea cache-miss
+500 silly fetch manifest postgres-date@~2.1.0
+501 silly packumentCache full:https://registry.npmjs.org/postgres-date cache-miss
+502 silly fetch manifest postgres-interval@^3.0.0
+503 silly packumentCache full:https://registry.npmjs.org/postgres-interval cache-miss
+504 silly fetch manifest postgres-range@^1.1.1
+505 silly packumentCache full:https://registry.npmjs.org/postgres-range cache-miss
+506 http fetch GET 200 https://registry.npmjs.org/pg-int8 39ms (cache miss)
+507 silly packumentCache full:https://registry.npmjs.org/pg-int8 set size:undefined disposed:false
+508 http fetch GET 200 https://registry.npmjs.org/postgres-interval 41ms (cache miss)
+509 silly packumentCache full:https://registry.npmjs.org/postgres-interval set size:undefined disposed:false
+510 http fetch GET 200 https://registry.npmjs.org/postgres-bytea 45ms (cache miss)
+511 silly packumentCache full:https://registry.npmjs.org/postgres-bytea set size:undefined disposed:false
+512 http fetch GET 200 https://registry.npmjs.org/postgres-array 45ms (cache miss)
+513 silly packumentCache full:https://registry.npmjs.org/postgres-array set size:undefined disposed:false
+514 http fetch GET 200 https://registry.npmjs.org/postgres-range 45ms (cache miss)
+515 silly packumentCache full:https://registry.npmjs.org/postgres-range set size:undefined disposed:false
+516 http fetch GET 200 https://registry.npmjs.org/undici-types 47ms (cache updated)
+517 silly packumentCache full:https://registry.npmjs.org/undici-types set size:undefined disposed:false
+518 http fetch GET 200 https://registry.npmjs.org/postgres-date 51ms (cache miss)
+519 silly packumentCache full:https://registry.npmjs.org/postgres-date set size:undefined disposed:false
+520 http fetch GET 200 https://registry.npmjs.org/pg-numeric 53ms (cache miss)
+521 silly packumentCache full:https://registry.npmjs.org/pg-numeric set size:undefined disposed:false
+522 silly placeDep node_modules/sql-language-server undici-types@6.11.1 OK for: @types/node@22.0.2 want: ~6.11.1
+523 silly placeDep node_modules/sql-language-server @types/yargs-parser@21.0.3 OK for: @types/yargs@17.0.32 want: *
+524 silly placeDep node_modules/sql-language-server ansicolors@0.3.2 OK for: cardinal@2.1.1 want: ~0.3.2
+525 silly placeDep node_modules/sql-language-server redeyed@2.1.1 OK for: cardinal@2.1.1 want: ~2.1.0
+526 silly fetch manifest esprima@~4.0.0
+527 silly packumentCache full:https://registry.npmjs.org/esprima cache-miss
+528 http fetch GET 200 https://registry.npmjs.org/esprima 50ms (cache miss)
+529 silly packumentCache full:https://registry.npmjs.org/esprima set size:undefined disposed:false
+530 silly placeDep node_modules/sql-language-server end-of-stream@1.4.4 OK for: duplexify@4.1.3 want: ^1.4.1
+531 silly placeDep node_modules/sql-language-server inherits@2.0.4 OK for: duplexify@4.1.3 want: ^2.0.3
+532 silly placeDep node_modules/sql-language-server stream-shift@1.0.3 OK for: duplexify@4.1.3 want: ^1.0.2
+533 silly fetch manifest once@^1.4.0
+534 silly packumentCache full:https://registry.npmjs.org/once cache-miss
+535 http fetch GET 200 https://registry.npmjs.org/once 40ms (cache revalidated)
+536 silly packumentCache full:https://registry.npmjs.org/once set size:11768 disposed:false
+537 silly placeDep node_modules/sql-language-server once@1.4.0 OK for: end-of-stream@1.4.4 want: ^1.4.0
+538 silly fetch manifest wrappy@1
+539 silly packumentCache full:https://registry.npmjs.org/wrappy cache-miss
