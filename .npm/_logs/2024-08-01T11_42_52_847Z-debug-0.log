@@ -1,0 +1,37 @@
+0 verbose cli /opt/homebrew/Cellar/node/22.5.1/bin/node /opt/homebrew/bin/npm
+1 info using npm@10.8.2
+2 info using node@v22.5.1
+3 silly config load:file:/opt/homebrew/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/charlo/.npmrc
+5 silly config load:file:/opt/homebrew/etc/npmrc
+6 verbose title npm install pyright
+7 verbose argv "install" "--global" "pyright"
+8 verbose logfile logs-max:10 dir:/Users/charlo/.npm/_logs/2024-08-01T11_42_52_847Z-
+9 verbose logfile /Users/charlo/.npm/_logs/2024-08-01T11_42_52_847Z-debug-0.log
+10 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+11 silly logfile start cleaning logs, removing 3 files
+12 silly idealTree buildDeps
+13 silly fetch manifest pyright@*
+14 silly packumentCache full:https://registry.npmjs.org/pyright cache-miss
+15 silly logfile done cleaning log files
+16 http fetch GET 200 https://registry.npmjs.org/pyright 359ms (cache revalidated)
+17 silly packumentCache full:https://registry.npmjs.org/pyright set size:1294354 disposed:false
+18 silly placeDep ROOT pyright@1.1.374 OK for:  want: *
+19 silly fetch manifest fsevents@~2.3.3
+20 silly packumentCache full:https://registry.npmjs.org/fsevents cache-miss
+21 http fetch GET 200 https://registry.npmjs.org/fsevents 55ms (cache revalidated)
+22 silly packumentCache full:https://registry.npmjs.org/fsevents set size:184786 disposed:false
+23 silly placeDep node_modules/pyright fsevents@2.3.3 OK for: pyright@1.1.374 want: ~2.3.3
+24 silly reify moves {}
+25 info run fsevents@2.3.3 install node_modules/pyright/node_modules/fsevents node-gyp rebuild
+26 info run fsevents@2.3.3 install { code: 1, signal: null }
+27 verbose reify failed optional dependency /opt/homebrew/lib/node_modules/pyright/node_modules/fsevents
+28 silly reify mark deleted [ '/opt/homebrew/lib/node_modules/pyright/node_modules/fsevents' ]
+29 silly ADD node_modules/pyright
+30 silly ADD
+31 verbose cwd /Users/charlo/Home/Coding/manim_projects
+32 verbose os Darwin 23.6.0
+33 verbose node v22.5.1
+34 verbose npm  v10.8.2
+35 verbose exit 0
+36 info ok

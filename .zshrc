@@ -11,7 +11,7 @@ export PATH=$PATH:/opt/homebrew/Cellar/fish/3.7.1/bin/fish
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-
+export VIMRUNTIME="/opt/homebrew/Cellar/neovim/0.10.1/share/nvim/runtime/"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -128,3 +128,6 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 source ~/powerlevel10k/powerlevel10k.zsh-theme
+
+# Created by `pipx` on 2024-07-31 22:02:28
+export PATH="$PATH:/Users/charlo/.local/bin"
