@@ -4,6 +4,8 @@ return {
     tag = "v0.9.1",
     opts = {
       ensure_installed = {
+        "ninja",
+        "rst",
         "javascript",
         "bash",
         "c",

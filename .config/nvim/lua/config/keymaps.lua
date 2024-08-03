@@ -7,7 +7,7 @@ local opts = { noremap = true, silent = true }
 local toggle = function()
   vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
 end
-
+-- Map <F5> to compile the current C++ file
 keymap.set("n", "<leader>o", toggle, opts)
 
 keymap.set("n", "x", '"_x')
