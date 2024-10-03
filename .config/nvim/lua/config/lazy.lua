@@ -18,6 +18,12 @@ require("lazy").setup({
   spec = {
     -- add LazyVim and import its plugins
     {
+      "mfussenegger/nvim-dap", -- The nvim-dap plugin
+      config = function()
+        require("dap") -- No setup required for nvim-dap
+      end,
+    },
+    {
       "LazyVim/LazyVim",
       import = "lazyvim.plugins",
       opts = {
