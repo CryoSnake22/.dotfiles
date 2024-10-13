@@ -1,0 +1,289 @@
+0 verbose cli /opt/homebrew/Cellar/node/22.8.0/bin/node /opt/homebrew/bin/npm
+1 info using npm@10.8.2
+2 info using node@v22.8.0
+3 silly config load:file:/opt/homebrew/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/charlo/dev/dbf_converter/.npmrc
+5 silly config load:file:/Users/charlo/.npmrc
+6 silly config load:file:/opt/homebrew/etc/npmrc
+7 verbose title npm install ora
+8 verbose argv "install" "ora"
+9 verbose logfile logs-max:10 dir:/Users/charlo/.npm/_logs/2024-10-09T18_15_35_058Z-
+10 verbose logfile /Users/charlo/.npm/_logs/2024-10-09T18_15_35_058Z-debug-0.log
+11 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+12 silly logfile start cleaning logs, removing 1 files
+13 silly logfile done cleaning log files
+14 silly idealTree buildDeps
+15 silly fetch manifest ora@*
+16 silly packumentCache full:https://registry.npmjs.org/ora cache-miss
+17 http fetch GET 200 https://registry.npmjs.org/ora 114ms (cache revalidated)
+18 silly packumentCache full:https://registry.npmjs.org/ora set size:126969 disposed:false
+19 silly placeDep ROOT ora@8.1.0 OK for: dbf_converter@1.0.0 want: *
+20 silly fetch manifest chalk@^5.3.0
+21 silly packumentCache full:https://registry.npmjs.org/chalk cache-miss
+22 silly fetch manifest cli-cursor@^5.0.0
+23 silly packumentCache full:https://registry.npmjs.org/cli-cursor cache-miss
+24 silly fetch manifest cli-spinners@^2.9.2
+25 silly packumentCache full:https://registry.npmjs.org/cli-spinners cache-miss
+26 silly fetch manifest is-interactive@^2.0.0
+27 silly packumentCache full:https://registry.npmjs.org/is-interactive cache-miss
+28 silly fetch manifest is-unicode-supported@^2.0.0
+29 silly packumentCache full:https://registry.npmjs.org/is-unicode-supported cache-miss
+30 silly fetch manifest log-symbols@^6.0.0
+31 silly packumentCache full:https://registry.npmjs.org/log-symbols cache-miss
+32 silly fetch manifest stdin-discarder@^0.2.2
+33 silly packumentCache full:https://registry.npmjs.org/stdin-discarder cache-miss
+34 silly fetch manifest string-width@^7.2.0
+35 silly packumentCache full:https://registry.npmjs.org/string-width cache-miss
+36 silly fetch manifest strip-ansi@^7.1.0
+37 silly packumentCache full:https://registry.npmjs.org/strip-ansi cache-miss
+38 http fetch GET 200 https://registry.npmjs.org/chalk 37ms (cache revalidated)
+39 silly packumentCache full:https://registry.npmjs.org/chalk set size:141429 disposed:false
+40 http fetch GET 200 https://registry.npmjs.org/cli-cursor 81ms (cache revalidated)
+41 silly packumentCache full:https://registry.npmjs.org/cli-cursor set size:18913 disposed:false
+42 http fetch GET 200 https://registry.npmjs.org/is-interactive 84ms (cache revalidated)
+43 silly packumentCache full:https://registry.npmjs.org/is-interactive set size:10692 disposed:false
+44 http fetch GET 200 https://registry.npmjs.org/cli-spinners 88ms (cache revalidated)
+45 silly packumentCache full:https://registry.npmjs.org/cli-spinners set size:61130 disposed:false
+46 http fetch GET 200 https://registry.npmjs.org/is-unicode-supported 90ms (cache revalidated)
+47 silly packumentCache full:https://registry.npmjs.org/is-unicode-supported set size:19461 disposed:false
+48 http fetch GET 200 https://registry.npmjs.org/log-symbols 95ms (cache revalidated)
+49 silly packumentCache full:https://registry.npmjs.org/log-symbols set size:30001 disposed:false
+50 http fetch GET 200 https://registry.npmjs.org/string-width 102ms (cache revalidated)
+51 silly packumentCache full:https://registry.npmjs.org/string-width set size:61460 disposed:false
+52 http fetch GET 200 https://registry.npmjs.org/strip-ansi 107ms (cache revalidated)
+53 silly packumentCache full:https://registry.npmjs.org/strip-ansi set size:43180 disposed:false
+54 http fetch GET 200 https://registry.npmjs.org/stdin-discarder 137ms (cache revalidated)
+55 silly packumentCache full:https://registry.npmjs.org/stdin-discarder set size:9846 disposed:false
+56 silly placeDep ROOT chalk@5.3.0 OK for: ora@8.1.0 want: ^5.3.0
+57 silly placeDep ROOT cli-cursor@5.0.0 OK for: ora@8.1.0 want: ^5.0.0
+58 silly placeDep ROOT cli-spinners@2.9.2 OK for: ora@8.1.0 want: ^2.9.2
+59 silly placeDep ROOT is-interactive@2.0.0 OK for: ora@8.1.0 want: ^2.0.0
+60 silly placeDep ROOT is-unicode-supported@2.1.0 OK for: ora@8.1.0 want: ^2.0.0
+61 silly placeDep ROOT log-symbols@6.0.0 OK for: ora@8.1.0 want: ^6.0.0
+62 silly placeDep ROOT stdin-discarder@0.2.2 OK for: ora@8.1.0 want: ^0.2.2
+63 silly placeDep ROOT string-width@7.2.0 OK for: ora@8.1.0 want: ^7.2.0
+64 silly placeDep ROOT strip-ansi@7.1.0 OK for: ora@8.1.0 want: ^7.1.0
+65 silly fetch manifest restore-cursor@^5.0.0
+66 silly packumentCache full:https://registry.npmjs.org/restore-cursor cache-miss
+67 silly fetch manifest is-unicode-supported@^1.3.0
+68 silly packumentCache full:https://registry.npmjs.org/is-unicode-supported cache-hit
+69 silly fetch manifest emoji-regex@^10.3.0
+70 silly packumentCache full:https://registry.npmjs.org/emoji-regex cache-miss
+71 silly fetch manifest get-east-asian-width@^1.0.0
+72 silly packumentCache full:https://registry.npmjs.org/get-east-asian-width cache-miss
+73 silly fetch manifest ansi-regex@^6.0.1
+74 silly packumentCache full:https://registry.npmjs.org/ansi-regex cache-miss
+75 http fetch GET 200 https://registry.npmjs.org/restore-cursor 38ms (cache revalidated)
+76 silly packumentCache full:https://registry.npmjs.org/restore-cursor set size:17895 disposed:false
+77 http fetch GET 200 https://registry.npmjs.org/emoji-regex 38ms (cache revalidated)
+78 silly packumentCache full:https://registry.npmjs.org/emoji-regex set size:85187 disposed:false
+79 http fetch GET 200 https://registry.npmjs.org/ansi-regex 59ms (cache revalidated)
+80 silly packumentCache full:https://registry.npmjs.org/ansi-regex set size:41869 disposed:false
+81 http fetch GET 200 https://registry.npmjs.org/get-east-asian-width 61ms (cache miss)
+82 silly packumentCache full:https://registry.npmjs.org/get-east-asian-width set size:undefined disposed:false
+83 silly placeDep ROOT restore-cursor@5.1.0 OK for: cli-cursor@5.0.0 want: ^5.0.0
+84 silly fetch manifest onetime@^7.0.0
+85 silly packumentCache full:https://registry.npmjs.org/onetime cache-miss
+86 silly fetch manifest signal-exit@^4.1.0
+87 silly packumentCache full:https://registry.npmjs.org/signal-exit cache-miss
+88 http fetch GET 200 https://registry.npmjs.org/signal-exit 33ms (cache revalidated)
+89 silly packumentCache full:https://registry.npmjs.org/signal-exit set size:53489 disposed:false
+90 http fetch GET 200 https://registry.npmjs.org/onetime 62ms (cache revalidated)
+91 silly packumentCache full:https://registry.npmjs.org/onetime set size:30525 disposed:false
+92 silly placeDep node_modules/log-symbols is-unicode-supported@1.3.0 OK for: log-symbols@6.0.0 want: ^1.3.0
+93 silly placeDep ROOT onetime@7.0.0 OK for: restore-cursor@5.1.0 want: ^7.0.0
+94 silly placeDep node_modules/restore-cursor signal-exit@4.1.0 OK for: restore-cursor@5.1.0 want: ^4.1.0
+95 silly fetch manifest mimic-function@^5.0.0
+96 silly packumentCache full:https://registry.npmjs.org/mimic-function cache-miss
+97 http fetch GET 200 https://registry.npmjs.org/mimic-function 67ms (cache miss)
+98 silly packumentCache full:https://registry.npmjs.org/mimic-function set size:undefined disposed:false
+99 silly placeDep ROOT mimic-function@5.0.1 OK for: onetime@7.0.0 want: ^5.0.0
+100 silly placeDep ROOT emoji-regex@10.4.0 OK for: string-width@7.2.0 want: ^10.3.0
+101 silly placeDep ROOT get-east-asian-width@1.2.0 OK for: string-width@7.2.0 want: ^1.0.0
+102 silly placeDep ROOT ansi-regex@6.1.0 OK for: strip-ansi@7.1.0 want: ^6.0.1
+103 silly reify moves {}
+104 silly audit bulk request {
+104 silly audit   '@gar/promisify': [ '1.1.3' ],
+104 silly audit   '@npmcli/fs': [ '1.1.1' ],
+104 silly audit   '@npmcli/move-file': [ '1.1.2' ],
+104 silly audit   '@tootallnate/once': [ '1.1.2' ],
+104 silly audit   abbrev: [ '1.1.1' ],
+104 silly audit   'agent-base': [ '6.0.2' ],
+104 silly audit   agentkeepalive: [ '4.5.0' ],
+104 silly audit   'aggregate-error': [ '3.1.0' ],
+104 silly audit   all: [ '0.0.0' ],
+104 silly audit   aproba: [ '2.0.0' ],
+104 silly audit   'are-we-there-yet': [ '3.0.1' ],
+104 silly audit   'balanced-match': [ '1.0.2' ],
+104 silly audit   'base64-js': [ '1.5.1' ],
+104 silly audit   bindings: [ '1.5.0' ],
+104 silly audit   bl: [ '4.1.0' ],
+104 silly audit   'brace-expansion': [ '1.1.11' ],
+104 silly audit   buffer: [ '5.7.1' ],
+104 silly audit   cacache: [ '15.3.0' ],
+104 silly audit   chownr: [ '2.0.0', '1.1.4' ],
+104 silly audit   'clean-stack': [ '2.2.0' ],
+104 silly audit   'color-support': [ '1.1.3' ],
+104 silly audit   'concat-map': [ '0.0.1' ],
+104 silly audit   'console-control-strings': [ '1.1.0' ],
+104 silly audit   'dbf-reader': [ '1.0.3' ],
+104 silly audit   debug: [ '4.3.5' ],
+104 silly audit   'decompress-response': [ '6.0.0' ],
+104 silly audit   'deep-extend': [ '0.6.0' ],
+104 silly audit   delegates: [ '1.0.0' ],
+104 silly audit   'detect-libc': [ '2.0.3' ],
+104 silly audit   encoding: [ '0.1.13' ],
+104 silly audit   'end-of-stream': [ '1.4.4' ],
+104 silly audit   'env-paths': [ '2.2.1' ],
+104 silly audit   'err-code': [ '2.0.3' ],
+104 silly audit   'expand-template': [ '2.0.3' ],
+104 silly audit   'file-uri-to-path': [ '1.0.0' ],
+104 silly audit   'fs-constants': [ '1.0.0' ],
+104 silly audit   'fs-minipass': [ '2.1.0' ],
+104 silly audit   'fs.realpath': [ '1.0.0' ],
+104 silly audit   gauge: [ '4.0.4' ],
+104 silly audit   'ansi-regex': [ '5.0.1', '6.1.0' ],
+104 silly audit   'emoji-regex': [ '8.0.0', '10.4.0' ],
+104 silly audit   'string-width': [ '4.2.3', '7.2.0' ],
+104 silly audit   'strip-ansi': [ '6.0.1', '7.1.0' ],
+104 silly audit   'github-from-package': [ '0.0.0' ],
+104 silly audit   glob: [ '7.2.3' ],
+104 silly audit   'graceful-fs': [ '4.2.11' ],
+104 silly audit   'has-unicode': [ '2.0.1' ],
+104 silly audit   'http-cache-semantics': [ '4.1.1' ],
+104 silly audit   'http-proxy-agent': [ '4.0.1' ],
+104 silly audit   'https-proxy-agent': [ '5.0.1' ],
+104 silly audit   'humanize-ms': [ '1.2.1' ],
+104 silly audit   'iconv-lite': [ '0.6.3' ],
+104 silly audit   ieee754: [ '1.2.1' ],
+104 silly audit   imurmurhash: [ '0.1.4' ],
+104 silly audit   'indent-string': [ '4.0.0' ],
+104 silly audit   'infer-owner': [ '1.0.4' ],
+104 silly audit   inflight: [ '1.0.6' ],
+104 silly audit   inherits: [ '2.0.4' ],
+104 silly audit   ini: [ '1.3.8' ],
+104 silly audit   'ip-address': [ '9.0.5' ],
+104 silly audit   'is-fullwidth-code-point': [ '3.0.0' ],
+104 silly audit   'is-lambda': [ '1.0.1' ],
+104 silly audit   isexe: [ '2.0.0' ],
+104 silly audit   jsbn: [ '1.1.0' ],
+104 silly audit   'lru-cache': [ '6.0.0' ],
+104 silly audit   'make-fetch-happen': [ '9.1.0' ],
+104 silly audit   'mimic-response': [ '3.1.0' ],
+104 silly audit   minimatch: [ '3.1.2' ],
+104 silly audit   minimist: [ '1.2.8' ],
+104 silly audit   minipass: [ '3.3.6', '5.0.0' ],
+104 silly audit   'minipass-collect': [ '1.0.2' ],
+104 silly audit   'minipass-fetch': [ '1.4.1' ],
+104 silly audit   'minipass-flush': [ '1.0.5' ],
+104 silly audit   'minipass-pipeline': [ '1.2.4' ],
+104 silly audit   'minipass-sized': [ '1.0.3' ],
+104 silly audit   minizlib: [ '2.1.2' ],
+104 silly audit   mkdirp: [ '1.0.4' ],
+104 silly audit   'mkdirp-classic': [ '0.5.3' ],
+104 silly audit   ms: [ '2.1.2' ],
+104 silly audit   'napi-build-utils': [ '1.0.2' ],
+104 silly audit   negotiator: [ '0.6.3' ],
+104 silly audit   'node-abi': [ '3.65.0' ],
+104 silly audit   'node-addon-api': [ '7.1.0' ],
+104 silly audit   'node-gyp': [ '8.4.1' ],
+104 silly audit   nopt: [ '5.0.0' ],
+104 silly audit   npmlog: [ '6.0.2' ],
+104 silly audit   once: [ '1.4.0' ],
+104 silly audit   'p-map': [ '4.0.0' ],
+104 silly audit   'path-is-absolute': [ '1.0.1' ],
+104 silly audit   'prebuild-install': [ '7.1.2' ],
+104 silly audit   'promise-inflight': [ '1.0.1' ],
+104 silly audit   'promise-retry': [ '2.0.1' ],
+104 silly audit   pump: [ '3.0.0' ],
+104 silly audit   rc: [ '1.2.8' ],
+104 silly audit   'readable-stream': [ '3.6.2' ],
+104 silly audit   retry: [ '0.12.0' ],
+104 silly audit   rimraf: [ '3.0.2' ],
+104 silly audit   'safe-buffer': [ '5.2.1' ],
+104 silly audit   'safer-buffer': [ '2.1.2' ],
+104 silly audit   semver: [ '7.6.2' ],
+104 silly audit   'set-blocking': [ '2.0.0' ],
+104 silly audit   'signal-exit': [ '3.0.7', '4.1.0' ],
+104 silly audit   'simple-concat': [ '1.0.1' ],
+104 silly audit   'simple-get': [ '4.0.1' ],
+104 silly audit   'smart-buffer': [ '4.2.0' ],
+104 silly audit   socks: [ '2.8.3' ],
+104 silly audit   'socks-proxy-agent': [ '6.2.1' ],
+104 silly audit   'sprintf-js': [ '1.1.3' ],
+104 silly audit   sqlite3: [ '5.1.7' ],
+104 silly audit   ssri: [ '8.0.1' ],
+104 silly audit   string_decoder: [ '1.3.0' ],
+104 silly audit   'strip-json-comments': [ '2.0.1' ],
+104 silly audit   tar: [ '6.2.1' ],
+104 silly audit   'tar-fs': [ '2.1.1' ],
+104 silly audit   'tar-stream': [ '2.2.0' ],
+104 silly audit   'tunnel-agent': [ '0.6.0' ],
+104 silly audit   'unique-filename': [ '1.1.1' ],
+104 silly audit   'unique-slug': [ '2.0.2' ],
+104 silly audit   'util-deprecate': [ '1.0.2' ],
+104 silly audit   which: [ '2.0.2' ],
+104 silly audit   'wide-align': [ '1.1.5' ],
+104 silly audit   wrappy: [ '1.0.2' ],
+104 silly audit   yallist: [ '4.0.0' ],
+104 silly audit   ora: [ '8.1.0' ],
+104 silly audit   chalk: [ '5.3.0' ],
+104 silly audit   'cli-cursor': [ '5.0.0' ],
+104 silly audit   'cli-spinners': [ '2.9.2' ],
+104 silly audit   'is-interactive': [ '2.0.0' ],
+104 silly audit   'is-unicode-supported': [ '2.1.0', '1.3.0' ],
+104 silly audit   'log-symbols': [ '6.0.0' ],
+104 silly audit   'stdin-discarder': [ '0.2.2' ],
+104 silly audit   'restore-cursor': [ '5.1.0' ],
+104 silly audit   onetime: [ '7.0.0' ],
+104 silly audit   'mimic-function': [ '5.0.1' ],
+104 silly audit   'get-east-asian-width': [ '1.2.0' ]
+104 silly audit }
+105 silly tarball no local data for get-east-asian-width@https://registry.npmjs.org/get-east-asian-width/-/get-east-asian-width-1.2.0.tgz. Extracting by manifest.
+106 silly tarball no local data for emoji-regex@https://registry.npmjs.org/emoji-regex/-/emoji-regex-10.4.0.tgz. Extracting by manifest.
+107 silly tarball no local data for onetime@https://registry.npmjs.org/onetime/-/onetime-7.0.0.tgz. Extracting by manifest.
+108 silly tarball no local data for restore-cursor@https://registry.npmjs.org/restore-cursor/-/restore-cursor-5.1.0.tgz. Extracting by manifest.
+109 silly tarball no local data for stdin-discarder@https://registry.npmjs.org/stdin-discarder/-/stdin-discarder-0.2.2.tgz. Extracting by manifest.
+110 silly tarball no local data for log-symbols@https://registry.npmjs.org/log-symbols/-/log-symbols-6.0.0.tgz. Extracting by manifest.
+111 silly tarball no local data for string-width@https://registry.npmjs.org/string-width/-/string-width-7.2.0.tgz. Extracting by manifest.
+112 silly tarball no local data for mimic-function@https://registry.npmjs.org/mimic-function/-/mimic-function-5.0.1.tgz. Extracting by manifest.
+113 silly tarball no local data for is-unicode-supported@https://registry.npmjs.org/is-unicode-supported/-/is-unicode-supported-2.1.0.tgz. Extracting by manifest.
+114 silly tarball no local data for ora@https://registry.npmjs.org/ora/-/ora-8.1.0.tgz. Extracting by manifest.
+115 silly tarball no local data for cli-cursor@https://registry.npmjs.org/cli-cursor/-/cli-cursor-5.0.0.tgz. Extracting by manifest.
+116 http fetch GET 200 https://registry.npmjs.org/restore-cursor/-/restore-cursor-5.1.0.tgz 43ms (cache miss)
+117 http fetch GET 200 https://registry.npmjs.org/onetime/-/onetime-7.0.0.tgz 44ms (cache miss)
+118 http fetch GET 200 https://registry.npmjs.org/get-east-asian-width/-/get-east-asian-width-1.2.0.tgz 46ms (cache miss)
+119 http fetch GET 200 https://registry.npmjs.org/emoji-regex/-/emoji-regex-10.4.0.tgz 47ms (cache miss)
+120 http fetch GET 200 https://registry.npmjs.org/string-width/-/string-width-7.2.0.tgz 47ms (cache miss)
+121 http fetch GET 200 https://registry.npmjs.org/stdin-discarder/-/stdin-discarder-0.2.2.tgz 48ms (cache miss)
+122 http fetch GET 200 https://registry.npmjs.org/mimic-function/-/mimic-function-5.0.1.tgz 47ms (cache miss)
+123 http fetch GET 200 https://registry.npmjs.org/log-symbols/-/log-symbols-6.0.0.tgz 49ms (cache miss)
+124 http fetch GET 200 https://registry.npmjs.org/ora/-/ora-8.1.0.tgz 85ms (cache miss)
+125 http fetch GET 200 https://registry.npmjs.org/cli-cursor/-/cli-cursor-5.0.0.tgz 84ms (cache miss)
+126 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 107ms
+127 silly audit report {}
+128 http fetch GET 200 https://registry.npmjs.org/is-unicode-supported/-/is-unicode-supported-2.1.0.tgz 93ms (cache miss)
+129 silly ADD node_modules/ansi-regex
+130 silly ADD node_modules/get-east-asian-width
+131 silly ADD node_modules/emoji-regex
+132 silly ADD node_modules/mimic-function
+133 silly ADD node_modules/onetime
+134 silly ADD node_modules/restore-cursor
+135 silly ADD node_modules/restore-cursor/node_modules/signal-exit
+136 silly ADD node_modules/strip-ansi
+137 silly ADD node_modules/string-width
+138 silly ADD node_modules/stdin-discarder
+139 silly ADD node_modules/log-symbols
+140 silly ADD node_modules/log-symbols/node_modules/is-unicode-supported
+141 silly ADD node_modules/is-unicode-supported
+142 silly ADD node_modules/is-interactive
+143 silly ADD node_modules/cli-spinners
+144 silly ADD node_modules/cli-cursor
+145 silly ADD node_modules/chalk
+146 silly ADD node_modules/ora
+147 verbose cwd /Users/charlo/dev/dbf_converter
+148 verbose os Darwin 23.6.0
+149 verbose node v22.8.0
+150 verbose npm  v10.8.2
+151 verbose exit 0
+152 info ok

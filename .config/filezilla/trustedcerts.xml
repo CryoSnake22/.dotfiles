@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<FileZilla3 version="3.67.1" platform="mac">
+	<FtpSessionResumption>
+		<Entry Host="www.laurier.com" Port="21">true</Entry>
+		<Entry Host="23.239.13.44" Port="21">true</Entry>
+	</FtpSessionResumption>
+</FileZilla3>

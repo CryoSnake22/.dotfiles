@@ -105,6 +105,18 @@ return {
         desc = "Lists files in your current working directory, respects .gitignore",
       },
       {
+        "<leader>ff",
+        function()
+          local builtin = require("telescope.builtin")
+          builtin.find_files({
+            cwd = "~/Home/Obsidian Notes/BIORAM/",
+            no_ignore = false,
+            hidden = true,
+          })
+        end,
+        desc = "Lists files in your current working directory, respects .gitignore",
+      },
+      {
         "<leader>pr",
         function()
           local builtin = require("telescope.builtin")

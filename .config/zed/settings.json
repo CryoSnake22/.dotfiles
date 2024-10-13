@@ -14,5 +14,9 @@
     "mode": "system",
     "light": "One Light",
     "dark": "Catppuccin Mocha"
+  },
+  "indent_guides": {
+    /// Whether to show indent guides in the editor.
+    "enabled": true
   }
 }

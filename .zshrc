@@ -1,3 +1,4 @@
+alias py3="python3"
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -7,12 +8,13 @@ fi
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH=$PATH:/opt/homebrew/Cellar/fish/3.7.1/bin/fish
+export PATH=$PATH:"/opt/homebrew/Cellar/fish/3.7.1/bin/fish"
 export PATH="/usr/local/texlive/2024/bin/universal-darwin:$PATH"
-
-
+export PATH=$PATH:"/opt/homebrew/opt/llvm/bin/"
+export PATH=$PATH:"/Applications/Obsidian.app/Contents/MacOS"
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -83,7 +85,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 ZSH_THEME="powerlevel10k/powerlevel10k"
 source $ZSH/oh-my-zsh.sh
-
+. "$HOME/.cargo/env"
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"

@@ -1,0 +1,157 @@
+0 verbose cli /opt/homebrew/Cellar/node/22.8.0/bin/node /opt/homebrew/bin/npm
+1 info using npm@10.8.2
+2 info using node@v22.8.0
+3 silly config load:file:/opt/homebrew/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/charlo/dev/dbf_converter/.npmrc
+5 silly config load:file:/Users/charlo/.npmrc
+6 silly config load:file:/opt/homebrew/etc/npmrc
+7 verbose title npm install all
+8 verbose argv "install" "all"
+9 verbose logfile logs-max:10 dir:/Users/charlo/.npm/_logs/2024-10-09T18_14_54_983Z-
+10 verbose logfile /Users/charlo/.npm/_logs/2024-10-09T18_14_54_983Z-debug-0.log
+11 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+12 silly logfile start cleaning logs, removing 1 files
+13 silly logfile done cleaning log files
+14 silly idealTree buildDeps
+15 silly fetch manifest all@*
+16 silly packumentCache full:https://registry.npmjs.org/all cache-miss
+17 http fetch GET 200 https://registry.npmjs.org/all 130ms (cache miss)
+18 silly packumentCache full:https://registry.npmjs.org/all set size:undefined disposed:false
+19 silly placeDep ROOT all@0.0.0 OK for: dbf_converter@1.0.0 want: *
+20 silly reify moves {}
+21 silly audit bulk request {
+21 silly audit   '@gar/promisify': [ '1.1.3' ],
+21 silly audit   '@npmcli/fs': [ '1.1.1' ],
+21 silly audit   '@npmcli/move-file': [ '1.1.2' ],
+21 silly audit   '@tootallnate/once': [ '1.1.2' ],
+21 silly audit   abbrev: [ '1.1.1' ],
+21 silly audit   'agent-base': [ '6.0.2' ],
+21 silly audit   agentkeepalive: [ '4.5.0' ],
+21 silly audit   'aggregate-error': [ '3.1.0' ],
+21 silly audit   aproba: [ '2.0.0' ],
+21 silly audit   'are-we-there-yet': [ '3.0.1' ],
+21 silly audit   'balanced-match': [ '1.0.2' ],
+21 silly audit   'base64-js': [ '1.5.1' ],
+21 silly audit   bindings: [ '1.5.0' ],
+21 silly audit   bl: [ '4.1.0' ],
+21 silly audit   'brace-expansion': [ '1.1.11' ],
+21 silly audit   buffer: [ '5.7.1' ],
+21 silly audit   cacache: [ '15.3.0' ],
+21 silly audit   chownr: [ '2.0.0', '1.1.4' ],
+21 silly audit   'clean-stack': [ '2.2.0' ],
+21 silly audit   'color-support': [ '1.1.3' ],
+21 silly audit   'concat-map': [ '0.0.1' ],
+21 silly audit   'console-control-strings': [ '1.1.0' ],
+21 silly audit   'dbf-reader': [ '1.0.3' ],
+21 silly audit   debug: [ '4.3.5' ],
+21 silly audit   'decompress-response': [ '6.0.0' ],
+21 silly audit   'deep-extend': [ '0.6.0' ],
+21 silly audit   delegates: [ '1.0.0' ],
+21 silly audit   'detect-libc': [ '2.0.3' ],
+21 silly audit   encoding: [ '0.1.13' ],
+21 silly audit   'end-of-stream': [ '1.4.4' ],
+21 silly audit   'env-paths': [ '2.2.1' ],
+21 silly audit   'err-code': [ '2.0.3' ],
+21 silly audit   'expand-template': [ '2.0.3' ],
+21 silly audit   'file-uri-to-path': [ '1.0.0' ],
+21 silly audit   'fs-constants': [ '1.0.0' ],
+21 silly audit   'fs-minipass': [ '2.1.0' ],
+21 silly audit   'fs.realpath': [ '1.0.0' ],
+21 silly audit   gauge: [ '4.0.4' ],
+21 silly audit   'ansi-regex': [ '5.0.1' ],
+21 silly audit   'emoji-regex': [ '8.0.0' ],
+21 silly audit   'string-width': [ '4.2.3' ],
+21 silly audit   'strip-ansi': [ '6.0.1' ],
+21 silly audit   'github-from-package': [ '0.0.0' ],
+21 silly audit   glob: [ '7.2.3' ],
+21 silly audit   'graceful-fs': [ '4.2.11' ],
+21 silly audit   'has-unicode': [ '2.0.1' ],
+21 silly audit   'http-cache-semantics': [ '4.1.1' ],
+21 silly audit   'http-proxy-agent': [ '4.0.1' ],
+21 silly audit   'https-proxy-agent': [ '5.0.1' ],
+21 silly audit   'humanize-ms': [ '1.2.1' ],
+21 silly audit   'iconv-lite': [ '0.6.3' ],
+21 silly audit   ieee754: [ '1.2.1' ],
+21 silly audit   imurmurhash: [ '0.1.4' ],
+21 silly audit   'indent-string': [ '4.0.0' ],
+21 silly audit   'infer-owner': [ '1.0.4' ],
+21 silly audit   inflight: [ '1.0.6' ],
+21 silly audit   inherits: [ '2.0.4' ],
+21 silly audit   ini: [ '1.3.8' ],
+21 silly audit   'ip-address': [ '9.0.5' ],
+21 silly audit   'is-fullwidth-code-point': [ '3.0.0' ],
+21 silly audit   'is-lambda': [ '1.0.1' ],
+21 silly audit   isexe: [ '2.0.0' ],
+21 silly audit   jsbn: [ '1.1.0' ],
+21 silly audit   'lru-cache': [ '6.0.0' ],
+21 silly audit   'make-fetch-happen': [ '9.1.0' ],
+21 silly audit   'mimic-response': [ '3.1.0' ],
+21 silly audit   minimatch: [ '3.1.2' ],
+21 silly audit   minimist: [ '1.2.8' ],
+21 silly audit   minipass: [ '3.3.6', '5.0.0' ],
+21 silly audit   'minipass-collect': [ '1.0.2' ],
+21 silly audit   'minipass-fetch': [ '1.4.1' ],
+21 silly audit   'minipass-flush': [ '1.0.5' ],
+21 silly audit   'minipass-pipeline': [ '1.2.4' ],
+21 silly audit   'minipass-sized': [ '1.0.3' ],
+21 silly audit   minizlib: [ '2.1.2' ],
+21 silly audit   mkdirp: [ '1.0.4' ],
+21 silly audit   'mkdirp-classic': [ '0.5.3' ],
+21 silly audit   ms: [ '2.1.2' ],
+21 silly audit   'napi-build-utils': [ '1.0.2' ],
+21 silly audit   negotiator: [ '0.6.3' ],
+21 silly audit   'node-abi': [ '3.65.0' ],
+21 silly audit   'node-addon-api': [ '7.1.0' ],
+21 silly audit   'node-gyp': [ '8.4.1' ],
+21 silly audit   nopt: [ '5.0.0' ],
+21 silly audit   npmlog: [ '6.0.2' ],
+21 silly audit   once: [ '1.4.0' ],
+21 silly audit   'p-map': [ '4.0.0' ],
+21 silly audit   'path-is-absolute': [ '1.0.1' ],
+21 silly audit   'prebuild-install': [ '7.1.2' ],
+21 silly audit   'promise-inflight': [ '1.0.1' ],
+21 silly audit   'promise-retry': [ '2.0.1' ],
+21 silly audit   pump: [ '3.0.0' ],
+21 silly audit   rc: [ '1.2.8' ],
+21 silly audit   'readable-stream': [ '3.6.2' ],
+21 silly audit   retry: [ '0.12.0' ],
+21 silly audit   rimraf: [ '3.0.2' ],
+21 silly audit   'safe-buffer': [ '5.2.1' ],
+21 silly audit   'safer-buffer': [ '2.1.2' ],
+21 silly audit   semver: [ '7.6.2' ],
+21 silly audit   'set-blocking': [ '2.0.0' ],
+21 silly audit   'signal-exit': [ '3.0.7' ],
+21 silly audit   'simple-concat': [ '1.0.1' ],
+21 silly audit   'simple-get': [ '4.0.1' ],
+21 silly audit   'smart-buffer': [ '4.2.0' ],
+21 silly audit   socks: [ '2.8.3' ],
+21 silly audit   'socks-proxy-agent': [ '6.2.1' ],
+21 silly audit   'sprintf-js': [ '1.1.3' ],
+21 silly audit   sqlite3: [ '5.1.7' ],
+21 silly audit   ssri: [ '8.0.1' ],
+21 silly audit   string_decoder: [ '1.3.0' ],
+21 silly audit   'strip-json-comments': [ '2.0.1' ],
+21 silly audit   tar: [ '6.2.1' ],
+21 silly audit   'tar-fs': [ '2.1.1' ],
+21 silly audit   'tar-stream': [ '2.2.0' ],
+21 silly audit   'tunnel-agent': [ '0.6.0' ],
+21 silly audit   'unique-filename': [ '1.1.1' ],
+21 silly audit   'unique-slug': [ '2.0.2' ],
+21 silly audit   'util-deprecate': [ '1.0.2' ],
+21 silly audit   which: [ '2.0.2' ],
+21 silly audit   'wide-align': [ '1.1.5' ],
+21 silly audit   wrappy: [ '1.0.2' ],
+21 silly audit   yallist: [ '4.0.0' ],
+21 silly audit   all: [ '0.0.0' ]
+21 silly audit }
+22 silly tarball no local data for all@https://registry.npmjs.org/all/-/all-0.0.0.tgz. Extracting by manifest.
+23 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 104ms
+24 silly audit report {}
+25 http fetch GET 200 https://registry.npmjs.org/all/-/all-0.0.0.tgz 124ms (cache miss)
+26 silly ADD node_modules/all
+27 verbose cwd /Users/charlo/dev/dbf_converter
+28 verbose os Darwin 23.6.0
+29 verbose node v22.8.0
+30 verbose npm  v10.8.2
+31 verbose exit 0
+32 info ok

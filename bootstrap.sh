@@ -12,3 +12,6 @@ ln -s ~/.dotfiles/Iterm/ ~/Home/Coding/
 # This uses the "Brewfile" which is obtained by using the command `brew bundle dump
 # --describe` in order to reinstall all the brew packages.
 brew bundle --file ~/.dotfiles/Brewfile
+
+defaults write com.apple.dock autohide-delay -float 0
+killall Dock
