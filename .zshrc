@@ -1,3 +1,5 @@
+bindkey -v
+export KEYTIMEOUT=1
 alias py3="python3"
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
@@ -14,8 +16,6 @@ export PATH=$PATH:"/opt/homebrew/opt/llvm/bin/"
 export PATH=$PATH:"/Applications/Obsidian.app/Contents/MacOS"
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-
-
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
