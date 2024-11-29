@@ -6,6 +6,22 @@ return {
   --   opts = {},
   -- },
   {
+    "Julian/lean.nvim",
+    event = { "BufReadPre *.lean", "BufNewFile *.lean" },
+
+    dependencies = {
+      "neovim/nvim-lspconfig",
+      "nvim-lua/plenary.nvim",
+      -- you also will likely want nvim-cmp or some completion engine
+    },
+
+    -- see details below for full configuration options
+    opts = {
+      lsp = {},
+      mappings = true,
+    },
+  },
+  {
     "williamboman/mason.nvim",
     opts = function(_, opts)
       vim.list_extend(opts.ensure_installed, {
@@ -18,14 +34,29 @@ return {
       })
     end,
   },
-
   -- lsp servers
   {
     "neovim/nvim-lspconfig",
     opts = {
       inlay_hints = { enabled = true },
-      ---@type lspconfig.options
       servers = {
+        clangd = {
+          cmd = { "clangd", "--compile-commands-dir=build" },
+          filetypes = { "c", "cpp", "objc", "objcpp" },
+          root_dir = require("lspconfig").util.root_pattern("compile_commands.json", ".git"),
+        },
+        cmake = {
+          cmd = { "cmake-language-server" },
+          filetypes = { "cmake" },
+          init_options = {
+            buildDirectory = "build",
+          },
+          root_dir = function(fname)
+            return require("lspconfig.util").root_pattern(".git", "compile_commands.json", "build")(fname)
+              or require("lspconfig.util").path.dirname(fname)
+          end,
+        },
+
         cssls = {},
         tailwindcss = {
           root_dir = function(...)

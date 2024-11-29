@@ -9,6 +9,7 @@ local toggle = function()
 end
 -- Map <F5> to compile the current C++ file
 keymap.set("n", "<leader>o", toggle, opts)
+keymap.set("n", "<leader>pv", ":Ex<CR>", opts)
 
 keymap.set("n", "x", '"_x')
 -- Increment/decrement

@@ -1,6 +1,8 @@
-bindkey -v
-export KEYTIMEOUT=1
+# Set up fzf key bindings and fuzzy completion
+source ~/.fzf-git.sh
+source <(fzf --zsh)
 alias py3="python3"
+alias inv='nvim $(fzf -m --preview="bat -p --color=always {}")'
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -131,3 +133,5 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 source ~/powerlevel10k/powerlevel10k.zsh-theme
+bindkey -v
+export KEYTIMEOUT=1

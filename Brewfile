@@ -1,106 +1,96 @@
 tap "homebrew/bundle"
 tap "homebrew/services"
 tap "jesseduffield/lazygit"
-# GNU internationalization (i18n) and localization (l10n) library
 brew "gettext"
-# Command-line interface for SQLite
-brew "sqlite"
-# Core application library for C
 brew "glib"
-# Network backup and restore
+brew "python@3.12"
+brew "bat"
+brew "black"
 brew "burp"
-# C unit testing framework
+brew "icu4c@76"
+brew "cake"
 brew "check"
-# Generate documentation for several programming languages
-brew "doxygen"
-# OpenType text shaping engine
-brew "harfbuzz"
-# Subtitle renderer for the ASS/SSA subtitle format
-brew "libass"
-# Framework for layout and rendering of i18n text
-brew "pango"
-# OCR (Optical Character Recognition) engine
-brew "tesseract"
-# Play, record, convert, and stream audio and video
-brew "ffmpeg"
-# User-friendly command-line shell for UNIX-like operating systems
-brew "fish"
-# GitHub command-line tool
-brew "gh"
-# C++ interface to glib
-brew "glibmm"
-# GNU Pretty Good Privacy (PGP) package
-brew "gnupg"
-# Open source programming language to build simple/reliable/efficient software
-brew "go"
-# Directory/file & DNS busting tool written in Go
-brew "gobuster"
-# Toolkit for creating graphical user interfaces
-brew "gtk+3"
-# Integrates GTK macOS applications with the Mac desktop
-brew "gtk-mac-integration"
-# Simple zero-configuration command-line HTTP server
-brew "http-server"
-# Interactive computing in Python
-brew "ipython"
-# Library for JSON, based on GLib
-brew "json-glib"
-# Simple terminal UI for git commands
-brew "lazygit"
-# Implementation of the file(1) command
-brew "libmagic"
-# Library to render SVG files using Cairo
-brew "librsvg"
-# Powerful, lightweight programming language
-brew "lua"
-# Fast and user friendly build system
-brew "meson"
-# Ambitious Vim-fork focused on extensibility and agility
-brew "neovim"
-# Development kit for the Java programming language
-brew "openjdk"
-# General-purpose scripting language
+brew "clang-format"
+brew "cmake"
 brew "php"
-# Manage compile and link flags for libraries
-brew "pkg-config"
-# Package compiler and linker metadata toolkit
-brew "pkgconf", link: false
-# Fast, disk space efficient package manager
-brew "pnpm"
-# PDF rendering library (based on the xpdf-3.0 code base)
-brew "poppler"
-# Theme for zsh
-brew "powerlevel10k"
-# Python 3 bindings for the Cairo graphics library
+brew "composer"
+brew "cpm"
+brew "docker"
+brew "doxygen"
+brew "harfbuzz"
+brew "libass"
+brew "pango"
+brew "tesseract"
+brew "ffmpeg"
+brew "fish"
+brew "fzf"
+brew "gcc"
+brew "gh"
+brew "glfw"
+brew "glibmm"
+brew "gnupg"
+brew "go"
+brew "gobuster"
+brew "gtk+3"
+brew "gtk-mac-integration"
+brew "htop"
+brew "node"
+brew "http-server"
+brew "inetutils", link: false
+brew "ipython"
+brew "json-glib"
+brew "jupyterlab"
+brew "lazygit"
+brew "libmagic"
+brew "librsvg"
+brew "llvm"
+brew "lua"
+brew "numpy"
 brew "py3cairo"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.11"
-# Tools for creating native apps for Android and iOS
-brew "react-native-cli"
-# Search tool like grep and The Silver Searcher
-brew "ripgrep"
-# Software for mathematics, science, and engineering
 brew "scipy"
-# User interface to the TELNET protocol
+brew "manim"
+brew "meson"
+brew "mysql", restart_service: true
+brew "neovim"
+brew "openjdk"
+brew "openvpn"
+brew "pgloader"
+brew "pipx"
+brew "pkgconf"
+brew "pnpm"
+brew "poppler"
+brew "postgresql@14"
+brew "powerlevel10k"
+brew "python@3.11"
+brew "react-native-cli"
+brew "ripgrep"
 brew "telnet"
-# Terminal multiplexer
 brew "tmux"
-# Language for application scale JavaScript development
+brew "tree"
 brew "typescript"
-# Fast static site generator in a single binary with everything built-in
+brew "vercel-cli"
+brew "xclip"
 brew "zola"
-# Build desktop apps with JavaScript, HTML, and CSS
+cask "alt-tab"
+cask "anaconda"
 cask "electron"
-# Clipboard manager
+cask "font-fira-code"
 cask "maccy"
-# Full TeX Live distribution with GUI applications
 cask "mactex"
-# Music streaming service
+cask "sequel-ace"
 cask "spotify"
+cask "vlc"
 vscode "akamud.vscode-javascript-snippet-pack"
+vscode "brapifra.phpserver"
+vscode "dbaeumer.vscode-eslint"
+vscode "devsense.composer-php-vscode"
+vscode "devsense.intelli-php-vscode"
+vscode "devsense.phptools-vscode"
+vscode "devsense.profiler-php-vscode"
 vscode "donjayamanne.githistory"
 vscode "dsznajder.es7-react-js-snippets"
-vscode "equinusocio.vsc-community-material-theme"
+vscode "equinusocio.vsc-material-theme"
+vscode "equinusocio.vsc-material-theme-icons"
 vscode "esbenp.prettier-vscode"
 vscode "formulahendry.code-runner"
 vscode "formulahendry.dotnet-test-explorer"
@@ -111,7 +101,9 @@ vscode "ionide.ionide-fsharp"
 vscode "jeff-hykin.better-cpp-syntax"
 vscode "jorgeserrano.vscode-csharp-snippets"
 vscode "kreativ-software.csharpextensions"
+vscode "leanprover.lean4"
 vscode "mathiasfrohlich.kotlin"
+vscode "mkloubert.vscode-http-client"
 vscode "monokai.theme-monokai-pro-vscode"
 vscode "ms-dotnettools.csdevkit"
 vscode "ms-dotnettools.csharp"
@@ -121,16 +113,27 @@ vscode "ms-python.black-formatter"
 vscode "ms-python.debugpy"
 vscode "ms-python.python"
 vscode "ms-python.vscode-pylance"
+vscode "ms-toolsai.jupyter"
+vscode "ms-toolsai.jupyter-keymap"
+vscode "ms-toolsai.jupyter-renderers"
+vscode "ms-toolsai.vscode-jupyter-cell-tags"
+vscode "ms-toolsai.vscode-jupyter-slideshow"
 vscode "ms-vscode.cmake-tools"
 vscode "ms-vscode.cpptools"
 vscode "ms-vscode.cpptools-extension-pack"
 vscode "ms-vscode.cpptools-themes"
 vscode "ms-vscode.vscode-typescript-next"
 vscode "ms-vsliveshare.vsliveshare"
+vscode "mtxr.sqltools"
+vscode "mtxr.sqltools-driver-mysql"
 vscode "ritwickdey.liveserver"
+vscode "sainnhe.sonokai"
 vscode "twxs.cmake"
 vscode "visualstudiotoolsforunity.vstuc"
 vscode "vscjava.vscode-gradle"
 vscode "vscodevim.vim"
 vscode "xabikos.javascriptsnippets"
 vscode "xadillax.viml"
+vscode "xdebug.php-debug"
+vscode "xdebug.php-pack"
+vscode "zobo.php-intellisense"

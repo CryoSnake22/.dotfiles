@@ -156,28 +156,28 @@ return {
         end,
         desc = "Lists Function names, variables, from Treesitter",
       },
-      {
-        "<leader>pv",
-        function()
-          local telescope = require("telescope")
-
-          local function telescope_buffer_dir()
-            return vim.fn.expand("%:p:h")
-          end
-
-          telescope.extensions.file_browser.file_browser({
-            path = "%:p:h",
-            cwd = telescope_buffer_dir(),
-            respect_gitignore = false,
-            hidden = true,
-            grouped = true,
-            previewer = false,
-            initial_mode = "normal",
-            layout_config = { height = 40 },
-          })
-        end,
-        desc = "Open File Browser with the path of the current buffer",
-      },
+      -- {
+      --   -- "<leader>pv",
+      --   -- function()
+      --   --   local telescope = require("telescope")
+      --   --
+      --   --   local function telescope_buffer_dir()
+      --   --     return vim.fn.expand("%:p:h")
+      --   --   end
+      --   --
+      --   --   telescope.extensions.file_browser.file_browser({
+      --   --     path = "%:p:h",
+      --   --     cwd = telescope_buffer_dir(),
+      --   --     respect_gitignore = false,
+      --   --     hidden = true,
+      --   --     grouped = true,
+      --   --     previewer = false,
+      --   --     initial_mode = "normal",
+      --   --     layout_config = { height = 40 },
+      --   --   })
+      --   -- end,
+      --   -- desc = "Open File Browser with the path of the current buffer",
+      -- },
     },
     config = function(_, opts)
       local telescope = require("telescope")
@@ -213,6 +213,10 @@ return {
             ["n"] = {
               -- your custom normal mode mappings
               ["n"] = fb_actions.create,
+              ["<C-n>"] = function()
+                local path = vim.fn.input("New Directory: ")
+                vim.fn.mkdir(path, "p")
+              end,
               ["h"] = fb_actions.goto_parent_dir,
               ["<c-u>"] = function(prompt_bufnr)
                 for i = 1, 10 do

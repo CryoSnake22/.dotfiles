@@ -58,6 +58,7 @@ return {
           focused = false
         end,
       })
+
       table.insert(opts.routes, 1, {
         filter = {
           cond = function()

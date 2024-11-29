@@ -9,13 +9,14 @@
         <Key Name="Window Positions 96">
           <Value Name="Comments Position" Type="2">6A0100004C0200004F01000001010000</Value>
           <Value Name="AdvancedOptions Position" Type="2">53010000D60100003B0200002F010000</Value>
-          <Value Name="MainForm Position" Type="2">A600000046010000DE0200005002000028000000A0000000550000003C00000010270000A901000036000000</Value>
+          <Value Name="MainForm Position" Type="2">BF0000008B010000DE0200005002000028000000A0000000550000003C00000010270000A901000036000000</Value>
           <Value Name="frmLuaTableScript Position" Type="2">4E0100001C020000AF01000039010000</Value>
           <Value Name="frmSelectionList Position" Type="2">690100005702000039010000E8000000</Value>
           <Value Name="ProcessWindow Position" Type="2">0801000024020000220100008B010000000000000000000000000000</Value>
         </Key>
         <Key Name="Ignored Exceptions"/>
         <Value Name="First Time User" Type="1">0</Value>
+        <Value Name="History" Type="4"/>
       </Key>
     </Key>
     <Key Name="Cookies"/>
