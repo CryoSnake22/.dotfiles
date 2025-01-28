@@ -5,7 +5,6 @@ vim.opt.encoding = "utf-8"
 vim.opt.fileencoding = "utf-8"
 
 vim.opt.number = true
-
 vim.opt.guicursor = ""
 vim.opt.title = true
 vim.opt.autoindent = true
@@ -39,4 +38,4 @@ vim.opt.formatoptions:append({ "r" })
 -- Set to "basedpyright" to use basedpyright instead of pyright.
 vim.g.lazyvim_python_lsp = "pyright"
 -- Set to "ruff_lsp" to use the old LSP implementation version.
-vim.g.lazyvim_python_ruff = "ruff"
+-- vim.g.lazyvim_python_ruff = "ruff"

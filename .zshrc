@@ -1,3 +1,11 @@
+
+
+# Importing the classpath for the java junit tests
+export CLASSPATH=$CLASSPATH:/Users/charlo/dev/java/classes/junit-4.13.jar:/Users/charlo/dev/java/classes/hamcrest-core-1.3.jar:.
+
+export SCHOOL="/Users/charlo/Home/School/Y1-S2/"
+
+
 # Set up fzf key bindings and fuzzy completion
 source ~/.fzf-git.sh
 source <(fzf --zsh)
@@ -10,12 +18,16 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+
+
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=$PATH:"/opt/homebrew/Cellar/fish/3.7.1/bin/fish"
 export PATH="/usr/local/texlive/2024/bin/universal-darwin:$PATH"
 export PATH=$PATH:"/opt/homebrew/opt/llvm/bin/"
 export PATH=$PATH:"/Applications/Obsidian.app/Contents/MacOS"
+
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 # Set name of the theme to load --- if set to "random", it will
@@ -133,5 +145,5 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 source ~/powerlevel10k/powerlevel10k.zsh-theme
-bindkey -v
+# bindkey -v
 export KEYTIMEOUT=1

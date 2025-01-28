@@ -4,6 +4,12 @@ end
 _G.dd = function(...)
   require("util.debug").dump(...)
 end
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "tex",
+  callback = function()
+    vim.opt_local.wrap = true
+  end,
+})
 
 vim.print = _G.dd
 require("config.lazy")
@@ -22,6 +28,30 @@ local function get_class_name()
   return nil
 end
 
+-- require("mason-nvim-dap").setup({
+--   ensure_installed = { "python", "cppdbg", "node2" }, -- Replace with the debuggers you need
+--   automatic_installation = true,
+-- })
+--
+-- local dap = require("dap")
+--
+-- -- Example: Python (using debugpy)
+-- dap.adapters.python = {
+--   type = "executable",
+--   command = "python",
+--   args = { "-m", "debugpy.adapter" },
+-- }
+-- dap.configurations.python = {
+--   {
+--     type = "python",
+--     request = "launch",
+--     name = "Launch file",
+--     program = "${file}", -- Launch the current file
+--     pythonPath = function()
+--       return "/usr/bin/python" -- Update to your Python path if needed
+--     end,
+--   },
+-- }
 local function render_scene()
   local class_name = get_class_name()
   if not class_name then

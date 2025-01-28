@@ -5,6 +5,49 @@ return {
   --   dependencies = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
   --   opts = {},
   -- },
+  -- {
+  --   "mfussenegger/nvim-dap",
+  --   dependencies = {
+  --     "rcarriga/nvim-dap-ui", -- UI for DAP
+  --     "jay-babu/mason-nvim-dap.nvim", -- DAP installer
+  --     "theHamsta/nvim-dap-virtual-text", -- Virtual text for inline info
+  --   },
+  --   config = function()
+  --     local dap = require("dap")
+  --     local dapui = require("dapui")
+  --
+  --     -- Setup DAP-UI
+  --     dapui.setup()
+  --
+  --     -- Automatically open/close DAP-UI on DAP events
+  --     dap.listeners.after.event_initialized["dapui_config"] = function()
+  --       dapui.open()
+  --     end
+  --     dap.listeners.before.event_terminated["dapui_config"] = function()
+  --       dapui.close()
+  --     end
+  --     dap.listeners.before.event_exited["dapui_config"] = function()
+  --       dapui.close()
+  --     end
+  --   end,
+  -- },
+  -- {
+  --   "lervag/vimtex",
+  --   lazyload = true,
+  --   ft = { "tex", "latex" }, -- Load only for LaTeX files
+  --   config = function()
+  --     -- Optional: configure vimtex, for instance:
+  --     vim.g.vimtex_general_viewer = "zathura"
+  --     vim.g.vimtex_view_general_option = "-reuse-instance -forward-search @tex @line @pdf"
+  --     -- vim.g.vimtex_view_method = "general"
+  --     vim.g.vimtex_compiler_method = "latexmk"
+  --     vim.g.vimtex_view_general_option_latexmk = "-reuse-instance"
+  --     vim.g.vimtex_compiler_latexmk = {
+  --       build_dir = "",
+  --       continuous = 1,
+  --     }
+  --   end,
+  -- },
   {
     "Julian/lean.nvim",
     event = { "BufReadPre *.lean", "BufNewFile *.lean" },
@@ -40,6 +83,50 @@ return {
     opts = {
       inlay_hints = { enabled = true },
       servers = {
+        -- pyright = {
+        --   settings = {
+        --     python = {
+        --       analysis = {
+        --         typeCheckingMode = "off",
+        --         reportMissingImports = false,
+        --       },
+        --     },
+        --   },
+        -- },
+        jdtls = {
+          cmd = {
+            "jdtls",
+          },
+          filetypes = { "java" },
+          root_dir = require("lspconfig").util.root_pattern(".git", "pom.xml", "build.gradle"),
+        },
+        texlab = {
+          settings = {
+            texlab = {
+              auxDirectory = ".",
+              bibtexFormatter = "latexindent",
+              build = {
+                args = { "-pdf", "-interaction=nonstopmode", "-synctex=1", "%f" },
+                executable = "latexmk",
+                forwardSearchAfter = false,
+                onSave = true,
+              },
+              chktex = {
+                onEdit = false,
+                onOpenAndSave = true,
+              },
+              diagnosticsDelay = 300,
+              formatterLineLength = 80,
+              forwardSearch = {
+                args = {},
+              },
+              latexFormatter = "latexindent",
+              latexindent = {
+                modifyLineBreaks = true,
+              },
+            },
+          },
+        },
         clangd = {
           cmd = { "clangd", "--compile-commands-dir=build" },
           filetypes = { "c", "cpp", "objc", "objcpp" },
@@ -166,10 +253,44 @@ return {
     },
   },
   {
-    "nvim-cmp",
-    dependencies = { "hrsh7th/cmp-emoji" },
-    opts = function(_, opts)
-      table.insert(opts.sources, { name = "emoji" })
+    "hrsh7th/nvim-cmp",
+    dependencies = {
+      "hrsh7th/cmp-nvim-lsp",
+      "hrsh7th/cmp-buffer",
+      "hrsh7th/cmp-path",
+      "saadparwaiz1/cmp_luasnip",
+      -- Add the vimtex source
+      "micangl/cmp-vimtex",
+    },
+    config = function()
+      local cmp = require("cmp")
+      cmp.setup({
+        snippet = {
+          expand = function(args)
+            -- Use your snippet engine of choice (e.g., LuaSnip)
+            require("luasnip").lsp_expand(args.body)
+          end,
+        },
+        mapping = cmp.mapping.preset.insert({
+          ["<C-n>"] = cmp.mapping.select_next_item(),
+          ["<C-p>"] = cmp.mapping.select_prev_item(),
+          ["<CR>"] = cmp.mapping.confirm({ select = true }),
+        }),
+        sources = cmp.config.sources({
+          { name = "nvim_lsp" },
+          { name = "vimtex" }, -- The vimtex completion source
+          { name = "buffer" },
+          { name = "path" },
+        }),
+      })
     end,
   },
+  -- {
+  --   "nvim-cmp",
+  --   dependencies = { "hrsh7th/cmp-emoji" },
+  --   opts = {},
+  --   -- opts = function(_, opts)
+  --   --   table.insert(opts.sources, { name = "emoji" })
+  --   -- end,
+  -- },
 }

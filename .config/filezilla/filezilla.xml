@@ -134,13 +134,13 @@
 		<Setting name="Remote filelist sortorder">0 0</Setting>
 		<Setting name="Already connected choice">1</Setting>
 		<Setting name="Splitter positions (v2)">98 -129 500000000 228 228 500000000</Setting>
-		<Setting name="Last automatic update check">2024-09-28 02:20:38</Setting>
-		<Setting name="Update Check New Version" platform="mac">release 3.67.1
-</Setting>
 		<Setting name="Window position and size">0 155 44 1200 838 </Setting>
+		<Setting name="Last automatic update check">2024-12-11 18:47:32</Setting>
+		<Setting name="Update Check New Version" platform="mac">release 3.67.0
+</Setting>
 		<Setting name="Tab data" sensitive="1">
 			<Tabs>
-				<Tab connected="1" selected="1">
+				<Tab selected="1">
 					<Host>23.239.13.44</Host>
 					<Port>21</Port>
 					<Protocol>0</Protocol>

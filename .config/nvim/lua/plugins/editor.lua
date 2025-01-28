@@ -1,4 +1,32 @@
 return {
+  { "tpope/vim-surround" },
+  {
+    "folke/snacks.nvim",
+    priority = 1000,
+    lazy = false,
+    opts = {
+      -- your configuration comes here
+      -- or leave it empty to use the default settings
+      -- refer to the configuration section below
+      scroll = { enabled = false },
+    },
+  },
+  {
+    "plasticboy/vim-markdown",
+    ft = "markdown",
+    config = function()
+      vim.g.markdown_fenced_languages = {
+        "bash",
+        "python",
+        "javascript",
+        "html",
+        "css",
+        "lua",
+        "cpp",
+        "java",
+      }
+    end,
+  },
   {
     "ThePrimeagen/harpoon",
     branch = "harpoon2",
@@ -156,34 +184,34 @@ return {
         end,
         desc = "Lists Function names, variables, from Treesitter",
       },
-      -- {
-      --   -- "<leader>pv",
-      --   -- function()
-      --   --   local telescope = require("telescope")
-      --   --
-      --   --   local function telescope_buffer_dir()
-      --   --     return vim.fn.expand("%:p:h")
-      --   --   end
-      --   --
-      --   --   telescope.extensions.file_browser.file_browser({
-      --   --     path = "%:p:h",
-      --   --     cwd = telescope_buffer_dir(),
-      --   --     respect_gitignore = false,
-      --   --     hidden = true,
-      --   --     grouped = true,
-      --   --     previewer = false,
-      --   --     initial_mode = "normal",
-      --   --     layout_config = { height = 40 },
-      --   --   })
-      --   -- end,
-      --   -- desc = "Open File Browser with the path of the current buffer",
-      -- },
+      {
+        "<leader>pv",
+        function()
+          local telescope = require("telescope")
+
+          local function telescope_buffer_dir()
+            return vim.fn.expand("%:p:h")
+          end
+
+          telescope.extensions.file_browser.file_browser({
+            path = "%:p:h",
+            cwd = telescope_buffer_dir(),
+            respect_gitignore = false,
+            hidden = true,
+            grouped = true,
+            previewer = true,
+            initial_mode = "normal",
+            layout_config = { height = 40 },
+          })
+        end,
+        desc = "Open File Browser with the path of the current buffer",
+      },
     },
     config = function(_, opts)
       local telescope = require("telescope")
       local actions = require("telescope.actions")
       local fb_actions = require("telescope").extensions.file_browser.actions
-
+      opts.defaults = opts.defaults or {}
       opts.defaults = vim.tbl_deep_extend("force", opts.defaults, {
         wrap_results = true,
         layout_strategy = "horizontal",
@@ -240,7 +268,7 @@ return {
         -- you can pass additional configuration to telescope to change the theme, layout, etc.
         builtin.current_buffer_fuzzy_find(require("telescope.themes").get_dropdown({
           -- winblend = 10,
-          previewer = false,
+          previewer = true,
         }))
       end, { desc = "[/] fuzzily search in current buffer" })
     end,

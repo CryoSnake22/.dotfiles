@@ -9,7 +9,17 @@ local toggle = function()
 end
 -- Map <F5> to compile the current C++ file
 keymap.set("n", "<leader>o", toggle, opts)
-keymap.set("n", "<leader>pv", ":Ex<CR>", opts)
+-- keymap.set("n", "<leader>pv", ":Ex<CR>", opts)
+vim.keymap.set("n", "<leader>lt", function()
+  -- Run VimtexCompile
+  vim.cmd("VimtexCompile")
+  -- Launch Zathura with the current file's PDF
+  local pdf_name = vim.fn.expand("%:r") .. ".pdf"
+  os.execute("zathura " .. pdf_name .. " &")
+  vim.defer_fn(function()
+    os.execute([[osascript -e 'tell application "Zathura" to activate']])
+  end, 100) -- Add a small delay to allow Zathura to launch
+end, { desc = "Compile LaTeX and open PDF in Zathura" })
 
 keymap.set("n", "x", '"_x')
 -- Increment/decrement
@@ -19,6 +29,7 @@ keymap.set("n", "-", "<C-x>")
 keymap.set("n", "<C-a>", "gg<S-v>G")
 
 keymap.set("n", "<leader>pb", ":!obsidian %<CR>", opts)
+keymap.set("n", "<leader>py", ":!python3 %<CR>", opts)
 keymap.set("n", "te", ":tabedit")
 keymap.set("n", "<tab>", ":tabnext<Return>", opts)
 keymap.set("n", "<s-tab>", ":tabprev<Return>", opts)
