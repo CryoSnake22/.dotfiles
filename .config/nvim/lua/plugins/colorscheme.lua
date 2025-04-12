@@ -1,19 +1,9 @@
 return {
   --
-  {
-    "cryosnake22/sonokai_plexed",
-    priority = 1000,
-    lazy = false,
-    config = function()
-      vim.g.sonokai_transparent_background = "1"
-      vim.g.sonokai_enable_italic = "1"
-      vim.g.sonokai_style = "andromeda"
-      vim.cmd.colorscheme("sonokai")
-    end,
-  },
   -- {
-  --   "sainnhe/sonokai",
-  --   priority = 999,
+  --   "cryosnake22/sonokai_plexed",
+  --   priority = 1000,
+  --   lazy = false,
   --   config = function()
   --     vim.g.sonokai_transparent_background = "1"
   --     vim.g.sonokai_enable_italic = "1"
@@ -21,6 +11,24 @@ return {
   --     vim.cmd.colorscheme("sonokai")
   --   end,
   -- },
+  -- {
+  --   "rose-pine/neovim",
+  --   priority = 1000,
+  --   name = "rose-pine",
+  --   config = function()
+  --     vim.cmd("colorscheme rose-pine")
+  --   end,
+  -- },
+  {
+    "sainnhe/sonokai",
+    priority = 999,
+    config = function()
+      vim.g.sonokai_transparent_background = "1"
+      vim.g.sonokai_enable_italic = "1"
+      vim.g.sonokai_style = "andromeda"
+      vim.cmd.colorscheme("sonokai")
+    end,
+  },
   {
     "yorumicolors/yorumi.nvim",
     priority = 998,

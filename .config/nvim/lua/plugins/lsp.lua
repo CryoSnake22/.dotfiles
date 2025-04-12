@@ -49,6 +49,17 @@ return {
   --   end,
   -- },
   {
+    "kaarmu/typst.vim",
+    ft = "typst",
+    lazy = false,
+  },
+  {
+    "chomosuke/typst-preview.nvim",
+    lazy = false, -- or ft = 'typst'
+    version = "1.*",
+    opts = {}, -- lazy.nvim will implicitly calls `setup {}`
+  },
+  {
     "Julian/lean.nvim",
     event = { "BufReadPre *.lean", "BufNewFile *.lean" },
 
@@ -140,7 +151,7 @@ return {
           },
           root_dir = function(fname)
             return require("lspconfig.util").root_pattern(".git", "compile_commands.json", "build")(fname)
-              or require("lspconfig.util").path.dirname(fname)
+              or require("lspconfig.util").vim.fs.dirname(fname)
           end,
         },
 
@@ -252,39 +263,7 @@ return {
       setup = {},
     },
   },
-  {
-    "hrsh7th/nvim-cmp",
-    dependencies = {
-      "hrsh7th/cmp-nvim-lsp",
-      "hrsh7th/cmp-buffer",
-      "hrsh7th/cmp-path",
-      "saadparwaiz1/cmp_luasnip",
-      -- Add the vimtex source
-      "micangl/cmp-vimtex",
-    },
-    config = function()
-      local cmp = require("cmp")
-      cmp.setup({
-        snippet = {
-          expand = function(args)
-            -- Use your snippet engine of choice (e.g., LuaSnip)
-            require("luasnip").lsp_expand(args.body)
-          end,
-        },
-        mapping = cmp.mapping.preset.insert({
-          ["<C-n>"] = cmp.mapping.select_next_item(),
-          ["<C-p>"] = cmp.mapping.select_prev_item(),
-          ["<CR>"] = cmp.mapping.confirm({ select = true }),
-        }),
-        sources = cmp.config.sources({
-          { name = "nvim_lsp" },
-          { name = "vimtex" }, -- The vimtex completion source
-          { name = "buffer" },
-          { name = "path" },
-        }),
-      })
-    end,
-  },
+  { "saghen/blink.cmp", enabled = false },
   -- {
   --   "nvim-cmp",
   --   dependencies = { "hrsh7th/cmp-emoji" },

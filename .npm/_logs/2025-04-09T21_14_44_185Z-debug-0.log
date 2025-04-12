@@ -1,0 +1,47 @@
+0 verbose cli /opt/homebrew/Cellar/node/23.10.0_1/bin/node /opt/homebrew/bin/npm
+1 info using npm@10.9.2
+2 info using node@v23.10.0
+3 silly config load:file:/opt/homebrew/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/charlo/.local/share/nvim/mason/staging/pyright/.npmrc
+5 silly config load:file:/Users/charlo/.npmrc
+6 silly config load:file:/opt/homebrew/etc/npmrc
+7 verbose title npm install pyright@1.1.399
+8 verbose argv "install" "pyright@1.1.399"
+9 verbose logfile logs-max:10 dir:/Users/charlo/.npm/_logs/2025-04-09T21_14_44_185Z-
+10 verbose logfile /Users/charlo/.npm/_logs/2025-04-09T21_14_44_185Z-debug-0.log
+11 silly logfile start cleaning logs, removing 1 files
+12 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+13 silly logfile done cleaning log files
+14 silly idealTree buildDeps
+15 silly fetch manifest pyright@1.1.399
+16 silly packumentCache full:https://registry.npmjs.org/pyright cache-miss
+17 http fetch GET 200 https://registry.npmjs.org/pyright 134ms (cache updated)
+18 silly packumentCache full:https://registry.npmjs.org/pyright set size:undefined disposed:false
+19 silly placeDep ROOT pyright@1.1.399 OK for: @mason/pyright@1.0.0 want: 1.1.399
+20 silly fetch manifest fsevents@~2.3.3
+21 silly packumentCache full:https://registry.npmjs.org/fsevents cache-miss
+22 http fetch GET 200 https://registry.npmjs.org/fsevents 45ms (cache updated)
+23 silly packumentCache full:https://registry.npmjs.org/fsevents set size:undefined disposed:false
+24 silly placeDep node_modules/pyright fsevents@2.3.3 OK for: pyright@1.1.399 want: ~2.3.3
+25 silly reify moves {}
+26 silly audit bulk request { pyright: [ '1.1.399' ], fsevents: [ '2.3.3' ] }
+27 http cache pyright@https://registry.npmjs.org/pyright/-/pyright-1.1.399.tgz 0ms (cache hit)
+28 http cache fsevents@https://registry.npmjs.org/fsevents/-/fsevents-2.3.3.tgz 0ms (cache hit)
+29 silly tarball no local data for pyright@https://registry.npmjs.org/pyright/-/pyright-1.1.399.tgz. Extracting by manifest.
+30 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 107ms
+31 silly audit report {}
+32 http fetch GET 200 https://registry.npmjs.org/pyright/-/pyright-1.1.399.tgz 960ms (cache miss)
+33 info run fsevents@2.3.3 install node_modules/pyright/node_modules/fsevents node-gyp rebuild
+34 info run fsevents@2.3.3 install { code: 1, signal: null }
+35 verbose reify failed optional dependency /Users/charlo/.local/share/nvim/mason/staging/pyright/node_modules/pyright/node_modules/fsevents
+36 silly reify mark deleted [
+36 silly reify   '/Users/charlo/.local/share/nvim/mason/staging/pyright/node_modules/pyright/node_modules/fsevents'
+36 silly reify ]
+37 silly ADD node_modules/pyright
+38 silly ADD
+39 verbose cwd /Users/charlo/.local/share/nvim/mason/staging/pyright
+40 verbose os Darwin 24.3.0
+41 verbose node v23.10.0
+42 verbose npm  v10.9.2
+43 verbose exit 0
+44 info ok

@@ -2,7 +2,7 @@ if vim.loader then
   vim.loader.enable()
 end
 _G.dd = function(...)
-  require("util.debug").dump(...)
+  -- require("util.debug").dump(...)
 end
 vim.api.nvim_create_autocmd("FileType", {
   pattern = "tex",
@@ -28,6 +28,7 @@ local function get_class_name()
   return nil
 end
 
+-- require("luasnip.loaders.from_lua").lazy_load({ paths = "~/.config/nvim/lua/snippets" })
 -- require("mason-nvim-dap").setup({
 --   ensure_installed = { "python", "cppdbg", "node2" }, -- Replace with the debuggers you need
 --   automatic_installation = true,

@@ -3,12 +3,28 @@
 # Importing the classpath for the java junit tests
 export CLASSPATH=$CLASSPATH:/Users/charlo/dev/java/classes/junit-4.13.jar:/Users/charlo/dev/java/classes/hamcrest-core-1.3.jar:.
 
-export SCHOOL="/Users/charlo/Home/School/Y1-S2/"
+export SCHOOL="/Users/charlo/Home/School/season_2/"
+# export BOK="/Users/charlo/home/Obsidian Notes/BIORAM/08_Books"
+# alias fzb='open $(find $BOK -type f|fzf -m)'
+export BOK="/Users/charlo/home/Books"
+export HOMIE="/Users/charlo/home"
+export TYPST_PATH="~/.config/typst/lib"
 
 
+# alias fzb='open "$(find "$BOK" -type f | sed "s|.*/08_Books/|08_Books/|" | fzf -m | sed "s|^08_Books/|$BOK/|")"'
+alias fb='selection=$(find "$BOK" -type f -iname "*.pdf" | sed "s|.*/Books/||" | fzf -m --exact) && open $BOK/$selection'
+alias fh='selection=$(find "$HOMIE" -type d ! -path "$HOMIE/Obsidian Notes/" ! -path "$HOMIE/Obsidian Notes/*" ! -path "$HOMIE/.obsidian/" ! -path "$HOMIE/.obsidian/*"| fzf -m --exact) && cd $selection'
 # Set up fzf key bindings and fuzzy completion
+
+
+
+
+
+
+
 source ~/.fzf-git.sh
 source <(fzf --zsh)
+
 alias py3="python3"
 alias inv='nvim $(fzf -m --preview="bat -p --color=always {}")'
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
@@ -23,7 +39,7 @@ fi
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH=$PATH:"/opt/homebrew/Cellar/fish/3.7.1/bin/fish"
+# export PATH=$PATH:"/opt/homebrew/Cellar/fish/3.7.1/bin/fish"
 export PATH="/usr/local/texlive/2024/bin/universal-darwin:$PATH"
 export PATH=$PATH:"/opt/homebrew/opt/llvm/bin/"
 export PATH=$PATH:"/Applications/Obsidian.app/Contents/MacOS"

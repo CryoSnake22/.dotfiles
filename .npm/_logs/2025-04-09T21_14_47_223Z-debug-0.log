@@ -1,0 +1,34 @@
+0 verbose cli /opt/homebrew/Cellar/node/23.10.0_1/bin/node /opt/homebrew/bin/npm
+1 info using npm@10.9.2
+2 info using node@v23.10.0
+3 silly config load:file:/opt/homebrew/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/charlo/.local/share/nvim/mason/staging/tailwindcss-language-server/.npmrc
+5 silly config load:file:/Users/charlo/.npmrc
+6 silly config load:file:/opt/homebrew/etc/npmrc
+7 verbose title npm install @tailwindcss/language-server@0.14.15
+8 verbose argv "install" "@tailwindcss/language-server@0.14.15"
+9 verbose logfile logs-max:10 dir:/Users/charlo/.npm/_logs/2025-04-09T21_14_47_223Z-
+10 verbose logfile /Users/charlo/.npm/_logs/2025-04-09T21_14_47_223Z-debug-0.log
+11 silly logfile start cleaning logs, removing 1 files
+12 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+13 silly logfile done cleaning log files
+14 silly idealTree buildDeps
+15 silly fetch manifest @tailwindcss/language-server@0.14.15
+16 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2flanguage-server cache-miss
+17 http fetch GET 200 https://registry.npmjs.org/@tailwindcss%2flanguage-server 196ms (cache updated)
+18 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2flanguage-server set size:undefined disposed:false
+19 silly placeDep ROOT @tailwindcss/language-server@0.14.15 OK for: @mason/tailwindcss-language-server@1.0.0 want: 0.14.15
+20 silly reify moves {}
+21 silly audit bulk request { '@tailwindcss/language-server': [ '0.14.15' ] }
+22 http cache @tailwindcss/language-server@https://registry.npmjs.org/@tailwindcss/language-server/-/language-server-0.14.15.tgz 0ms (cache hit)
+23 silly tarball no local data for @tailwindcss/language-server@https://registry.npmjs.org/@tailwindcss/language-server/-/language-server-0.14.15.tgz. Extracting by manifest.
+24 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 96ms
+25 silly audit report {}
+26 http fetch GET 200 https://registry.npmjs.org/@tailwindcss/language-server/-/language-server-0.14.15.tgz 1044ms (cache miss)
+27 silly ADD node_modules/@tailwindcss/language-server
+28 verbose cwd /Users/charlo/.local/share/nvim/mason/staging/tailwindcss-language-server
+29 verbose os Darwin 24.3.0
+30 verbose node v23.10.0
+31 verbose npm  v10.9.2
+32 verbose exit 0
+33 info ok

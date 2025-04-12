@@ -1,0 +1,306 @@
+0 verbose cli /opt/homebrew/Cellar/node/23.10.0_1/bin/node /opt/homebrew/bin/npm
+1 info using npm@10.9.2
+2 info using node@v23.10.0
+3 silly config load:file:/opt/homebrew/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/charlo/.local/share/nvim/mason/staging/intelephense/.npmrc
+5 silly config load:file:/Users/charlo/.npmrc
+6 silly config load:file:/opt/homebrew/etc/npmrc
+7 verbose title npm install intelephense@1.14.4
+8 verbose argv "install" "intelephense@1.14.4"
+9 verbose logfile logs-max:10 dir:/Users/charlo/.npm/_logs/2025-04-09T21_14_24_088Z-
+10 verbose logfile /Users/charlo/.npm/_logs/2025-04-09T21_14_24_088Z-debug-0.log
+11 silly logfile start cleaning logs, removing 1 files
+12 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+13 silly logfile done cleaning log files
+14 silly idealTree buildDeps
+15 silly fetch manifest intelephense@1.14.4
+16 silly packumentCache full:https://registry.npmjs.org/intelephense cache-miss
+17 http fetch GET 200 https://registry.npmjs.org/intelephense 681ms (cache updated)
+18 silly packumentCache full:https://registry.npmjs.org/intelephense set size:undefined disposed:false
+19 silly placeDep ROOT intelephense@1.14.4 OK for: @mason/intelephense@1.0.0 want: 1.14.4
+20 silly fetch manifest @bmewburn/js-beautify@1.15.2
+21 silly packumentCache full:https://registry.npmjs.org/@bmewburn%2fjs-beautify cache-miss
+22 silly fetch manifest @bmewburn/vscode-html-languageserver@1.11.0
+23 silly packumentCache full:https://registry.npmjs.org/@bmewburn%2fvscode-html-languageserver cache-miss
+24 silly fetch manifest applicationinsights@~2.7.3
+25 silly packumentCache full:https://registry.npmjs.org/applicationinsights cache-miss
+26 silly fetch manifest fast-glob@~3.3.2
+27 silly packumentCache full:https://registry.npmjs.org/fast-glob cache-miss
+28 silly fetch manifest fs-extra@~11.2.0
+29 silly packumentCache full:https://registry.npmjs.org/fs-extra cache-miss
+30 silly fetch manifest html-to-text@~9.0.5
+31 silly packumentCache full:https://registry.npmjs.org/html-to-text cache-miss
+32 silly fetch manifest lru-cache@~10.2.2
+33 silly packumentCache full:https://registry.npmjs.org/lru-cache cache-miss
+34 silly fetch manifest micromatch@~4.0.7
+35 silly packumentCache full:https://registry.npmjs.org/micromatch cache-miss
+36 silly fetch manifest protobufjs@~7.3.2
+37 silly packumentCache full:https://registry.npmjs.org/protobufjs cache-miss
+38 http fetch GET 200 https://registry.npmjs.org/lru-cache 401ms (cache updated)
+39 silly packumentCache full:https://registry.npmjs.org/lru-cache set size:undefined disposed:false
+40 silly fetch manifest proxy-agent@^6.4.0
+41 silly packumentCache full:https://registry.npmjs.org/proxy-agent cache-miss
+42 http fetch GET 200 https://registry.npmjs.org/fast-glob 413ms (cache updated)
+43 silly packumentCache full:https://registry.npmjs.org/fast-glob set size:undefined disposed:false
+44 silly fetch manifest semver@~7.6.2
+45 silly packumentCache full:https://registry.npmjs.org/semver cache-miss
+46 http fetch GET 200 https://registry.npmjs.org/micromatch 419ms (cache updated)
+47 silly packumentCache full:https://registry.npmjs.org/micromatch set size:undefined disposed:false
+48 silly fetch manifest turndown@~7.2.0
+49 silly packumentCache full:https://registry.npmjs.org/turndown cache-miss
+50 http fetch GET 200 https://registry.npmjs.org/applicationinsights 433ms (cache updated)
+51 silly packumentCache full:https://registry.npmjs.org/applicationinsights set size:undefined disposed:false
+52 silly fetch manifest turndown-plugin-gfm@~1.0.2
+53 silly packumentCache full:https://registry.npmjs.org/turndown-plugin-gfm cache-miss
+54 http fetch GET 200 https://registry.npmjs.org/fs-extra 436ms (cache updated)
+55 silly packumentCache full:https://registry.npmjs.org/fs-extra set size:undefined disposed:false
+56 silly fetch manifest vscode-languageserver@9.0.1
+57 silly packumentCache full:https://registry.npmjs.org/vscode-languageserver cache-miss
+58 http fetch GET 200 https://registry.npmjs.org/html-to-text 477ms (cache updated)
+59 silly packumentCache full:https://registry.npmjs.org/html-to-text set size:undefined disposed:false
+60 silly fetch manifest vscode-languageserver-types@3.17.5
+61 silly packumentCache full:https://registry.npmjs.org/vscode-languageserver-types cache-miss
+62 http fetch GET 200 https://registry.npmjs.org/protobufjs 492ms (cache updated)
+63 silly packumentCache full:https://registry.npmjs.org/protobufjs set size:undefined disposed:false
+64 silly fetch manifest vscode-uri@~3.0.8
+65 silly packumentCache full:https://registry.npmjs.org/vscode-uri cache-miss
+66 http fetch GET 200 https://registry.npmjs.org/proxy-agent 148ms (cache updated)
+67 silly packumentCache full:https://registry.npmjs.org/proxy-agent set size:undefined disposed:false
+68 http fetch GET 200 https://registry.npmjs.org/semver 157ms (cache updated)
+69 silly packumentCache full:https://registry.npmjs.org/semver set size:undefined disposed:false
+70 http fetch GET 200 https://registry.npmjs.org/turndown 153ms (cache updated)
+71 silly packumentCache full:https://registry.npmjs.org/turndown set size:undefined disposed:false
+72 http fetch GET 200 https://registry.npmjs.org/vscode-languageserver 164ms (cache updated)
+73 silly packumentCache full:https://registry.npmjs.org/vscode-languageserver set size:undefined disposed:false
+74 http fetch GET 200 https://registry.npmjs.org/vscode-languageserver-types 155ms (cache updated)
+75 silly packumentCache full:https://registry.npmjs.org/vscode-languageserver-types set size:undefined disposed:false
+76 http fetch GET 200 https://registry.npmjs.org/vscode-uri 151ms (cache updated)
+77 silly packumentCache full:https://registry.npmjs.org/vscode-uri set size:undefined disposed:false
+78 http fetch GET 200 https://registry.npmjs.org/@bmewburn%2fjs-beautify 812ms (cache updated)
+79 silly packumentCache full:https://registry.npmjs.org/@bmewburn%2fjs-beautify set size:undefined disposed:false
+80 http fetch GET 200 https://registry.npmjs.org/turndown-plugin-gfm 430ms (cache updated)
+81 silly packumentCache full:https://registry.npmjs.org/turndown-plugin-gfm set size:undefined disposed:false
+82 http fetch GET 200 https://registry.npmjs.org/@bmewburn%2fvscode-html-languageserver 1149ms (cache updated)
+83 silly packumentCache full:https://registry.npmjs.org/@bmewburn%2fvscode-html-languageserver set size:undefined disposed:false
+84 silly fetch manifest applicationinsights-native-metrics@*
+85 silly packumentCache full:https://registry.npmjs.org/applicationinsights-native-metrics cache-miss
+86 http fetch GET 200 https://registry.npmjs.org/applicationinsights-native-metrics 487ms (cache updated)
+87 silly packumentCache full:https://registry.npmjs.org/applicationinsights-native-metrics set size:undefined disposed:false
+88 silly placeDep node_modules/intelephense @bmewburn/js-beautify@1.15.2 OK for: intelephense@1.14.4 want: 1.15.2
+89 silly placeDep node_modules/intelephense @bmewburn/vscode-html-languageserver@1.11.0 OK for: intelephense@1.14.4 want: 1.11.0
+90 silly placeDep node_modules/intelephense applicationinsights@2.7.3 OK for: intelephense@1.14.4 want: ~2.7.3
+91 silly placeDep node_modules/intelephense fast-glob@3.3.3 OK for: intelephense@1.14.4 want: ~3.3.2
+92 silly placeDep node_modules/intelephense fs-extra@11.2.0 OK for: intelephense@1.14.4 want: ~11.2.0
+93 silly placeDep node_modules/intelephense html-to-text@9.0.5 OK for: intelephense@1.14.4 want: ~9.0.5
+94 silly placeDep node_modules/intelephense lru-cache@10.2.2 OK for: intelephense@1.14.4 want: ~10.2.2
+95 silly placeDep node_modules/intelephense micromatch@4.0.8 OK for: intelephense@1.14.4 want: ~4.0.7
+96 silly placeDep node_modules/intelephense protobufjs@7.3.3 OK for: intelephense@1.14.4 want: ~7.3.2
+97 silly placeDep node_modules/intelephense proxy-agent@6.5.0 OK for: intelephense@1.14.4 want: ^6.4.0
+98 silly placeDep node_modules/intelephense semver@7.6.3 OK for: intelephense@1.14.4 want: ~7.6.2
+99 silly placeDep node_modules/intelephense turndown@7.2.0 OK for: intelephense@1.14.4 want: ~7.2.0
+100 silly placeDep node_modules/intelephense turndown-plugin-gfm@1.0.2 OK for: intelephense@1.14.4 want: ~1.0.2
+101 silly placeDep node_modules/intelephense vscode-languageserver@9.0.1 OK for: intelephense@1.14.4 want: 9.0.1
+102 silly placeDep node_modules/intelephense vscode-languageserver-types@3.17.5 OK for: intelephense@1.14.4 want: 3.17.5
+103 silly placeDep node_modules/intelephense vscode-uri@3.0.8 OK for: intelephense@1.14.4 want: ~3.0.8
+104 silly fetch manifest config-chain@^1.1.13
+105 silly packumentCache full:https://registry.npmjs.org/config-chain cache-miss
+106 silly fetch manifest editorconfig@^1.0.4
+107 silly packumentCache full:https://registry.npmjs.org/editorconfig cache-miss
+108 silly fetch manifest glob@^10.3.3
+109 silly packumentCache full:https://registry.npmjs.org/glob cache-miss
+110 silly fetch manifest js-cookie@^3.0.5
+111 silly packumentCache full:https://registry.npmjs.org/js-cookie cache-miss
+112 silly fetch manifest nopt@^7.2.0
+113 silly packumentCache full:https://registry.npmjs.org/nopt cache-miss
+114 silly fetch manifest typescript@^5.4.5
+115 silly packumentCache full:https://registry.npmjs.org/typescript cache-miss
+116 silly fetch manifest vscode-languageserver-protocol@~3.17.5
+117 silly packumentCache full:https://registry.npmjs.org/vscode-languageserver-protocol cache-miss
+118 silly fetch manifest vscode-languageserver-types@~3.17.5
+119 silly packumentCache full:https://registry.npmjs.org/vscode-languageserver-types cache-miss
+120 silly fetch manifest @vscode/l10n@^0.0.18
+121 silly packumentCache full:https://registry.npmjs.org/@vscode%2fl10n cache-miss
+122 http cache https://registry.npmjs.org/vscode-languageserver-types 5ms (cache hit)
+123 silly packumentCache full:https://registry.npmjs.org/vscode-languageserver-types set size:307546 disposed:false
+124 silly fetch manifest vscode-css-languageservice@^6.2.14
+125 silly packumentCache full:https://registry.npmjs.org/vscode-css-languageservice cache-miss
+126 http fetch GET 200 https://registry.npmjs.org/js-cookie 183ms (cache updated)
+127 silly packumentCache full:https://registry.npmjs.org/js-cookie set size:undefined disposed:false
+128 silly fetch manifest vscode-html-languageservice@^5.2.0
+129 silly packumentCache full:https://registry.npmjs.org/vscode-html-languageservice cache-miss
+130 http fetch GET 200 https://registry.npmjs.org/glob 195ms (cache updated)
+131 silly packumentCache full:https://registry.npmjs.org/glob set size:undefined disposed:false
+132 silly fetch manifest vscode-languageserver@^9.0.1
+133 silly packumentCache full:https://registry.npmjs.org/vscode-languageserver cache-miss
+134 http fetch GET 200 https://registry.npmjs.org/config-chain 200ms (cache updated)
+135 silly packumentCache full:https://registry.npmjs.org/config-chain set size:undefined disposed:false
+136 silly fetch manifest vscode-languageserver-textdocument@^1.0.11
+137 silly packumentCache full:https://registry.npmjs.org/vscode-languageserver-textdocument cache-miss
+138 http fetch GET 200 https://registry.npmjs.org/nopt 199ms (cache updated)
+139 silly packumentCache full:https://registry.npmjs.org/nopt set size:undefined disposed:false
+140 silly fetch manifest vscode-uri@^3.0.8
+141 silly packumentCache full:https://registry.npmjs.org/vscode-uri cache-miss
+142 http fetch GET 200 https://registry.npmjs.org/editorconfig 203ms (cache updated)
+143 silly packumentCache full:https://registry.npmjs.org/editorconfig set size:undefined disposed:false
+144 silly fetch manifest cls-hooked@^4.2.2
+145 silly packumentCache full:https://registry.npmjs.org/cls-hooked cache-miss
+146 http cache https://registry.npmjs.org/vscode-languageserver 6ms (cache hit)
+147 silly packumentCache full:https://registry.npmjs.org/vscode-languageserver set size:699917 disposed:false
+148 silly fetch manifest @azure/core-auth@^1.5.0
+149 silly packumentCache full:https://registry.npmjs.org/@azure%2fcore-auth cache-miss
+150 http cache https://registry.npmjs.org/vscode-uri 8ms (cache hit)
+151 silly packumentCache full:https://registry.npmjs.org/vscode-uri set size:75563 disposed:false
+152 silly fetch manifest @azure/core-util@1.2.0
+153 silly packumentCache full:https://registry.npmjs.org/@azure%2fcore-util cache-miss
+154 http fetch GET 200 https://registry.npmjs.org/vscode-languageserver-protocol 210ms (cache updated)
+155 silly packumentCache full:https://registry.npmjs.org/vscode-languageserver-protocol set size:undefined disposed:false
+156 silly fetch manifest @opentelemetry/api@^1.4.1
+157 silly packumentCache full:https://registry.npmjs.org/@opentelemetry%2fapi cache-miss
+158 http fetch GET 200 https://registry.npmjs.org/vscode-css-languageservice 241ms (cache updated)
+159 silly packumentCache full:https://registry.npmjs.org/vscode-css-languageservice set size:undefined disposed:false
+160 silly fetch manifest diagnostic-channel@1.1.1
+161 silly packumentCache full:https://registry.npmjs.org/diagnostic-channel cache-miss
+162 http fetch GET 200 https://registry.npmjs.org/vscode-html-languageservice 231ms (cache updated)
+163 silly packumentCache full:https://registry.npmjs.org/vscode-html-languageservice set size:undefined disposed:false
+164 silly fetch manifest @opentelemetry/core@^1.15.2
+165 silly packumentCache full:https://registry.npmjs.org/@opentelemetry%2fcore cache-miss
+166 http fetch GET 200 https://registry.npmjs.org/cls-hooked 229ms (cache updated)
+167 silly packumentCache full:https://registry.npmjs.org/cls-hooked set size:undefined disposed:false
+168 silly fetch manifest @azure/core-rest-pipeline@1.10.1
+169 silly packumentCache full:https://registry.npmjs.org/@azure%2fcore-rest-pipeline cache-miss
+170 http fetch GET 200 https://registry.npmjs.org/@azure%2fcore-util 258ms (cache updated)
+171 silly packumentCache full:https://registry.npmjs.org/@azure%2fcore-util set size:undefined disposed:false
+172 silly fetch manifest continuation-local-storage@^3.2.1
+173 silly packumentCache full:https://registry.npmjs.org/continuation-local-storage cache-miss
+174 http fetch GET 200 https://registry.npmjs.org/@opentelemetry%2fapi 260ms (cache updated)
+175 silly packumentCache full:https://registry.npmjs.org/@opentelemetry%2fapi set size:undefined disposed:false
+176 silly fetch manifest @opentelemetry/sdk-trace-base@^1.15.2
+177 silly packumentCache full:https://registry.npmjs.org/@opentelemetry%2fsdk-trace-base cache-miss
+178 http fetch GET 200 https://registry.npmjs.org/vscode-languageserver-textdocument 278ms (cache updated)
+179 silly packumentCache full:https://registry.npmjs.org/vscode-languageserver-textdocument set size:undefined disposed:false
+180 silly fetch manifest diagnostic-channel-publishers@1.0.7
+181 silly packumentCache full:https://registry.npmjs.org/diagnostic-channel-publishers cache-miss
+182 http fetch GET 200 https://registry.npmjs.org/diagnostic-channel 232ms (cache updated)
+183 silly packumentCache full:https://registry.npmjs.org/diagnostic-channel set size:undefined disposed:false
+184 silly fetch manifest @opentelemetry/semantic-conventions@^1.15.2
+185 silly packumentCache full:https://registry.npmjs.org/@opentelemetry%2fsemantic-conventions cache-miss
+186 http fetch GET 200 https://registry.npmjs.org/@azure%2fcore-auth 484ms (cache updated)
+187 silly packumentCache full:https://registry.npmjs.org/@azure%2fcore-auth set size:undefined disposed:false
+188 silly fetch manifest @microsoft/applicationinsights-web-snippet@^1.0.1
+189 silly packumentCache full:https://registry.npmjs.org/@microsoft%2fapplicationinsights-web-snippet cache-miss
+190 http fetch GET 200 https://registry.npmjs.org/continuation-local-storage 225ms (cache updated)
+191 silly packumentCache full:https://registry.npmjs.org/continuation-local-storage set size:undefined disposed:false
+192 silly fetch manifest @azure/opentelemetry-instrumentation-azure-sdk@^1.0.0-beta.5
+193 silly packumentCache full:https://registry.npmjs.org/@azure%2fopentelemetry-instrumentation-azure-sdk cache-miss
+194 http fetch GET 200 https://registry.npmjs.org/diagnostic-channel-publishers 225ms (cache updated)
+195 silly packumentCache full:https://registry.npmjs.org/diagnostic-channel-publishers set size:undefined disposed:false
+196 silly fetch manifest @nodelib/fs.stat@^2.0.2
+197 silly packumentCache full:https://registry.npmjs.org/@nodelib%2ffs.stat cache-miss
+198 http fetch GET 200 https://registry.npmjs.org/@opentelemetry%2fsdk-trace-base 236ms (cache updated)
+199 silly packumentCache full:https://registry.npmjs.org/@opentelemetry%2fsdk-trace-base set size:undefined disposed:false
+200 silly fetch manifest @nodelib/fs.walk@^1.2.3
+201 silly packumentCache full:https://registry.npmjs.org/@nodelib%2ffs.walk cache-miss
+202 http fetch GET 200 https://registry.npmjs.org/@opentelemetry%2fcore 309ms (cache updated)
+203 silly packumentCache full:https://registry.npmjs.org/@opentelemetry%2fcore set size:undefined disposed:false
+204 silly fetch manifest glob-parent@^5.1.2
+205 silly packumentCache full:https://registry.npmjs.org/glob-parent cache-miss
+206 http fetch GET 200 https://registry.npmjs.org/@opentelemetry%2fsemantic-conventions 320ms (cache updated)
+207 silly packumentCache full:https://registry.npmjs.org/@opentelemetry%2fsemantic-conventions set size:undefined disposed:false
+208 silly fetch manifest merge2@^1.3.0
+209 silly packumentCache full:https://registry.npmjs.org/merge2 cache-miss
+210 http fetch GET 200 https://registry.npmjs.org/@azure%2fcore-rest-pipeline 407ms (cache updated)
+211 silly packumentCache full:https://registry.npmjs.org/@azure%2fcore-rest-pipeline set size:undefined disposed:false
+212 silly fetch manifest micromatch@^4.0.8
+213 silly packumentCache full:https://registry.npmjs.org/micromatch cache-miss
+214 http cache https://registry.npmjs.org/micromatch 5ms (cache hit)
+215 silly packumentCache full:https://registry.npmjs.org/micromatch set size:240630 disposed:false
+216 silly fetch manifest jsonfile@^6.0.1
+217 silly packumentCache full:https://registry.npmjs.org/jsonfile cache-miss
+218 http fetch GET 200 https://registry.npmjs.org/@vscode%2fl10n 914ms (cache updated)
+219 silly packumentCache full:https://registry.npmjs.org/@vscode%2fl10n set size:undefined disposed:false
+220 silly fetch manifest graceful-fs@^4.2.0
+221 silly packumentCache full:https://registry.npmjs.org/graceful-fs cache-miss
+222 http fetch GET 200 https://registry.npmjs.org/@nodelib%2ffs.stat 279ms (cache updated)
+223 silly packumentCache full:https://registry.npmjs.org/@nodelib%2ffs.stat set size:undefined disposed:false
+224 silly fetch manifest universalify@^2.0.0
+225 silly packumentCache full:https://registry.npmjs.org/universalify cache-miss
+226 http fetch GET 200 https://registry.npmjs.org/glob-parent 258ms (cache updated)
+227 silly packumentCache full:https://registry.npmjs.org/glob-parent set size:undefined disposed:false
+228 silly fetch manifest @selderee/plugin-htmlparser2@^0.11.0
+229 silly packumentCache full:https://registry.npmjs.org/@selderee%2fplugin-htmlparser2 cache-miss
+230 http fetch GET 200 https://registry.npmjs.org/@nodelib%2ffs.walk 274ms (cache updated)
+231 silly packumentCache full:https://registry.npmjs.org/@nodelib%2ffs.walk set size:undefined disposed:false
+232 silly fetch manifest deepmerge@^4.3.1
+233 silly packumentCache full:https://registry.npmjs.org/deepmerge cache-miss
+234 http fetch GET 200 https://registry.npmjs.org/@microsoft%2fapplicationinsights-web-snippet 325ms (cache updated)
+235 silly packumentCache full:https://registry.npmjs.org/@microsoft%2fapplicationinsights-web-snippet set size:undefined disposed:false
+236 silly fetch manifest dom-serializer@^2.0.0
+237 silly packumentCache full:https://registry.npmjs.org/dom-serializer cache-miss
+238 http fetch GET 200 https://registry.npmjs.org/merge2 246ms (cache updated)
+239 silly packumentCache full:https://registry.npmjs.org/merge2 set size:undefined disposed:false
+240 silly fetch manifest htmlparser2@^8.0.2
+241 silly packumentCache full:https://registry.npmjs.org/htmlparser2 cache-miss
+242 http fetch GET 200 https://registry.npmjs.org/@azure%2fopentelemetry-instrumentation-azure-sdk 403ms (cache updated)
+243 silly packumentCache full:https://registry.npmjs.org/@azure%2fopentelemetry-instrumentation-azure-sdk set size:undefined disposed:false
+244 silly fetch manifest selderee@^0.11.0
+245 silly packumentCache full:https://registry.npmjs.org/selderee cache-miss
+246 http fetch GET 200 https://registry.npmjs.org/jsonfile 260ms (cache updated)
+247 silly packumentCache full:https://registry.npmjs.org/jsonfile set size:undefined disposed:false
+248 silly fetch manifest braces@^3.0.3
+249 silly packumentCache full:https://registry.npmjs.org/braces cache-miss
+250 http fetch GET 200 https://registry.npmjs.org/graceful-fs 204ms (cache updated)
+251 silly packumentCache full:https://registry.npmjs.org/graceful-fs set size:undefined disposed:false
+252 silly fetch manifest picomatch@^2.3.1
+253 silly packumentCache full:https://registry.npmjs.org/picomatch cache-miss
+254 http fetch GET 200 https://registry.npmjs.org/deepmerge 135ms (cache updated)
+255 silly packumentCache full:https://registry.npmjs.org/deepmerge set size:undefined disposed:false
+256 silly fetch manifest long@^5.0.0
+257 silly packumentCache full:https://registry.npmjs.org/long cache-miss
+258 http fetch GET 200 https://registry.npmjs.org/universalify 140ms (cache updated)
+259 silly packumentCache full:https://registry.npmjs.org/universalify set size:undefined disposed:false
+260 silly fetch manifest @types/node@>=13.7.0
+261 silly packumentCache full:https://registry.npmjs.org/@types%2fnode cache-miss
+262 http fetch GET 200 https://registry.npmjs.org/@selderee%2fplugin-htmlparser2 139ms (cache updated)
+263 silly packumentCache full:https://registry.npmjs.org/@selderee%2fplugin-htmlparser2 set size:undefined disposed:false
+264 silly fetch manifest @protobufjs/path@^1.1.2
+265 silly packumentCache full:https://registry.npmjs.org/@protobufjs%2fpath cache-miss
+266 http fetch GET 200 https://registry.npmjs.org/dom-serializer 106ms (cache updated)
+267 silly packumentCache full:https://registry.npmjs.org/dom-serializer set size:undefined disposed:false
+268 silly fetch manifest @protobufjs/pool@^1.1.0
+269 silly packumentCache full:https://registry.npmjs.org/@protobufjs%2fpool cache-miss
+270 http fetch GET 200 https://registry.npmjs.org/htmlparser2 79ms (cache updated)
+271 silly packumentCache full:https://registry.npmjs.org/htmlparser2 set size:undefined disposed:false
+272 silly fetch manifest @protobufjs/utf8@^1.1.0
+273 silly packumentCache full:https://registry.npmjs.org/@protobufjs%2futf8 cache-miss
+274 http fetch GET 200 https://registry.npmjs.org/typescript 1138ms (cache updated)
+275 silly packumentCache full:https://registry.npmjs.org/typescript set size:undefined disposed:false
+276 silly fetch manifest @protobufjs/fetch@^1.1.0
+277 silly packumentCache full:https://registry.npmjs.org/@protobufjs%2ffetch cache-miss
+278 http fetch GET 200 https://registry.npmjs.org/@protobufjs%2fpool 69ms (cache updated)
+279 silly packumentCache full:https://registry.npmjs.org/@protobufjs%2fpool set size:undefined disposed:false
+280 silly fetch manifest @protobufjs/float@^1.0.2
+281 silly packumentCache full:https://registry.npmjs.org/@protobufjs%2ffloat cache-miss
+282 http fetch GET 200 https://registry.npmjs.org/selderee 91ms (cache updated)
+283 silly packumentCache full:https://registry.npmjs.org/selderee set size:undefined disposed:false
+284 silly fetch manifest @protobufjs/base64@^1.1.2
+285 silly packumentCache full:https://registry.npmjs.org/@protobufjs%2fbase64 cache-miss
+286 http fetch GET 200 https://registry.npmjs.org/braces 86ms (cache updated)
+287 silly packumentCache full:https://registry.npmjs.org/braces set size:undefined disposed:false
+288 silly fetch manifest @protobufjs/codegen@^2.0.4
+289 silly packumentCache full:https://registry.npmjs.org/@protobufjs%2fcodegen cache-miss
+290 http fetch GET 200 https://registry.npmjs.org/picomatch 78ms (cache updated)
+291 silly packumentCache full:https://registry.npmjs.org/picomatch set size:undefined disposed:false
+292 silly fetch manifest @protobufjs/inquire@^1.1.0
+293 silly packumentCache full:https://registry.npmjs.org/@protobufjs%2finquire cache-miss
+294 http fetch GET 200 https://registry.npmjs.org/long 76ms (cache updated)
+295 silly packumentCache full:https://registry.npmjs.org/long set size:undefined disposed:false
+296 silly fetch manifest @protobufjs/aspromise@^1.1.2
+297 silly packumentCache full:https://registry.npmjs.org/@protobufjs%2faspromise cache-miss
+298 http fetch GET 200 https://registry.npmjs.org/@protobufjs%2fpath 79ms (cache updated)
+299 silly packumentCache full:https://registry.npmjs.org/@protobufjs%2fpath set size:undefined disposed:false
+300 silly fetch manifest @protobufjs/eventemitter@^1.1.0
+301 silly packumentCache full:https://registry.npmjs.org/@protobufjs%2feventemitter cache-miss
+302 http fetch GET 200 https://registry.npmjs.org/@protobufjs%2futf8 76ms (cache updated)
+303 silly packumentCache full:https://registry.npmjs.org/@protobufjs%2futf8 set size:undefined disposed:false
+304 silly fetch manifest agent-base@^7.1.2
+305 silly packumentCache full:https://registry.npmjs.org/agent-base cache-miss
