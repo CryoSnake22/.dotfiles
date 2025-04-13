@@ -11,7 +11,6 @@ return {
   config = function()
     local cmp = require("cmp")
     local lspkind = require("lspkind")
-
     cmp.setup({
       snippet = {
         expand = function(args)
@@ -24,9 +23,16 @@ return {
         ["<CR>"] = cmp.mapping.confirm({ select = true }),
       }),
       window = {
-        documentation = cmp.config.window.bordered({
-          winhighlight = "Normal:Pmenu,FloatBorder:Pmenu,CursorLine:PmenuSel,Search:None",
-        }),
+        completion = {
+          scrollbar = false,
+          border = "rounded",
+          winhighlight = "Normal:CmpNormal,FloatBorder:CmpBorder",
+        },
+        documentation = {
+          scrollbar = false,
+          border = "rounded",
+          winhighlight = "Normal:CmpNormal,FloatBorder:CmpBorder",
+        },
       },
       sources = cmp.config.sources({
         { name = "luasnip" },

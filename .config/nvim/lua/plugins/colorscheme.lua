@@ -20,10 +20,20 @@ return {
   --   end,
   -- },
   {
+    "vague2k/vague.nvim",
+    config = function()
+      -- NOTE: you do not need to call setup if you don't want to.
+      require("vague").setup({
+        -- optional configuration here
+        transparent = false,
+      })
+    end,
+  },
+  {
     "sainnhe/sonokai",
     priority = 999,
     config = function()
-      vim.g.sonokai_transparent_background = "1"
+      vim.g.sonokai_transparent_background = "2"
       vim.g.sonokai_enable_italic = "1"
       vim.g.sonokai_style = "andromeda"
       vim.cmd.colorscheme("sonokai")

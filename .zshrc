@@ -8,7 +8,8 @@ export SCHOOL="/Users/charlo/Home/School/season_2/"
 # alias fzb='open $(find $BOK -type f|fzf -m)'
 export BOK="/Users/charlo/home/Books"
 export HOMIE="/Users/charlo/home"
-export TYPST_PATH="~/.config/typst/lib"
+export TYPST="/Users/charlo/Library/Application Support/typst"
+
 
 
 # alias fzb='open "$(find "$BOK" -type f | sed "s|.*/08_Books/|08_Books/|" | fzf -m | sed "s|^08_Books/|$BOK/|")"'

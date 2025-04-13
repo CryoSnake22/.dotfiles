@@ -3,6 +3,9 @@ vim.g.mapleader = " "
 vim.scriptencoding = "utf-8"
 vim.opt.encoding = "utf-8"
 vim.opt.fileencoding = "utf-8"
+-- Apparently this fixes the transparent window problem
+vim.opt.pumblend = 0
+vim.opt.winblend = 0
 
 vim.opt.number = true
 vim.opt.guicursor = ""
