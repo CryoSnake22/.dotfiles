@@ -1,2 +1,41 @@
 set synctex true
 set auto-reload true
+set open-first-page false
+# Appearance
+# set recolor               true        # Invert colors (like dark mode)
+# set recolor-keephue       true        # Keeps some hue when recoloring
+
+
+
+set font "monospace normal 18"
+set adjust-open           best-fit    # Zoom to fit when opening
+set statusbar-h-padding   10
+set statusbar-v-padding   5
+set selection-clipboard   clipboard   # Allows Ctrl+C to copy text
+set incremental-search    true
+# set highlight-color ""          # gold/yellow for all matches
+# set highlight-active-color "#00FFFF"   # cyan for the current match
+# set recolor-highlight-color "#FF00FF"  # magenta for recolor mode
+set completion-bg         "#282a36"   # Dracula theme-ish
+set completion-fg         "#f8f8f2"
+set completion-highlight-fg "#f8f8f2"
+set recolor-lightcolor    "#1e1e1e"   # Background in dark mode
+set recolor-darkcolor     "#e0e0e0"   # Text in dark mode
+set guioptions ""
+
+
+# Scrolling
+set scroll-step           100
+set zoom-step             10
+set scroll-full-overlap   0.05        # 5% overlap when jumping pages
+
+# Navigation
+map <C-j> scroll down
+map <C-k> scroll up
+map <C-h> scroll left
+map <C-l> scroll right
+
+# UI toggles
+map <C-b> toggle_statusbar
+map <C-n> toggle_inputbar
+map <C-m> toggle_index

@@ -108,7 +108,7 @@ return {
     { trig = "figt", name = "Insert table figure" },
     fmt(
       [[
-    figure(
+    #figure(
       table(
         columns: ({}),
         align: ({}),
@@ -131,7 +131,7 @@ return {
     { trig = "figi", name = "Insert image figure" },
     fmt(
       [[
-    figure(
+    #figure(
       image("{}", width: {}, height: {}),
       caption: [{}],
     ) <fimg-{}>{}]],
@@ -150,7 +150,7 @@ return {
     { trig = "figc", name = "Insert code figure" },
     fmt(
       [[
-    figure(
+    #figure(
       caption: [{}],
     )[
     ```{}
@@ -288,17 +288,13 @@ return {
     fmta(
       [[
       #theorem(
-        "<>",
-        footer: [<>]
-      )[
-        <>
-      ]
-      
+        [<>],
+        [<>]
+      )      
       <>]],
       {
         i(1, "title"),
         i(2, "footer text"),
-        d(3, get_visual),
         i(0),
       }
     )

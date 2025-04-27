@@ -22,6 +22,12 @@ vim.keymap.set("n", "<leader>lt", function()
   end, 100) -- Add a small delay to allow Zathura to launch
 end, { desc = "Compile LaTeX and open PDF in Zathura" })
 
+keymap.set("n", "<leader>r", ":MagmaEvaluateOperator<CR>")
+keymap.set("n", "<leader>rr", ":MagmaEvaluateLine<CR>")
+keymap.set("n", "<leader>rc", ":MagmaReevaluateCell<CR>")
+keymap.set("n", "<leader>rd", ":MagmaDelete<CR>")
+keymap.set("n", "<leader>ro", ":MagmaShowOuput<CR>")
+
 keymap.set("n", "x", '"_x')
 -- Increment/decrement
 keymap.set("n", "+", "<C-a>")

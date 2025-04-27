@@ -11,12 +11,12 @@ export HOMIE="/Users/charlo/home"
 export TYPST="/Users/charlo/Library/Application Support/typst"
 
 
-
 # alias fzb='open "$(find "$BOK" -type f | sed "s|.*/08_Books/|08_Books/|" | fzf -m | sed "s|^08_Books/|$BOK/|")"'
-alias fb='selection=$(find "$BOK" -type f -iname "*.pdf" | sed "s|.*/Books/||" | fzf -m --exact) && open $BOK/$selection'
+alias fb='selection=$(find "$BOK" -type f -iname "*.pdf" | sed "s|.*/Books/||" | fzf -m --exact) && zf $BOK/$selection'
 alias fh='selection=$(find "$HOMIE" -type d ! -path "$HOMIE/Obsidian Notes/" ! -path "$HOMIE/Obsidian Notes/*" ! -path "$HOMIE/.obsidian/" ! -path "$HOMIE/.obsidian/*"| fzf -m --exact) && cd $selection'
+alias zf='~/.dotfiles/scripts/zathura_focus.sh'
 # Set up fzf key bindings and fuzzy completion
-
+source ~/.dotfiles/.keys
 
 
 

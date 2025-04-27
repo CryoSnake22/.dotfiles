@@ -100,14 +100,12 @@ local cppcompile = Terminal:new({
     -- string.format("g++ -std=c++20 " .. filepath .. "-o " .. filepath .. ":r \n")
     vim.cmd("startinsert!")
 
-    vim.api.nvim_buf_set_keymap(term.bufnr, "n", "q", "<cmd>close<CR>", { noremap = true, silent = true })
     vim.defer_fn(function()
       vim.api.nvim_chan_send(term.job_id, cmd_to_run)
       vim.api.nvim_chan_send(term.job_id, "./" .. MUtils.filepathnoext .. "\n")
     end, 100)
   end,
 })
-
 MUtils.edit = function(fn, line_number)
   local edit_cmd = string.format(":e %s", fn)
   if line_number ~= nil then
