@@ -3,12 +3,16 @@
 # Importing the classpath for the java junit tests
 export CLASSPATH=$CLASSPATH:/Users/charlo/dev/java/classes/junit-4.13.jar:/Users/charlo/dev/java/classes/hamcrest-core-1.3.jar:.
 
-export SCHOOL="/Users/charlo/Home/School/season_2/"
+export SCHOOL="/Users/charlo/Home/School/season_3/"
 # export BOK="/Users/charlo/home/Obsidian Notes/BIORAM/08_Books"
 # alias fzb='open $(find $BOK -type f|fzf -m)'
 export BOK="/Users/charlo/home/Books"
 export HOMIE="/Users/charlo/home"
 export TYPST="/Users/charlo/Library/Application Support/typst"
+export BLOG="/Users/charlo/home/Coding/Blog"
+# Force conda env to always show on the left
+# export PROMPT='$(conda_prompt_info)%n@%m:%~ $ '
+PROMPT='$(echo "($CONDA_DEFAULT_ENV)") %n@%m:%~ $ '
 
 
 # alias fzb='open "$(find "$BOK" -type f | sed "s|.*/08_Books/|08_Books/|" | fzf -m | sed "s|^08_Books/|$BOK/|")"'
@@ -148,17 +152,21 @@ source $ZSH/oh-my-zsh.sh
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/charlo/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup="$('/opt/homebrew/Caskroom/mambaforge/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/Users/charlo/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/charlo/anaconda3/etc/profile.d/conda.sh"
+    if [ -f "/opt/homebrew/Caskroom/mambaforge/base/etc/profile.d/conda.sh" ]; then
+        . "/opt/homebrew/Caskroom/mambaforge/base/etc/profile.d/conda.sh"
     else
-        export PATH="/Users/charlo/anaconda3/bin:$PATH"
+        export PATH="/opt/homebrew/Caskroom/mambaforge/base/bin:$PATH"
     fi
 fi
 unset __conda_setup
+
+if [ -f "/opt/homebrew/Caskroom/mambaforge/base/etc/profile.d/mamba.sh" ]; then
+    . "/opt/homebrew/Caskroom/mambaforge/base/etc/profile.d/mamba.sh"
+fi
 # <<< conda initialize <<<
 
 source ~/powerlevel10k/powerlevel10k.zsh-theme
@@ -171,3 +179,7 @@ export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
+alias ls="eza --icons --group-directories-first -ha"
+alias cd="z"
+alias zop="zathura"
+eval "$(zoxide init zsh)"
