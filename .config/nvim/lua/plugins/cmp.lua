@@ -11,6 +11,8 @@ return {
   config = function()
     local cmp = require("cmp")
     local lspkind = require("lspkind")
+    vim.api.nvim_set_hl(0, "CmpNormal", { bg = "NONE", fg = "NONE" })
+
     cmp.setup({
       snippet = {
         expand = function(args)

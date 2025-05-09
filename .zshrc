@@ -22,6 +22,8 @@ alias zf='~/.dotfiles/scripts/zathura_focus.sh'
 # Set up fzf key bindings and fuzzy completion
 source ~/.dotfiles/.keys
 
+export TERM="xterm-256color"
+export COLORTERM=truecolor
 
 
 

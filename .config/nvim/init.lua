@@ -117,5 +117,4 @@ end
 MUtils.cppcompile = function()
   cppcompile:toggle()
 end
-
 vim.keymap.set("n", "<leader>cp", _G.MUtils.cppcompile, { silent = true })
