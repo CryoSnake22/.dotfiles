@@ -25,7 +25,8 @@ return {
       -- NOTE: you do not need to call setup if you don't want to.
       require("vague").setup({
         -- optional configuration here
-        transparent = false,
+        transparent = true,
+        enable_italic = "1",
       })
     end,
   },

@@ -6,7 +6,7 @@ vim.opt.fileencoding = "utf-8"
 -- Apparently this fixes the transparent window problem
 vim.opt.pumblend = 0
 vim.opt.winblend = 0
-
+vim.opt.relativenumber = true
 vim.opt.number = true
 vim.opt.guicursor = ""
 vim.opt.title = true
