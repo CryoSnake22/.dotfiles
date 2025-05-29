@@ -20,7 +20,21 @@ return {
   --   end,
   -- },
   {
+    "CryoSnake22/vagueZ.nvim",
+    priority = 999,
+    config = function()
+      -- NOTE: you do not need to call setup if you don't want to.
+      require("vagueZ").setup({
+        -- optional configuration here
+        transparent = true,
+        enable_italic = "1",
+      })
+      -- vim.cmd.colorscheme("vagueZ")
+    end,
+  },
+  {
     "vague2k/vague.nvim",
+    priority = 999,
     config = function()
       -- NOTE: you do not need to call setup if you don't want to.
       require("vague").setup({
@@ -28,11 +42,11 @@ return {
         transparent = true,
         enable_italic = "1",
       })
+      -- vim.cmd.colorscheme("vague")
     end,
   },
   {
     "sainnhe/sonokai",
-    priority = 999,
     config = function()
       vim.g.sonokai_transparent_background = "2"
       vim.g.sonokai_enable_italic = "1"
@@ -42,7 +56,6 @@ return {
   },
   {
     "yorumicolors/yorumi.nvim",
-    priority = 998,
   },
   {
     "zenbones-theme/zenbones.nvim",
@@ -51,7 +64,6 @@ return {
     -- In Vim, compat mode is turned on as Lush only works in Neovim.
     dependencies = "rktjmp/lush.nvim",
     lazy = false,
-    priority = 997,
     -- you can set set configuration options here
     -- config = function()
     --     vim.g.zenbones_darken_comments = 45
@@ -61,7 +73,6 @@ return {
   },
   {
     "folke/tokyonight.nvim",
-    priority = 999,
     config = function()
       vim.g.tokyonight_transparent_background = "1"
       vim.g.tokyonight_enable_italic = "1"

@@ -57,7 +57,7 @@ keymap.set("n", "<C-S-h>", "<C-w><")
 keymap.set("n", "<C-S-l>", "<C-w>>")
 keymap.set("n", "<C-S-k>", "<C-w>+")
 keymap.set("n", "<C-S-j>", "<C-w>-")
-
+keymap.set("n", "<leader>ca", ":lua vim.lsp.buf.code_action()", { desc = "LSP code action" })
 -- Diagnostics
 -- keymap.set("n", "<C-j>", function()
 --   vim.diagnostic.goto_next()

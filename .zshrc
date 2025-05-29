@@ -6,6 +6,7 @@ export CLASSPATH=$CLASSPATH:/Users/charlo/dev/java/classes/junit-4.13.jar:/Users
 export SCHOOL="/Users/charlo/Home/School/season_3/"
 # export BOK="/Users/charlo/home/Obsidian Notes/BIORAM/08_Books"
 # alias fzb='open $(find $BOK -type f|fzf -m)'
+export FIREP="/Users/charlo/Library/Application Support/Firefox/Profiles/jcug2r6z.default-release/"
 export BOK="/Users/charlo/home/Books"
 export HOMIE="/Users/charlo/home"
 export TYPST="/Users/charlo/Library/Application Support/typst"
@@ -16,8 +17,10 @@ PROMPT='$(echo "($CONDA_DEFAULT_ENV)") %n@%m:%~ $ '
 
 
 # alias fzb='open "$(find "$BOK" -type f | sed "s|.*/08_Books/|08_Books/|" | fzf -m | sed "s|^08_Books/|$BOK/|")"'
+alias firep='/Applications/Firefox.app/Contents/MacOS/firefox --no-remote --profile $FIREP'
 alias fb='selection=$(find "$BOK" -type f -iname "*.pdf" | sed "s|.*/Books/||" | fzf -m --exact) && zf $BOK/$selection'
 alias fh='selection=$(find "$HOMIE" -type d ! -path "$HOMIE/Obsidian Notes/" ! -path "$HOMIE/Obsidian Notes/*" ! -path "$HOMIE/.obsidian/" ! -path "$HOMIE/.obsidian/*"| fzf -m --exact) && cd $selection'
+alias fo='selection=$(find "$HOMIE/Obsidian Notes/" -type f -iname "*.md" | sed "s|.*/BIORAM/||" | fzf -m --exact) && nvim $selection'
 alias zf='~/.dotfiles/scripts/zathura_focus.sh'
 # Set up fzf key bindings and fuzzy completion
 source ~/.dotfiles/.keys
@@ -119,7 +122,14 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(
+    git 
+    zsh-autosuggestions 
+    zsh-syntax-highlighting
+    zsh-completions
+    fzf
+    fzf-tab
+)
 ZSH_THEME="powerlevel10k/powerlevel10k"
 source $ZSH/oh-my-zsh.sh
 . "$HOME/.cargo/env"
