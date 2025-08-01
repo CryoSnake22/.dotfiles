@@ -94,7 +94,7 @@ return {
   {
     "neovim/nvim-lspconfig",
     opts = {
-      inlay_hints = { enabled = true },
+      inlay_hints = { enabled = false },
       servers = {
         -- pyright = {
         --   settings = {
@@ -141,9 +141,9 @@ return {
           },
         },
         clangd = {
-          cmd = { "clangd", "--compile-commands-dir=build" },
+          cmd = { "clangd", "--background-index", "--compile-commands-dir=cmake-build" },
           filetypes = { "c", "cpp", "objc", "objcpp" },
-          root_dir = require("lspconfig").util.root_pattern("compile_commands.json", ".git"),
+          root_dir = require("lspconfig").util.root_pattern("cmake-build/compile_commands.json", ".git"),
         },
         cmake = {
           cmd = { "cmake-language-server" },

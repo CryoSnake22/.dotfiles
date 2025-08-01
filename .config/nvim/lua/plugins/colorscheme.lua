@@ -20,21 +20,8 @@ return {
   --   end,
   -- },
   {
-    "CryoSnake22/vagueZ.nvim",
-    priority = 999,
-    config = function()
-      -- NOTE: you do not need to call setup if you don't want to.
-      require("vagueZ").setup({
-        -- optional configuration here
-        transparent = true,
-        enable_italic = "1",
-      })
-      -- vim.cmd.colorscheme("vagueZ")
-    end,
-  },
-  {
     "vague2k/vague.nvim",
-    priority = 999,
+    -- priority = 999,
     config = function()
       -- NOTE: you do not need to call setup if you don't want to.
       require("vague").setup({
@@ -51,7 +38,19 @@ return {
       vim.g.sonokai_transparent_background = "2"
       vim.g.sonokai_enable_italic = "1"
       vim.g.sonokai_style = "andromeda"
-      vim.cmd.colorscheme("sonokai")
+      -- vim.cmd.colorscheme("sonokai")
+    end,
+  },
+  {
+    "CryoSnake22/vagueZ.nvim",
+    config = function()
+      -- NOTE: you do not need to call setup if you don't want to.
+      require("vagueZ").setup({
+        -- optional configuration here
+        transparent = true,
+        enable_italic = "1",
+      })
+      vim.cmd.colorscheme("vagueZ")
     end,
   },
   {

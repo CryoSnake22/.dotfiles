@@ -7,11 +7,14 @@ return {
     -- tag = "v0.9.1",
     opts = {
       ensure_installed = {
+        "cpp",
         "go",
+        "haskell",
         "python",
         "ninja",
         "rst",
         "javascript",
+        "java",
         "bash",
         "c",
         "diff",
@@ -23,8 +26,6 @@ return {
         "http",
         "jsdoc",
         "jsonc",
-        "markdown",
-        "markdown_inline",
         "printf",
         "query",
         "json",
