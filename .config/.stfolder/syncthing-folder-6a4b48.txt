@@ -1,5 +1,0 @@
-# This directory is a Syncthing folder marker.
-# Do not delete.
-
-folderID: jpenk-ykw6i
-created: 2025-05-28T21:19:39-04:00

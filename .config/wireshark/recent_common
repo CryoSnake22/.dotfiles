@@ -1,4 +1,4 @@
-# Common recent settings file for Wireshark 4.4.6.
+# Common recent settings file for Wireshark 4.4.7.
 #
 # This file is regenerated each time Wireshark is quit
 # and when changing configuration profile.
@@ -12,6 +12,9 @@
 
 ######## Recent display filters (latest last), cannot be altered through command line ########
 
+recent.display_filter: tcp.stream eq 10
+recent.display_filter: tcp.stream eq 19
+recent.display_filter: http.request
 recent.display_filter: tcp.stream eq 2
 recent.display_filter: (ip.addr eq 172.217.13.133 and ip.addr eq 10.0.0.223) and (tcp.port eq 443 and tcp.port eq 64728)
 
@@ -93,7 +96,7 @@ gui.geom.FollowStreamDialog.height: 831
 # true or false (case-insensitive).
 gui.geom.FollowStreamDialog.maximized: false
 # Qt Geometry State (hex byte string).
-gui.geom.FollowStreamDialog.qt_geometry: (null)
+gui.geom.FollowStreamDialog.qt_geometry: 01d9d0cb00030000000000f200000026000004e100000380000000f200000042000004e100000380000000000000000005e8000000f200000042000004e100000380
 
 # Custom colors.
 # List of custom colors selected in Qt color picker.

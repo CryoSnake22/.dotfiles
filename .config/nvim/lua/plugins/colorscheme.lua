@@ -21,7 +21,7 @@ return {
   -- },
   {
     "vague2k/vague.nvim",
-    -- priority = 999,
+    priority = 999,
     config = function()
       -- NOTE: you do not need to call setup if you don't want to.
       require("vague").setup({
@@ -29,7 +29,7 @@ return {
         transparent = true,
         enable_italic = "1",
       })
-      -- vim.cmd.colorscheme("vague")
+      vim.cmd.colorscheme("vague")
     end,
   },
   {
@@ -41,18 +41,18 @@ return {
       -- vim.cmd.colorscheme("sonokai")
     end,
   },
-  {
-    "CryoSnake22/vagueZ.nvim",
-    config = function()
-      -- NOTE: you do not need to call setup if you don't want to.
-      require("vagueZ").setup({
-        -- optional configuration here
-        transparent = true,
-        enable_italic = "1",
-      })
-      vim.cmd.colorscheme("vagueZ")
-    end,
-  },
+  -- {
+  --   "CryoSnake22/vagueZ.nvim",
+  --   config = function()
+  --     -- NOTE: you do not need to call setup if you don't want to.
+  --     require("vagueZ").setup({
+  --       -- optional configuration here
+  --       transparent = true,
+  --       enable_italic = "1",
+  --     })
+  --     vim.cmd.colorscheme("vagueZ")
+  --   end,
+  -- },
   {
     "yorumicolors/yorumi.nvim",
   },

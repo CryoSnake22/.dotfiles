@@ -1,0 +1,90 @@
+
+[[Snippets]]
+  Description = "Scan local subnet"
+  Output = ""
+  Tag = ["recon"]
+  command = "sudo nmap -sP -O 10.0.0.0/24"
+
+[[Snippets]]
+  Description = "Basic Version Scanning for specified ip"
+  Output = ""
+  Tag = ["recon"]
+  command = "sudo nmap -sV <ip>"
+
+[[Snippets]]
+  Description = "get gps longude and latitude from file"
+  Output = ""
+  Tag = ["forensics"]
+  command = "exiftool --gpslatitude --gpslongitude <filename>"
+
+[[Snippets]]
+  Description = "Basic network scanning"
+  Output = ""
+  Tag = ["recon"]
+  command = "nmap <ip>"
+
+[[Snippets]]
+  Description = "Refresh Virus Database"
+  Output = ""
+  Tag = ["AV"]
+  command = "freshclam -v"
+
+[[Snippets]]
+  Description = "Scan with clamav"
+  Output = ""
+  Tag = ["AV"]
+  command = "clamscan -r -i /"
+
+[[Snippets]]
+  Description = "get shasum for file"
+  Output = ""
+  Tag = ["Crypto"]
+  command = "shasum -a <version> <file>"
+
+[[Snippets]]
+  Description = "yt-dlp 720p download"
+  Output = ""
+  Tag = []
+  command = "yt-dlp -f \"bestvideo[height<=720]+bestaudio/best[height<=720]\" \"<URL>\""
+
+[[Snippets]]
+  Description = "Get Date Formatted"
+  Output = ""
+  Tag = []
+  command = "date +%F"
+
+[[Snippets]]
+  Description = "move a screenshot to the current directory"
+  Output = ""
+  Tag = []
+  command = "mv \"<screenshot>\" ./<new_name>.png"
+
+[[Snippets]]
+  Description = "Global Search in Filesystem (not including root)"
+  Output = ""
+  Tag = []
+  command = "sudo find ~/ -iname \"<pattern>\" 2>/dev/null"
+
+[[Snippets]]
+  Description = "Global Search in Filesystem (including root)"
+  Output = ""
+  Tag = []
+  command = "sudo find / -iname \"<pattern>\" 2>/dev/null"
+
+[[Snippets]]
+  Description = "curl-JSON"
+  Output = ""
+  Tag = []
+  command = "curl -s <ip address> | jq"
+
+[[Snippets]]
+  Description = "Laurier Weird Monitor Command (webm)"
+  Output = ""
+  Tag = []
+  command = "ffmpeg -i <input>.webm -c:v libxvid -qscale:v 3 -vf \"scale=720:480 ,fps=25\" -c:a libmp3lame -b:a 128k -ar 44100 -ac 2 <input>.avi"
+
+[[Snippets]]
+  Description = "Init Homework Typst"
+  Output = ""
+  Tag = []
+  command = "typst init @local/homework:0.1.0"

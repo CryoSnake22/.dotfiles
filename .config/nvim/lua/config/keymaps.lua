@@ -26,6 +26,8 @@ keymap.set("n", "<leader>rr", ":MagmaEvaluateLine<CR>")
 keymap.set("n", "<leader>rc", ":MagmaReevaluateCell<CR>")
 keymap.set("n", "<leader>rd", ":MagmaDelete<CR>")
 keymap.set("n", "<leader>ro", ":MagmaShowOuput<CR>")
+-- keymap.set("n", "<C-h>", ":prev<CR>")
+-- keymap.set("n", "<C-l>", ":next<CR>")
 
 keymap.set("n", "x", '"_x')
 -- Increment/decrement

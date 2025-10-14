@@ -126,7 +126,19 @@ return {
       }
     )
   ),
-
+  sb(
+    { trig = "bs", name = "Basic Latex Setup" },
+    fmt(
+      [[
+        #set enum(numbering:"1.")
+        #set page(margin: 1.5cm)
+        #set text(
+            font: "CMU Serif",
+            size:10pt
+        ){}]],
+      { i(0) }
+    )
+  ),
   sb(
     { trig = "figi", name = "Insert image figure" },
     fmt(

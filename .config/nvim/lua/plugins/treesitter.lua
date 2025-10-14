@@ -7,6 +7,7 @@ return {
     -- tag = "v0.9.1",
     opts = {
       ensure_installed = {
+        "prisma",
         "cpp",
         "go",
         "haskell",
@@ -48,7 +49,7 @@ return {
     },
   },
   {
-    "romgrk/nvim-treesitter-context",
+    "nvim-treesitter/nvim-treesitter-context",
     opts = function()
       local tsc = require("treesitter-context")
 

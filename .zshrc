@@ -1,8 +1,19 @@
+#
+#Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
 
+ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
+[ ! -d $ZINIT_HOME ] && mkdir -p "$(dirname $ZINIT_HOME)"
+[ ! -d $ZINIT_HOME/.git ] && git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
+source "${ZINIT_HOME}/zinit.zsh"
 
+export EDITOR='nvim'
 # Importing the classpath for the java junit tests
 export CLASSPATH=$CLASSPATH:/Users/charlo/dev/java/classes/junit-4.13.jar:/Users/charlo/dev/java/classes/hamcrest-core-1.3.jar:.
-
 export SCHOOL="/Users/charlo/Home/School/season_3/"
 # export BOK="/Users/charlo/home/Obsidian Notes/BIORAM/08_Books"
 # alias fzb='open $(find $BOK -type f|fzf -m)'
@@ -13,12 +24,13 @@ export TYPST="/Users/charlo/Library/Application Support/typst"
 export BLOG="/Users/charlo/home/Coding/Blog"
 # Force conda env to always show on the left
 # export PROMPT='$(conda_prompt_info)%n@%m:%~ $ '
-PROMPT='$(echo "($CONDA_DEFAULT_ENV)") %n@%m:%~ $ '
 
 
 # alias fzb='open "$(find "$BOK" -type f | sed "s|.*/08_Books/|08_Books/|" | fzf -m | sed "s|^08_Books/|$BOK/|")"'
+alias g++='g++ -std=c++20'
 alias firep='/Applications/Firefox.app/Contents/MacOS/firefox --no-remote --profile $FIREP'
 alias fb='selection=$(find "$BOK" -type f -iname "*.pdf" | sed "s|.*/Books/||" | fzf -m --exact) && zf $BOK/$selection'
+alias fp='selection=$(find "$BOK" -type f -iname "*.pdf" | sed "s|.*/Books/||" | fzf -m --exact) && open $BOK/$selection'
 alias fh='selection=$(find "$HOMIE" -type d ! -path "$HOMIE/Obsidian Notes/" ! -path "$HOMIE/Obsidian Notes/*" ! -path "$HOMIE/.obsidian/" ! -path "$HOMIE/.obsidian/*"| fzf -m --exact) && cd $selection'
 alias fo='selection=$(find "$HOMIE/Obsidian Notes/" -type f -iname "*.md" | sed "s|.*/BIORAM/||" | fzf -m --exact) && nvim $selection'
 alias zf='~/.dotfiles/scripts/zathura_focus.sh'
@@ -40,9 +52,10 @@ alias inv='nvim $(fzf -m --preview="bat -p --color=always {}")'
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
+
+# if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+#   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+# fi
 
 
 
@@ -53,14 +66,22 @@ fi
 export PATH="/usr/local/texlive/2024/bin/universal-darwin:$PATH"
 export PATH=$PATH:"/opt/homebrew/opt/llvm/bin/"
 export PATH=$PATH:"/Applications/Obsidian.app/Contents/MacOS"
+export PATH="$PATH:$HOME/go/bin"
+
+# /usr/local/bin:/usr/bin:/bin:/Users/you/go/bin
 
 # Path to your oh-my-zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
+#
+# export ZSH="$HOME/.oh-my-zsh"
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="powerlevel10k/powerlevel10k"
+# ZSH_THEME="alanpeabody"
+
+# [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -122,16 +143,93 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(
-    git 
-    zsh-autosuggestions 
-    zsh-syntax-highlighting
-    zsh-completions
-    fzf
-    fzf-tab
-)
-ZSH_THEME="powerlevel10k/powerlevel10k"
-source $ZSH/oh-my-zsh.sh
+
+zinit light zsh-users/zsh-autosuggestions
+zinit light zsh-users/zsh-completions
+zinit light Aloxaf/fzf-tab
+zinit light zsh-users/zsh-syntax-highlighting
+
+zstyle ':completion:*' menu select
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
+zstyle ':completion:*' list-colors ''
+
+# compdef _exiftool exiftool
+
+# trying some stuff:
+
+fart(){
+    echo "prout"
+}
+
+# exif() {
+#   case "$1" in
+#     gps)
+#       shift
+#       exiftool -gpslatitude -gpslongitude -n "$@"
+#       ;;
+#     time)
+#       shift
+#       exiftool -DateTimeOriginal -CreateDate "$@"
+#       ;;
+#     *)
+#       exiftool "$@"
+#       ;;
+#   esac
+# }
+# This defines a whole new executable that I can use to get stuff to happen.
+
+fpath+=~/.zsh/completions
+autoload -Uz _zinit
+autoload -Uz compinit && compinit
+
+stty -ixon
+function memo-select() {
+    memo edit
+}
+zle -N memo-select
+bindkey '^h' memo-select
+
+
+function prev() {
+  PREV=$(fc -lrn | head -n 1)
+  sh -c "pet new `printf %q "$PREV"`"
+}
+function pet-select() {
+  BUFFER=$(pet search --query "$LBUFFER")
+  CURSOR=$#BUFFER
+  zle redisplay
+}
+
+function com(){
+  pet-select
+}
+
+zle -N pet-select
+# bindkey '^p' pet-select
+
+export FZF_CTRL_R_OPTS="
+  --reverse
+  --cycle
+  --info=right
+  --color header:italic
+  --header 'alt+s (pet new)'
+  --preview 'echo {}' --preview-window down:3:hidden:wrap 
+  --bind '?:toggle-preview'
+  --bind 'alt-s:execute(pet new --tag {2..})+abort'"
+
+
+# This makes sure it knows hey when I press tab after exif [tab] get the completions in _exif
+
+
+# plugins=(
+#     git 
+#     zsh-autosuggestions 
+#     zsh-syntax-highlighting
+#     zsh-completions
+#     fzf
+#     fzf-tab
+# )
+# source $ZSH/oh-my-zsh.sh
 . "$HOME/.cargo/env"
 # User configuration
 
@@ -144,7 +242,7 @@ source $ZSH/oh-my-zsh.sh
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
 # else
-#   export EDITOR='mvim'
+#   export EDITOR='nvim'
 # fi
 
 # Compilation flags
@@ -160,7 +258,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -181,7 +278,7 @@ if [ -f "/opt/homebrew/Caskroom/mambaforge/base/etc/profile.d/mamba.sh" ]; then
 fi
 # <<< conda initialize <<<
 
-source ~/powerlevel10k/powerlevel10k.zsh-theme
+# source ~/powerlevel10k/powerlevel10k.zsh-theme
 # bindkey -v
 export KEYTIMEOUT=1
 
@@ -191,8 +288,39 @@ export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
+
 alias ls="eza --icons --group-directories-first -ha"
 alias lg="lazygit"
 alias cd="z"
 alias zop="zathura"
 eval "$(zoxide init zsh)"
+
+
+### Added by Zinit's installer
+if [[ ! -f $HOME/.local/share/zinit/zinit.git/zinit.zsh ]]; then
+    print -P "%F{33} %F{220}Installing %F{33}ZDHARMA-CONTINUUM%F{220} Initiative Plugin Manager (%F{33}zdharma-continuum/zinit%F{220})…%f"
+    command mkdir -p "$HOME/.local/share/zinit" && command chmod g-rwX "$HOME/.local/share/zinit"
+    command git clone https://github.com/zdharma-continuum/zinit "$HOME/.local/share/zinit/zinit.git" && \
+        print -P "%F{33} %F{34}Installation successful.%f%b" || \
+        print -P "%F{160} The clone has failed.%f%b"
+fi
+
+source "$HOME/.local/share/zinit/zinit.git/zinit.zsh"
+(( ${+_comps} )) && _comps[zinit]=_zinit
+
+# Load a few important annexes, without Turbo
+# (this is currently required for annexes)
+zinit ice depth"1" # git clone depth
+zinit light romkatv/powerlevel10k
+zinit light-mode for \
+    zdharma-continuum/zinit-annex-as-monitor \
+    zdharma-continuum/zinit-annex-bin-gem-node \
+    zdharma-continuum/zinit-annex-patch-dl \
+    zdharma-continuum/zinit-annex-rust
+
+### End of Zinit's installer chunk
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+source ~/.ghcup/env
