@@ -4,13 +4,13 @@ end
 _G.dd = function(...)
   -- require("util.debug").dump(...)
 end
+
 vim.api.nvim_create_autocmd("FileType", {
   pattern = "tex",
   callback = function()
     vim.opt_local.wrap = true
   end,
 })
-
 vim.print = _G.dd
 require("config.lazy")
 local function get_class_name()

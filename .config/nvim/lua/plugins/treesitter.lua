@@ -19,6 +19,7 @@ return {
         "bash",
         "c",
         "diff",
+        "c_sharp",
         "html",
         "typescript",
         "css",

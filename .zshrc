@@ -27,6 +27,10 @@ export BLOG="/Users/charlo/home/Coding/Blog"
 
 
 # alias fzb='open "$(find "$BOK" -type f | sed "s|.*/08_Books/|08_Books/|" | fzf -m | sed "s|^08_Books/|$BOK/|")"'
+#
+qcp(){
+  g++ $1 && ./a.out
+}
 alias g++='g++ -std=c++20'
 alias firep='/Applications/Firefox.app/Contents/MacOS/firefox --no-remote --profile $FIREP'
 alias fb='selection=$(find "$BOK" -type f -iname "*.pdf" | sed "s|.*/Books/||" | fzf -m --exact) && zf $BOK/$selection'
@@ -205,7 +209,7 @@ function com(){
 }
 
 zle -N pet-select
-# bindkey '^p' pet-select
+bindkey '^p' pet-select
 
 export FZF_CTRL_R_OPTS="
   --reverse
@@ -324,3 +328,4 @@ zinit light-mode for \
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 source ~/.ghcup/env
+export PATH="/opt/homebrew/opt/dotnet@8/bin:$PATH"

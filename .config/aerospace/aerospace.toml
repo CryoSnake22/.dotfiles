@@ -196,7 +196,8 @@ alt-shift-o = 'move-node-to-workspace O'
 alt-tab = 'workspace-back-and-forth'
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-workspace-to-monitor
 alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'
-
+alt-f = 'fullscreen'
+alt-shift-f = 'macos-native-fullscreen'
 # See: https://nikitabobko.github.io/AeroSpace/commands#mode
 alt-shift-semicolon = 'mode service'
 
@@ -225,6 +226,8 @@ down = 'volume down'
 up = 'volume up'
 shift-down = ['volume set 0', 'mode main']
 
+# [[on-window-detected]]
+# if.app-id = 'com.todoist.mac.Todoist'
 # [[on-window-detected]]
 # if.app-id = "com.utmapp.UTM"
 # run = ["layout floating"]
