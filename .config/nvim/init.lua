@@ -27,7 +27,7 @@ local function get_class_name()
   end
   return nil
 end
-
+require("memo").setup()
 -- require("luasnip.loaders.from_lua").lazy_load({ paths = "~/.config/nvim/lua/snippets" })
 -- require("mason-nvim-dap").setup({
 --   ensure_installed = { "python", "cppdbg", "node2" }, -- Replace with the debuggers you need
