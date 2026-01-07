@@ -6,7 +6,11 @@ return {
 
     -- tag = "v0.9.1",
     opts = {
+      highlight = {
+        enable = true,
+      },
       ensure_installed = {
+        "glsl",
         "prisma",
         "cpp",
         "go",

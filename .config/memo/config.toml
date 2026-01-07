@@ -2,7 +2,7 @@ memodir = "/Users/charlo/.config/memo/_posts"
 editor = "nvim"
 column = 20
 width = 0
-selectcmd = "fzf --exact --ansi --layout=reverse --border --height=90% --pointer=* --cycle --prompt=Snippets:"
+selectcmd = "fzf --exact --ansi --layout=reverse --border --height=90% --pointer=* --cycle --prompt=Notes:"
 grepcmd = "grep -nH ${PATTERN} ${FILES}"
 memotemplate = ""
 assetsdir = "."

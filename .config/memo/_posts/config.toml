@@ -1,0 +1,11 @@
+memodir = "/Users/charlo/.config/memo/_posts"
+editor = "nvim"
+column = 20
+width = 0
+selectcmd = "fzf --exact --ansi --layout=reverse --border --height=90% --pointer=* --cycle --prompt=Snippets:"
+grepcmd = "grep -nH ${PATTERN} ${FILES}"
+memotemplate = ""
+assetsdir = "."
+pluginsdir = "/Users/charlo/.config/memo/plugins"
+templatedirfile = ""
+templatebodyfile = ""

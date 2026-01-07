@@ -25,7 +25,9 @@ export BLOG="/Users/charlo/home/Coding/Blog"
 # Force conda env to always show on the left
 # export PROMPT='$(conda_prompt_info)%n@%m:%~ $ '
 
-
+poo(){
+  echo "hey"
+}
 # alias fzb='open "$(find "$BOK" -type f | sed "s|.*/08_Books/|08_Books/|" | fzf -m | sed "s|^08_Books/|$BOK/|")"'
 #
 qcp(){
@@ -38,6 +40,7 @@ alias fp='selection=$(find "$BOK" -type f -iname "*.pdf" | sed "s|.*/Books/||" |
 alias fh='selection=$(find "$HOMIE" -type d ! -path "$HOMIE/Obsidian Notes/" ! -path "$HOMIE/Obsidian Notes/*" ! -path "$HOMIE/.obsidian/" ! -path "$HOMIE/.obsidian/*"| fzf -m --exact) && cd $selection'
 alias fo='selection=$(find "$HOMIE/Obsidian Notes/" -type f -iname "*.md" | sed "s|.*/BIORAM/||" | fzf -m --exact) && nvim $selection'
 alias zf='~/.dotfiles/scripts/zathura_focus.sh'
+alias obe='~/.dotfiles/scripts/obs_edit.sh'
 # Set up fzf key bindings and fuzzy completion
 source ~/.dotfiles/.keys
 
@@ -45,7 +48,9 @@ export TERM="xterm-256color"
 export COLORTERM=truecolor
 
 
-
+sc(){
+  memo edit Scratch.md
+}
 
 
 source ~/.fzf-git.sh
@@ -191,7 +196,7 @@ function memo-select() {
     memo edit
 }
 zle -N memo-select
-bindkey '^h' memo-select
+bindkey '^k' memo-select
 
 
 function prev() {
@@ -329,3 +334,4 @@ zinit light-mode for \
 
 source ~/.ghcup/env
 export PATH="/opt/homebrew/opt/dotnet@8/bin:$PATH"
+export CMAKE_POLICY_VERSION_MINIMUM=3.5

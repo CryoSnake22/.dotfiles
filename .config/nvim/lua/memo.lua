@@ -6,7 +6,7 @@ local M = {}
 -- Get memo directory (adjust if your memo uses a different location)
 local function get_memo_dir()
   local home = os.getenv("HOME")
-  return home .. "/.config/memo" -- Update this to match your memo directory
+  return home .. "/.config/memo/_posts" -- Update this to match your memo directory
 end
 
 -- Function to open memo in a split
