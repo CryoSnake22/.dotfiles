@@ -17,7 +17,13 @@ return {
     "R-nvim/R.nvim",
     -- Only required if you also set defaults.lazy = true
     lazy = false,
+    -- R.nvim is still young and we may make some breaking changes from time
+    -- to time (but also bug fixes all the time). If configuration stability
+    -- is a high priority for you, pin to the latest minor version, but unpin
+    -- it and try the latest version before reporting an issue:
+    -- version = "~0.1.0"
     config = function()
+      -- Create a table with the options to be passed to setup()
       ---@type RConfigUserOpts
       local opts = {
         hook = {
@@ -39,7 +45,7 @@ return {
         },
         disable_cmds = {
           "RClearConsole",
-          "RCustomStart",
+          -- "RCustomStart",
           "RSPlot",
           "RSaveClose",
         },
@@ -63,7 +69,9 @@ return {
     "chomosuke/typst-preview.nvim",
     lazy = false, -- or ft = 'typst'
     version = "1.*",
-    opts = {}, -- lazy.nvim will implicitly calls `setup {}`
+    debug = true,
+    ft = "typst",
+    opts = {},
   },
   {
     "Julian/lean.nvim",
@@ -105,6 +113,22 @@ return {
       servers = {
         -- roslyn = false,
         -- omnisharp = {},
+        pyright = {
+          settings = {
+            pyright = {
+              enableTypedDictProtocols = true,
+            },
+            python = {
+              analysis = {
+                typeCheckingMode = "standard",
+                diagnosticSeverityOverrides = {
+                  reportReturnType = "none", -- One big plaster to stop langgraph partial returns from breaking everything
+                  reportTypedDictNotRequiredAccess = "none",
+                },
+              },
+            },
+          },
+        },
         jdtls = {
           cmd = {
             "jdtls",

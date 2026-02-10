@@ -96,7 +96,7 @@ local postfixm = extdec.apply(postfix, { condition = in_math, show_condition = i
 
 -- ----------------------------------------------------------------------------
 
-return {
+local triggered_snippets = {
   -- ============================================
   --              Triggered Snippets
   -- ============================================
@@ -469,7 +469,9 @@ return {
   sm({ trig = "tt", name = "Text" }, fmt([["{}" {}]], { i(1, "text here"), i(0) })),
 
   -- ----------------------------------------------------------------------------
-}, {
+}
+
+local auto_snippets = {
   -- ============================================
   --                Auto Snippets
   -- ============================================
@@ -639,3 +641,5 @@ return {
     })
   ),
 }
+
+return triggered_snippets, auto_snippets

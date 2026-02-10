@@ -11,6 +11,10 @@ ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 [ ! -d $ZINIT_HOME/.git ] && git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
 source "${ZINIT_HOME}/zinit.zsh"
 
+# Claude stuff
+export CLAUDE_PACKAGE_MANAGER=pnpm
+
+
 export EDITOR='nvim'
 # Importing the classpath for the java junit tests
 export CLASSPATH=$CLASSPATH:/Users/charlo/dev/java/classes/junit-4.13.jar:/Users/charlo/dev/java/classes/hamcrest-core-1.3.jar:.
@@ -19,9 +23,12 @@ export SCHOOL="/Users/charlo/Home/School/season_3/"
 # alias fzb='open $(find $BOK -type f|fzf -m)'
 export FIREP="/Users/charlo/Library/Application Support/Firefox/Profiles/jcug2r6z.default-release/"
 export BOK="/Users/charlo/home/Books"
+export R_AUTO_START=true
 export HOMIE="/Users/charlo/home"
 export TYPST="/Users/charlo/Library/Application Support/typst"
 export BLOG="/Users/charlo/home/Coding/Blog"
+export GEMINI_API_KEY="blabla"
+
 # Force conda env to always show on the left
 # export PROMPT='$(conda_prompt_info)%n@%m:%~ $ '
 
@@ -33,14 +40,19 @@ poo(){
 qcp(){
   g++ $1 && ./a.out
 }
-alias g++='g++ -std=c++20'
-alias firep='/Applications/Firefox.app/Contents/MacOS/firefox --no-remote --profile $FIREP'
-alias fb='selection=$(find "$BOK" -type f -iname "*.pdf" | sed "s|.*/Books/||" | fzf -m --exact) && zf $BOK/$selection'
-alias fp='selection=$(find "$BOK" -type f -iname "*.pdf" | sed "s|.*/Books/||" | fzf -m --exact) && open $BOK/$selection'
-alias fh='selection=$(find "$HOMIE" -type d ! -path "$HOMIE/Obsidian Notes/" ! -path "$HOMIE/Obsidian Notes/*" ! -path "$HOMIE/.obsidian/" ! -path "$HOMIE/.obsidian/*"| fzf -m --exact) && cd $selection'
-alias fo='selection=$(find "$HOMIE/Obsidian Notes/" -type f -iname "*.md" | sed "s|.*/BIORAM/||" | fzf -m --exact) && nvim $selection'
-alias zf='~/.dotfiles/scripts/zathura_focus.sh'
-alias obe='~/.dotfiles/scripts/obs_edit.sh'
+
+if [[ $- == *i* ]]; then
+  alias g++='g++ -std=c++20'
+  alias firep='/Applications/Firefox.app/Contents/MacOS/firefox --no-remote --profile $FIREP'
+  alias fb='selection=$(find "$BOK" -type f -iname "*.pdf" | sed "s|.*/Books/||" | fzf -m --exact) && zf $BOK/$selection'
+  alias fp='selection=$(find "$BOK" -type f -iname "*.pdf" | sed "s|.*/Books/||" | fzf -m --exact) && open $BOK/$selection'
+  alias fh='selection=$(find "$HOMIE" -type d ! -path "$HOMIE/Obsidian Notes/" ! -path "$HOMIE/Obsidian Notes/*" ! -path "$HOMIE/.obsidian/" ! -path "$HOMIE/.obsidian/*"| fzf -m --exact) && cd $selection'
+  alias fo='selection=$(find "$HOMIE/Obsidian Notes/" -type f -iname "*.md" | sed "s|.*/BIORAM/||" | fzf -m --exact) && nvim $selection'
+  alias zf='~/.dotfiles/scripts/zathura_focus.sh'
+  alias mn='memo new'
+  alias ms='memo edit'
+  alias obe='~/.dotfiles/scripts/obs_edit.sh'
+fi
 # Set up fzf key bindings and fuzzy completion
 source ~/.dotfiles/.keys
 
@@ -50,6 +62,10 @@ export COLORTERM=truecolor
 
 sc(){
   memo edit Scratch.md
+}
+
+st(){
+  nvim /Users/charlo/dev/typst/notes/scratch/homework.typ
 }
 
 
@@ -335,3 +351,17 @@ zinit light-mode for \
 source ~/.ghcup/env
 export PATH="/opt/homebrew/opt/dotnet@8/bin:$PATH"
 export CMAKE_POLICY_VERSION_MINIMUM=3.5
+
+# Added by Antigravity
+export PATH="/Users/charlo/.antigravity/antigravity/bin:$PATH"
+
+# bun completions
+[ -s "/Users/charlo/.bun/_bun" ] && source "/Users/charlo/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"

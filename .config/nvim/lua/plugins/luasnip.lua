@@ -10,12 +10,22 @@ return {
       -- Load VSCode-style snippets
       require("luasnip.loaders.from_vscode").lazy_load()
       require("luasnip.loaders.from_lua").lazy_load({ paths = "~/.config/nvim/lua/snippets/" })
+
       -- Custom snippet for Typst
       ls.add_snippets("typst", {
         s("mm", {
-          t({ "$", "", "$" }), -- t({}) = multiline
+          t({ "$", "" }),
+          i(1),
+          t({ "", "$" }),
+          i(2),
         }),
       })
+      ls.add_snippets("typst", { s("mi", {
+        t("$"),
+        i(1),
+        t("$"),
+        i(2),
+      }) })
 
       -- Custom snippet for Lua
       ls.add_snippets("lua", {
