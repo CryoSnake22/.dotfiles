@@ -1,0 +1,15 @@
+_HiStOrY_V2_
+clear\012ls.
+[main.pl].
+[main].
+love(X,juliet).
+love(romeo,juliet).
+[main].
+phrase(s,\040[a]).
+phrase(s,\040[b]).
+phrase(s,\040[a,b,b,b,b,b,b,b]).
+phrase(s,\040[a,a,b,b,b,b,b,b]).
+phrase(s,\040X)\012;\012,..\040.
+phrase(s,X).
+;\012phrase(s,X).
+phrase(s,X).

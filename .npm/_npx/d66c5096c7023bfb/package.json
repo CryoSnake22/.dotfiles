@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "shadcn": "^3.8.1"
+    "shadcn": "^4.0.5"
   },
   "_npx": {
     "packages": [

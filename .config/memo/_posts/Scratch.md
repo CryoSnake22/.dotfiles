@@ -1,3 +1,286 @@
+# Thu 12 Mar 2026 11:24:14 EDT
+
+Todo:
+
+- Figure out testing and setup claude.md for that
+
+# Thu 12 Mar 2026 10:28:54 EDT
+
+Filming Cooking stuff: Philipe Lemoine
+
+# Thu 12 Mar 2026 09:58:50 EDT
+
+Lubing yoyo: https://www.youtube.com/watch?v=ntivf4TGrvw
+
+# Wed 11 Mar 2026 22:05:54 EDT
+
+Personal rules I need to follow:
+
+- No project longer than 12 hours
+- No new stack for 3 months
+- Ship something every week
+- Embarassing is ok := ship ugly
+- ideas are experiments external to me not identity
+
+Goal for this year: Ship one small tool every week for the whole year
+
+Stop asking
+
+- What startup can I build ?
+
+Start asking:
+
+- What experiment can I run this week
+
+I need a framework / a routine. One day should be collecting complaints and pain points and then compiling them, then choosing the experiment of the week making sure it's doable within 10 hours of work.
+
+- Monday: Complaint mine, map problems to solutions which are doable within 10 hours
+- Tuesday - Wednesday: Build it
+- Thursday : Deploy it
+- Friday: Show People
+- Weekend: Get Feedback
+
+# Wed 11 Mar 2026 18:04:08 EDT
+
+Stack:
+Frontend + backend: Next.js
+Database + storage: Supabase
+Auth: Clerk or Supabase Auth
+Payments: Stripe
+Email: Resend
+AI features: OpenAI API
+Deploy: Vercel
+UI: Tailwind + shadcn/ui
+
+Businessinsight: If people don't pull something into their lives then it's not a good idea
+
+# Wed 11 Mar 2026 17:29:26 EDT
+
+Painpoint:
+I feel like so many people are stuck being lesser versions of themselves, not giving themselves the right tools to actually build the life they want, knowing what they want to become, knowing what life they want, and yet sitting paralyzed in doubt, guilt, fear, and just immobility, convincing themselves that they're being chased by ghosts.
+Sometimes I feel like one of those people. Sometimes I look at people around me who seem to be in motion, and I feel like I'm so slow. I don't know how I would help those people.
+I know this: for me personally, what helps me change is always to think:
+
+1. What is the life I want?
+2. How am I going to move today towards that life?
+3. If I keep taking the actions I'm taking today, what is the probability that I will attain the life that I want?
+
+   Typically, the answer gets me in motion because I realize that the odds of me living or getting the life that I want, if I keep taking the actions I'm taking today, are typically slim to none.o
+
+# Wed 11 Mar 2026 13:13:57 EDT
+
+I'm kind of tired but I feel like the coffee gave me some motivation
+
+# Wed 11 Mar 2026 12:11:47 EDT
+
+I texted Antoine because I'm bored. It's good to talk.
+
+# Tue 10 Mar 2026 20:41:38 EDT
+
+# Tue 10 Mar 2026 13:46:45 EDT
+
+Okay I've done some work for stats but I definitely need to do more. Tonight I need to do some work on webdev + AI workflow stuff. I need to learn more about agents, and maybe look into ctfs for fun for like 30 min. No pressure just 30 min of lookup / work.
+
+For now I think I should probably get back to my cleaning tasks since Bhavna has many expectations. Plus I need to make chili garlic noodles with fried tofu and clean the home so yeah it's gonna be hectic.
+
+# Tue 10 Mar 2026 11:51:41 EDT
+
+I should prioritize my tasks for today, I've got some stuff I'm behind on in class. Let's try to figure out what I'm most behind on
+
+Stats:
+Haven't studied anything since last midterm and next midterm is next week (Super high priority)
+
+Elem Analysis:
+
+- I have to do the exercises from 5.1 to 5.3 (Tomorrow and maybe later today)
+
+Databases:
+
+- Assignment 2 -> March 30
+
+Programming Paradigms:
+
+- Assignment 2 -> March 25
+- Prolog Lab 1 -> March 23
+
+# Tue 10 Mar 2026 11:19:49 EDT
+
+What do I have to do today ? What's the priority ?
+
+- I took a shower
+- I brushed
+- I did my hair
+- I took vitamins (Not creatine. Let me go do it right now)
+
+Out of all the things I have to do what can I make run in the background while I study ?
+
+- Clothes washing
+- Dishwasher
+
+# Tue 10 Mar 2026 11:06:22 EDT
+
+Note to self for future in CSGAMES: Don't go, you might think it's harmless but this shit is exhausting like veryyyyy exhausting.
+
+# Sat 7 Mar 2026 13:26:24 EST
+
+74.249.40.240
+
+https://2026.csgames.org/en/#participate
+
+# Fri 6 Mar 2026 20:06:47 EST
+
+PRYNMEAPUNCH!
+
+# Fri 6 Mar 2026 16:45:26 EST
+
+I might learn about the OSI model just for fun.
+
+# Thu 5 Mar 2026 13:09:45 EST
+
+It seems like I feel like I don't know what to do even though I know I have lots of things to do. I've studied a bit for discrete structs I feel like I'm not fully ready but good enough for a 70%. The question is do I want to settle for that and work on other stuff ? If so what are the areas in my life which could benefit the most from some work right now ?
+
+I'm leaving for the weekend so I'm not going to be able to study or pretty much do anything this weekend since it's going to be CS games so I should probably focus on doing some stuff for school. Or I could focus on doing stuff like figuring out what I want to build for saas and learning AI and stuff. Humm... This is tough, it almost feels like my entire life is one big exercise in optimization. I don't know if me writing constantly is a good thing or a bad one but it at least feels like a good output (I feel like there's another word for that OH OUTLET).
+
+Some things I may want to fix in the future:
+
+- Hydration (I can't keept not drinking water it's bad for me)
+  - 1 full cup in the morning with pills
+  - Bottle should be carried around
+- Mental loops (Not sure how address that one)
+- Resistance training (Should do some training)
+- Zinc, Vitamin D, Creatine, Omega 3
+
+# Thu 5 Mar 2026 09:38:31 EST
+
+It seems like I forgot my vitamins again today. If I want to do better than yesterday, I have to at least take magnesium today and my vitamins tomorrow morning otherwise it's not better. So what I can do is today night I can put all my vitamins on the table ready to take that way I can't avoid them in the morning. Also I haven't been following my todoist so I think that's the main goal today so 2 things I HAVE to do today on top of what I've done previously:
+Previous:
+
+- Don't go on youtube without purpose
+- Don't scroll at all (Avoid all forms of scrollable content)
+- Don't check email + messages compulsively to fill in blank spaces
+
+Today:
+
+- Take Vitamins and prep next day
+- Follow todoist
+
+# Wed 4 Mar 2026 12:08:37 EST
+
+I checked my email Arghhhhhhh I have energy but not for paradigms and I have litterally like 5 hours left so I think I should pour some of my energy into devops / kubernetes
+
+# Wed 4 Mar 2026 11:27:14 EST
+
+My god it's hard I keep accidentally checking my messages by reflex
+
+# Wed 4 Mar 2026 10:38:16 EST
+
+So far I'm feeling okay about the lack of distraction, I'm still getting the impulse to compulsively check my email so you know what my main goal today will be not to check my email or messages until I get a message notification. This shit's gonna be tough but necessary I think.
+
+- Yesterday I didn't go on youtube for time waste
+- Today what can I do better than yesterday ?
+  - I can take magnesium
+  - I can do a bit (10-20 min) of work on learning what kubernetes is (Human Learning)
+
+# Tue 3 Mar 2026 14:40:31 EST
+
+What are some things yesterday's me did that today's me could do better ?
+
+I am not going to play terraria, so why am I watching terraria gameplay and wasting hours doing so. Why am I not focusing on things like building a better life for myself.
+
+Today, I declare I will not watch a terraria gaming video or scroll through reel type content
+
+Tomorrow morning I would like to start taking my vitamins again and I would like to start taking magnesium again
+
+I'm giving myself a challenge, from today until the end of this month I will not scroll on youtube or instagram or read manga or watch useless youtube (cooking and tutorials acceptable if seeked specifically)
+
+This is the main overarching theme of march. March = no distractions
+
+The next theme and what I would like to start next is := AI powered output, Human learning
+
+# Tue 3 Mar 2026 13:08:02 EST
+
+https://www.youtube.com/watch?v=aQqdBxyf6cc
+
+I've been disconnected from doing what interests me as well as disconnected from my goals. Some of the things I've stopped doing:
+
+- Trying to improve my skills in web development / SAAS development (Meaningful to me)
+- Trying to improve my agentic development skills (For Work)
+- Trying to improve my agentic AI utilization skills (Stuff like claude code)
+- Studying for my classes (They seemed insignificant / not meaningful and I neglected them)
+- Properly showing up to cs club (Makes me seem not accountable or trust worthy)
+
+Things I've started doing again:
+
+- Defaulting to youtube and reels to fill the gap of shame
+
+What are the things I need in my life and am I taking the actions to get them ?
+
+- Good hygiene
+  - I take a shower every day and brush so that's good
+  - I havent been training in months, I felt better when I Did
+- Sense of purpose
+  I'm not sure what else I need
+
+# Mon 2 Mar 2026 15:54:34 EST
+
+What to do money wise:
+
+- Keep TD, maybe get rid of Desjardins
+- Open FHSA
+- Make sure to reduce card utilization
+- Try to get a credit increase
+
+https://www.amazon.ca/s?k=TP-Link%20AX55%20%2F%20AX73 (Router upgrade ??)
+
+# Mon 2 Mar 2026 13:59:15 EST
+
+Closed :=
+let a_n in A
+if a_n -> L in R
+then L in A
+
+compactness :=
+forall a_n in A
+ther exists a subsequence a_n_k s.t a_n_k -> L in A
+
+## check:
+
+Limit point
+Accumulation point
+interior Point
+isolated Point
+Boundary Point
+
+# Mon 2 Mar 2026 12:05:03 EST
+
+https://www.youtube.com/watch?v=HCi_rz7AAf8
+https://www.youtube.com/watch?v=zEbVo_QNtG4
+https://www.youtube.com/watch?v=J6GrqnZ2g9I
+https://www.youtube.com/watch?v=gmNQKGPXRPw
+https://www.youtube.com/watch?v=0fbib8cH3Jg
+https://www.youtube.com/watch?v=HLdvx0ecZHg
+https://www.youtube.com/watch?v=uBswZpDgedw
+https://www.youtube.com/watch?v=btJHerA37ec
+
+# Mon 2 Mar 2026 11:29:23 EST
+
+I'm doing data entry and dying inside. I don't want to live this boring ass life and I'm thinking probably any work which is not self directed will end up being as mind numbing and intollerable as the work I'm doing right now. I'm currently entering each inventory item by hand one by one for thousands of items noting when an item is not reflected in inventory and I feel like I'm dying this sucks so much my god.
+
+# Mon 2 Mar 2026 09:55:05 EST
+
+- Understand proof for root and ratio test
+
+# Sun 1 Mar 2026 16:56:03 EST
+
+- I will be going to Montreal through my own means since I have a Midterm in the morning
+- I will be coming back from Montreal through my own means since I have work in the morning on Monday
+
+## Work:
+
+Stuff to Tell Howard:
+
+- I have a midterm on Friday midday so I will not be able to be at work
+
 # Tue 10 Feb 2026 11:40:34 EST
 
 I will allow myself 1h for sailing.
@@ -231,227 +514,3 @@ site:jobs.ashbyhq.com AND ("founding engineer" OR "first engineer" OR "founding 
 1. What props does this component accept?
 2. What does it render on the screen?
 3. What is the return statement doing?
-
-# Freedom
-
-bolt.new for iteration ?
-
-Cursor for full project understanding
-
-pydantic ai vs langgraph
-npm create t3-app@latest
-Some things I need to work on / understand:
-
-# For Each idea :
-
-Who has the problem? (Be concrete: “Canadian junior dev job hunters” not “job seekers”)
-
-When does the problem hurt? (Situation / trigger)
-
-What is the recurring workflow? (Sequence of 5–10 steps they repeat)
-
-Where can AI slot in?
-
-Classify? Summarize? Rewrite? Recommend? Plan? Monitor? Decide? Generate?
-
-What is the smallest loop I can build in 3 days that:
-
-Takes real input from a user
-
-Produces a meaningful outcome
-
-Is sticky enough they might come back?
-
-# Try to come up with a template which does this and reuse for each:
-
-Ingestion
-
-User uploads / pastes / connects (resume, job URL, CSV, website, etc.)
-
-Structure
-
-Convert raw stuff into canonical JSON schema (you love this anyway)
-
-Store
-
-Save raw + structured in Supabase
-
-Process (AI / agents)
-
-A LangGraph flow that:
-
-Validates inputs
-
-Calls tools (APIs, DB, external services)
-
-Produces a result object
-
-Present
-
-Clean UI to display result (table, chart, editor, “diff from last version”, etc.)
-
-Automate
-
-Optional: n8n to rerun the flow on a schedule or triggers (new email, new document, etc.)
-
-- Tailwind CSS
-- SQL (Triggers, Views and Queries)
-- Go Concurrency
-- Docker
-
-Pillars of life:
-
-1. Financial
-
-- Job applications are not in progress right now same for leetcode. I hate leetcode I wonder how I can force myself to do more
-
-2. Long Term skill Investments
-
-- I'm thinking of definitely working on a lot of AI agentic stuff.
-- It's good that I made the DB project my own job tracking app
-
-3. Life, relationships and health
-
-- Cleaning Home
-- Cooking for Bhavna
-- Making sure she feels supported and that she has a partner
-- Stop letting stuff hang. Just do it and get rid of the anxiety
-
-4. Creative and fulfilment
-
-- Honestly just music is enough for my "creativity" or whatevs haha I think for now
-
-# Jobs:
-
-## Leetcode:
-
-Mon 19 Jan 2026 13:17:08 EST
-
-Did a bit of Graph problems (just 2 of them)
-
-https://leetcode.com/studyplan/top-interview-150/
-
-Tue 6 Jan 2026 10:39:37 EST
-Did one array problem
-
-## Job Seeking
-
-Applying for jobs:
-
-- Apply to 5 jobs a day
-- Delete jobs as you apply
-- Every month, that's 150 job applications.
-
-Smart thing would be to hit Linkedin API for jobs matching my keywords and get the most "matching ones".
-
-# Content strategy
-
-Maybe make n8n automation which takes in idea and iterates with 2-3 different formats with feedback loops and some premade blocks around my feel and my voice.
-
-# GameDev:
-
-Today I did:
-
-- Coins
-- Coin Counter
-- Game Manager
-- Singleton Pattern
-- Basic Event Driven coins;
-  I learned how important decoupling and single responsibility is especially in highly interdependent systes like games.
-
-Next I should:
-
-- Implement Audio system.
-- Implement Paralaxed Background
-- Implement Doors that open on coin count;
-
-After I should:
-
-- Implement Attack
-- Get Started on Enemies;
-
-# ML
-
-Diffusion branch
-
-- Gaussian mixture models which can vary between one gaussian or a mixture of an infinite number of gaussians.
-
-I need to find/focus on one question for 12 weeks. This semester / these next two months I need to spend all my time in ML focusing on answering a research question and I need to hit the following things:
-
-- Can read and reason about papers.
-  - Cite papers
-  - Strengths and Weaknesses
-  - Note ambiguity and assumptions
-- Clean Code
-  - Configs
-  - Readable and minimal Code
-- Explaining why certain things / design choices are made
-  - Explain why we pick this loss.
-  - Connect denoising / score matching
-- Run Experiments
-  - Multiple Seeds
-  - Honest Plots
-  - Controlled Change
-- Document Failures and Uncertainty
-  - Explain what surprised or troubled you
-  - Dont Oversell
-- Communicate Clearly
-  - Clean README
-  - Clear Figures
-  - Straightforward writing
-- Repo needs to feel "done" not abandonned, end to end completed an actual experiment.
-
----
-
-My current Goal/Quest is to get to the Liquid Neural Network. To do so I need to step through a few things.
-
-1. Stability Theory
-
-- Lyapunov Stability and Fixed Point Analysis.
-  to Answer: How does the liquid time constant (tau(x,t)) prevent the system from becoming unstable when x(t) changes quickly.
-
-2. Numerical Analysis
-
-- Runge-Kunta (RK4) integrator and adaptive step size methods:
-- Understand how step size matters and how Liquid Neural networks can tell the solver to slow down or speed up based on data stiffness.
-
-3. Adjoint Sensitivity method.
-
-- Backpropagation in the continuous world.
-- Study Chen et al. (2018), original paper on neural ODE's where you solve a second ODE and get backpropagation through that _Specifically derivation of adjoint state_.
-
-Then need to see how we get from RESNET to LNNs
-
-How about evolutionary algorithms ? How about Gaussian Processes ? Maybe I should understand why and what a covariance matrix is and how manipulating that can lead to proper sampling in evolutionary algorithms.
-
-## Short Form
-
-From meeting to moving to now
-
-- Have a yap session about something I feel strongly about
-- Come up with prompt to get 60 second content, perfect Investments
-
-_Todo_
-
-- [ ] Film some B-roll
-- Pick 3 locations
-- For each location Film
-  - Close up
-  - Far
-  - POV
-
-Film moments I feel strongly about.
-
-## Long Form
-
-# School
-
-## Databases:
-
-The professor's office hours are ONLINE 11:00-13:00 every
-Wednesday ONLY BY APPOINTMENT ONLINE:
-
-Please contact the professor by email at the latest by 19:00 the
-Tuesday before the Wednesday that you would like to meet with
-her online. The online meetings will take place via MS Teams
-with 1-1 ad hoc meetings.

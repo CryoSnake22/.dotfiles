@@ -107,11 +107,6 @@ function M.create_file_memo()
   if vim.fn.filereadable(memo_file) == 0 then
     local lines = {
       "# " .. memo_name,
-      "",
-      "**File:** `" .. current_file .. "`",
-      "",
-      "## Notes",
-      "",
     }
     vim.fn.writefile(lines, memo_file)
   end
