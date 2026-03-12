@@ -3,6 +3,9 @@
 Todo:
 
 - Figure out testing and setup claude.md for that
+-
+
+I would like to be able to implement streaming responses so that the input from the chat actually shows up as it gets generated
 
 # Thu 12 Mar 2026 10:28:54 EDT
 
