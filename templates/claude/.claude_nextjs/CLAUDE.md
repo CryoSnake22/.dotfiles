@@ -4,7 +4,7 @@ Package Manager: pnpm (preferred)
 
 ## Memory
 
-After any of the following, update the relevant memory file in your auto memory AND update MEMORY.md index if needed:
+After any of the following, update your memory using the `project-memory-checkpoint` skill
 
 - Installing a package
 - Adding a new route or page
@@ -13,6 +13,8 @@ After any of the following, update the relevant memory file in your auto memory 
 - Receiving feedback or a correction from the user
 
 At the start of each session, read relevant memory files before doing discovery.
+
+Use the `project-memory-checkpoint` skill whenever a checkpoint is needed.
 
 ## Dev Commands
 
